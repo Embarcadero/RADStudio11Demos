@@ -1,0 +1,127 @@
+object NotificationsForm: TNotificationsForm
+  Left = 0
+  Top = 0
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 1920
+  FormFactor.Height = 1022
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object btnSendScheduledNotification: TButton
+    Action = ActionSendScheduledNotification
+    Align = Top
+    Enabled = True
+    ImageIndex = -1
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 54.000000000000000000
+    Size.Width = 364.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 384.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Label1: TLabel
+      Align = Client
+      Size.Width = 384.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Notifications'
+    end
+  end
+  object btnSendNotificationImmediately: TButton
+    Action = ActionSendNotificationImmediately
+    Align = Top
+    Enabled = True
+    ImageIndex = -1
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 108.000000000000000000
+    Size.Width = 364.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+  end
+  object ToolBar2: TToolBar
+    Align = Bottom
+    Position.Y = 523.000000000000000000
+    Size.Width = 384.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object SpeedButton1: TSpeedButton
+      Action = ActionCancelScheduled
+      Align = Left
+      Enabled = True
+      ImageIndex = -1
+      Margins.Left = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Size.Width = 164.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object SpeedButton2: TSpeedButton
+      Action = ActionCancelAllNotifications
+      Align = Right
+      Enabled = True
+      ImageIndex = -1
+      Margins.Right = 5.000000000000000000
+      Position.X = 184.000000000000000000
+      Size.Width = 195.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Client
+    Margins.Left = 16.000000000000000000
+    Margins.Top = 3.000000000000000000
+    Margins.Right = 16.000000000000000000
+    Margins.Bottom = 3.000000000000000000
+    Size.Width = 352.000000000000000000
+    Size.Height = 365.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Viewport.Width = 344.000000000000000000
+    Viewport.Height = 357.000000000000000000
+  end
+  object NotificationC: TNotificationCenter
+    OnReceiveLocalNotification = NotificationCReceiveLocalNotification
+    OnPermissionRequestResult = NotificationCPermissionRequestResult
+    Left = 176
+    Top = 272
+  end
+  object ActionList: TActionList
+    OnExecute = ActionListExecute
+    Left = 24
+    Top = 8
+    object ActionSendScheduledNotification: TAction
+      Text = 'Send Scheduled Notification'
+      OnExecute = ActionSendScheduledNotificationExecute
+    end
+    object ActionSendNotificationImmediately: TAction
+      Text = 'Send Notification Immediately'
+      OnExecute = ActionSendNotificationImmediatelyExecute
+    end
+    object ActionCancelScheduled: TAction
+      Text = 'Cancel Scheduled'
+      OnExecute = ActionCancelScheduledExecute
+    end
+    object ActionCancelAllNotifications: TAction
+      Text = 'Cancel All Notifications'
+      OnExecute = ActionCancelAllNotificationsExecute
+    end
+  end
+end

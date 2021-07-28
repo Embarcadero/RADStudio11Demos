@@ -1,0 +1,88 @@
+object CameraComponentForm: TCameraComponentForm
+  Left = 0
+  Top = 0
+  ClientHeight = 579
+  ClientWidth = 385
+  FormFactor.Width = 1920
+  FormFactor.Height = 1022
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object imgCameraView: TImage
+    MultiResBitmap = <
+      item
+      end
+      item
+        Scale = 2.000000000000000000
+      end>
+    Align = Client
+    Size.Width = 385.000000000000000000
+    Size.Height = 471.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object btnStartStopCamera: TButton
+    Align = Bottom
+    ModalResult = 1
+    Margins.Left = 16.000000000000000000
+    Margins.Top = 8.000000000000000000
+    Margins.Right = 16.000000000000000000
+    Margins.Bottom = 8.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 527.000000000000000000
+    Size.Width = 353.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Start'
+    OnClick = actStartExecute
+  end
+  object CameraComponent: TCameraComponent
+    OnSampleBufferReady = CameraComponentSampleBufferReady
+    Left = 24
+    Top = 8
+  end
+  object tbToolbar: TToolBar
+    Padding.Left = 8.000000000000000000
+    Padding.Right = 8.000000000000000000
+    Size.Width = 385.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    object lToolbarTitle: TLabel
+      Align = Contents
+      Size.Width = 385.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Camera demo'
+    end
+    object btnSettings: TButton
+      Action = actShowSettings
+      Align = Right
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 329.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'detailstoolbutton'
+    end
+  end
+  object ActionList: TActionList
+    OnExecute = ActionListExecute
+    OnUpdate = ActionListUpdate
+    Left = 24
+    Top = 64
+    object actStart: TAction
+      Text = 'Start'
+      OnExecute = actStartExecute
+    end
+    object actStop: TAction
+      Text = 'Stop'
+      OnExecute = actStopExecute
+    end
+    object actShowSettings: TAction
+      Text = 'Settings'
+      OnExecute = actShowSettingsExecute
+    end
+  end
+end

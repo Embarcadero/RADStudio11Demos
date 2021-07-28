@@ -1,0 +1,13 @@
+object PreviewForm: TPreviewForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 493
+  ClientWidth = 542
+  Position = Designed
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = FormClose
+  DesignerMasterStyle = 0
+end
