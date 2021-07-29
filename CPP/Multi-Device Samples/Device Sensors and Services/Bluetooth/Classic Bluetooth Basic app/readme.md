@@ -33,8 +33,8 @@ You can find the **Classic Bluetooth Basic app** sample project at:
 
 * **GitHub Repository:**
 
-* [https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Multi-Device%20Samples/Device%20Sensors%20and%20Services/Bluetooth/Classic%20Bluetooth%20Basic%20app](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Multi-Device%20Samples/Device%20Sensors%20and%20Services/Bluetooth/Classic%20Bluetooth%20Basic%20app)
-* [https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Multi-Device%20Samples/Device%20Sensors%20and%20Services/Bluetooth/Classic%20Bluetooth%20Basic%20app](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Multi-Device%20Samples/Device%20Sensors%20and%20Services/Bluetooth/Classic%20Bluetooth%20Basic%20app)
+* [https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Multi-Device%20Samples/Device%20Sensors%20and%20Services/Bluetooth/Classic%20Bluetooth%20Basic%20app](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Multi-Device%20Samples/Device%20Sensors%20and%20Services/Bluetooth/Classic%20Bluetooth%20Basic%20app)
+* [https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Multi-Device%20Samples/Device%20Sensors%20and%20Services/Bluetooth/Classic%20Bluetooth%20Basic%20app](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Multi-Device%20Samples/Device%20Sensors%20and%20Services/Bluetooth/Classic%20Bluetooth%20Basic%20app)
 
 ## Description 
 

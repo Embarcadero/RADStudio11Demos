@@ -23,8 +23,8 @@ You can find the **AdminTool** project at:
 * **Object Pascal\DataBase\IBX\Admin**
 * **CPP\Database\IBX\Admin**
 
-* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/IBX/Admin/](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/IBX/Admin/)
-* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Database/IBX/Admin/](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Database/IBX/Admin/)
+* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/IBX/Admin/](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/IBX/Admin/)
+* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Database/IBX/Admin/](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Database/IBX/Admin/)
 
 ## Description 
 

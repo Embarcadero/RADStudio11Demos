@@ -21,7 +21,7 @@ This sample demonstrates how to create and use custom VCL components. The applic
 You can find the **Controls** sample project at:
 * **Start | Programs | Embarcadero RAD Studio Rio | Samples** and then navigate to **CPP\VCL\Controls**.
 * **C:\Users\Public\Documents\Embarcadero\Studio\\Samples\CPP\VCL\Controls**.
-* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/VCL/Controls/](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/VCL/Controls/).
+* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/VCL/Controls/](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/VCL/Controls/).
 
 ## Description 
 

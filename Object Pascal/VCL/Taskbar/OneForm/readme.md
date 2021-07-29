@@ -25,8 +25,8 @@ You can find the **One Form Application** sample project at:
 * **Object Pascal\VCL\Taskbar\OneForm**
 * **CPP\VCL\Taskbar\OneFormApp**
 
-* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/VCL/Taskbar/OneForm](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/VCL/Taskbar/OneForm)
-* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/VCL/Taskbar/OneFormApp](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/VCL/Taskbar/OneFormApp)
+* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/VCL/Taskbar/OneForm](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/VCL/Taskbar/OneForm)
+* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/VCL/Taskbar/OneFormApp](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/VCL/Taskbar/OneFormApp)
 
 ## Description 
 

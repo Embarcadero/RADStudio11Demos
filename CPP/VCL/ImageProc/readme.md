@@ -24,7 +24,7 @@ This sample demonstrates how to use [TImage](http://docwiki.embarcadero.com/Libr
 
 You can find the **ImageProcessing** sample project at:
 * **Start | Programs | Embarcadero RAD Studio Rio | Samples** and then navigate to **CPP\VCL\ImageProc**
-* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/VCL/ImageProc/](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/VCL/ImageProc/)
+* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/VCL/ImageProc/](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/VCL/ImageProc/)
 
 ## Description 
 

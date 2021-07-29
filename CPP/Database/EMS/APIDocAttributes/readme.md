@@ -31,8 +31,8 @@ You can find the **APIDocAttributes** sample project at:
 * **Object Pascal\DataBase\EMS\APIDocAttributes**
 * **CPP\Database\EMS\APIDocAttributes**
 
-* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/EMS/APIDocAttributes/](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/EMS/APIDocAttributes/)
-* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Database/EMS/APIDocAttributes/](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Database/EMS/APIDocAttributes/)
+* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/EMS/APIDocAttributes/](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/EMS/APIDocAttributes/)
+* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Database/EMS/APIDocAttributes/](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Database/EMS/APIDocAttributes/)
 
 ## Description 
 

@@ -28,7 +28,7 @@ You can find the **SortVector** sample project at:
 
 * **GitHub Repository:**
 
-* **C++:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/RTL/SortVector](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/RTL/SortVector)
+* **C++:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/RTL/SortVector](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/RTL/SortVector)
 
 ## Description 
 

@@ -29,8 +29,8 @@ You can find the **Sensors** sample project at:
 
 * **GitHub Repository:**
 
-* **Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/VCL/Sensors](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/VCL/Sensors)
-* **C++:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/VCL/Sensors](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/VCL/Sensors)
+* **Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/VCL/Sensors](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/VCL/Sensors)
+* **C++:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/VCL/Sensors](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/VCL/Sensors)
 
 ## Description 
 

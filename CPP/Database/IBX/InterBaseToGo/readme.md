@@ -20,7 +20,7 @@ This sample shows how to monitor trace flags on an InterBase database connection
 
 You can find the **Monitor Demo** project at:
 * **Start | Programs | Embarcadero RAD Studio Rio | Samples** and then navigate to **CPP\Database\IBX\InterBaseToGo**.
-* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Database/IBX/InterBaseToGo/](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Database/IBX/InterBaseToGo/)
+* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Database/IBX/InterBaseToGo/](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Database/IBX/InterBaseToGo/)
 
 ## Description 
 

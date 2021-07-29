@@ -29,8 +29,8 @@ You can find the **HttpDownload** sample project at:
 * `Object Pascal\RTL\HttpAsyncDownload`
 * `CPP\RTL\HttpAsyncDownloadDemo`
 
-* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/RTL/HttpAsyncDownload](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/RTL/HttpAsyncDownload)
-* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/RTL/HttpAsyncDownloadDemo/](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/RTL/HttpAsyncDownloadDemo/)
+* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/RTL/HttpAsyncDownload](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/RTL/HttpAsyncDownload)
+* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/RTL/HttpAsyncDownloadDemo/](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/RTL/HttpAsyncDownloadDemo/)
 
 ## Description 
 

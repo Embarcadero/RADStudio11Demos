@@ -31,8 +31,8 @@ You can find the **BDShoppingList** project at:
 
 * **GitHub Repository:**
 
-* [https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/RTL/Tethering/BDShoppingList](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/RTL/Tethering/BDShoppingList)
-* [https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/RTL/Tethering/BDShoppingList](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/RTL/Tethering/BDShoppingList)
+* [https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/RTL/Tethering/BDShoppingList](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/RTL/Tethering/BDShoppingList)
+* [https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/RTL/Tethering/BDShoppingList](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/RTL/Tethering/BDShoppingList)
 
 ## Description 
 

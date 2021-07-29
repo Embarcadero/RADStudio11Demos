@@ -26,8 +26,8 @@ You can find the **ToggleSwitch** sample project at:
 * `Object Pascal\VCL\ToggleSwitch`
 * `CPP\VCL\ToggleSwitch`
 
-* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/VCL/ToggleSwitch](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/VCL/ToggleSwitch)
-* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/VCL/ToggleSwitch](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/VCL/ToggleSwitch)
+* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/VCL/ToggleSwitch](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/VCL/ToggleSwitch)
+* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/VCL/ToggleSwitch](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/VCL/ToggleSwitch)
 
 ## Description 
 

@@ -29,8 +29,8 @@ You can find the **Location** sample project at:
 
 * **GitHub Repository:**
 
-* **Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Mobile%20Snippets/Location](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Mobile%20Snippets/Location)
-* **C++:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Mobile%20Snippets/Location](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Mobile%20Snippets/Location)
+* **Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Mobile%20Snippets/Location](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Mobile%20Snippets/Location)
+* **C++:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Mobile%20Snippets/Location](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Mobile%20Snippets/Location)
 
 ## Description 
 

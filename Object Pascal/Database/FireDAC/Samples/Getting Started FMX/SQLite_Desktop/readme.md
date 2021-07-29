@@ -26,7 +26,7 @@ You can find the **FMGettingStarted** project at:
 
 * **GitHub Repository for Delphi:**
 
-* [https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/FireDAC/Samples/Getting%20Started%20FMX/SQLite_Desktop/](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/FireDAC/Samples/Getting%20Started%20FMX/SQLite_Desktop/)
+* [https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/FireDAC/Samples/Getting%20Started%20FMX/SQLite_Desktop/](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/FireDAC/Samples/Getting%20Started%20FMX/SQLite_Desktop/)
 
 ## Description 
 

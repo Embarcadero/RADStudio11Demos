@@ -20,7 +20,7 @@ This demo is a system with functionality to add, modify, browse, and report on o
 
 You can find the **IBMastApp** project at:
 * **Start | Programs | Embarcadero RAD Studio Rio | Samples** and then navigate to **Object Pascal\DataBase\IBX\IBMastApp**
-* **GitHub Repository:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/IBX/IBMastApp/](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/IBX/IBMastApp/)
+* **GitHub Repository:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/IBX/IBMastApp/](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/IBX/IBMastApp/)
 
 ## Description 
 

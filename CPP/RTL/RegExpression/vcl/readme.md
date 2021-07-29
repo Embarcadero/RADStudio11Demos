@@ -25,8 +25,8 @@ You can find the **RegExpDemo** sample project at:
 * **Object Pascal\RTL\RegExpression\vcl**
 * **CPP\RTL\RegExpression\vcl**
 
-* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/RTL/RegExpression/vcl](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/RTL/RegExpression/vcl)
-* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/RTL/RegExpression/vcl](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/RTL/RegExpression/vcl)
+* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/RTL/RegExpression/vcl](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/RTL/RegExpression/vcl)
+* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/RTL/RegExpression/vcl](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/RTL/RegExpression/vcl)
 
 ## Description 
 

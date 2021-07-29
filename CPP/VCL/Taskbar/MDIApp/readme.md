@@ -25,8 +25,8 @@ You can find the **MDIApp** sample project at:
 * **Object Pascal\VCL\Taskbar\MDI**
 * **CPP\VCL\Taskbar\MDIApp**
 
-* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/VCL/Taskbar/MDI](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/VCL/Taskbar/MDI)
-* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/VCL/Taskbar/MDIApp](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/VCL/Taskbar/MDIApp)
+* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/VCL/Taskbar/MDI](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/VCL/Taskbar/MDI)
+* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/VCL/Taskbar/MDIApp](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/VCL/Taskbar/MDIApp)
 
 ## Description 
 

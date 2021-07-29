@@ -27,7 +27,7 @@ You can find the **Arrays** project at:
 
 * **GitHub Repository**:
 
-* **Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/FireDAC/Samples/DBMS%20Specific/InterBase/Arrays](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/FireDAC/Samples/DBMS%20Specific/InterBase/Arrays)
+* **Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/FireDAC/Samples/DBMS%20Specific/InterBase/Arrays](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/FireDAC/Samples/DBMS%20Specific/InterBase/Arrays)
 
 ## Description 
 

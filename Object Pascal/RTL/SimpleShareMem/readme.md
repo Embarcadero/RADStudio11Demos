@@ -21,7 +21,7 @@ This sample demonstrates how to share memory between a DLL and its client applic
 
 You can find the **SimpleShareMem** sample project at:
 * **Start > Programs > Embarcadero RAD Studio > Samples > Delphi > RTL > SimpleShareMem**
-* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/RTL/SimpleShareMem/](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/RTL/SimpleShareMem/)
+* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/RTL/SimpleShareMem/](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/RTL/SimpleShareMem/)
 
 ## Description 
 

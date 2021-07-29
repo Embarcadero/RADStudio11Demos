@@ -31,8 +31,8 @@ You can find the **Windows 10 SharingContract** sample project at:
 
 * **GitHub Repository:**
 
-* [https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/VCL/Windows%2010%20SharingContract](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/VCL/Windows%2010%20SharingContract)
-* [https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/VCL/Windows%2010%20SharingContract](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/VCL/Windows%2010%20SharingContract)
+* [https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/VCL/Windows%2010%20SharingContract](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/VCL/Windows%2010%20SharingContract)
+* [https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/VCL/Windows%2010%20SharingContract](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/VCL/Windows%2010%20SharingContract)
 
 ## Description 
 

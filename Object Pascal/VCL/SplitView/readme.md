@@ -26,8 +26,8 @@ You can find the **SplitView** sample project at:
 * `Object Pascal\VCL\SplitView`
 * `CPP\VCL\SplitView`
 
-* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/VCL/SplitView](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/VCL/SplitView)
-* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/VCL/SplitView](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/VCL/SplitView)
+* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/VCL/SplitView](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/VCL/SplitView)
+* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/VCL/SplitView](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/VCL/SplitView)
 
 ## Description 
 

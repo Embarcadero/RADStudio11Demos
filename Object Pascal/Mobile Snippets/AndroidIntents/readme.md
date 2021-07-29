@@ -33,7 +33,7 @@ You can find the **Android Intents** sample project at:
 
 * **GitHub Repository:**
 
-*  For Delphi: [https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Mobile%20Snippets/AndroidIntents/](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Mobile%20Snippets/AndroidIntents/)
+*  For Delphi: [https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Mobile%20Snippets/AndroidIntents/](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Mobile%20Snippets/AndroidIntents/)
 
 ## Description 
 

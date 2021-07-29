@@ -20,7 +20,7 @@ You can find the **DataSnap FireDAC** sample project at:
 
 * `Object Pascal\DataSnap\FireDAC`
 
-* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/DataSnap/FireDAC](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/DataSnap/FireDAC)
+* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/DataSnap/FireDAC](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/DataSnap/FireDAC)
 
 ## Description 
 

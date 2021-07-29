@@ -28,7 +28,7 @@ You can find the **CamerasTextures3D** sample project at:
 
 * **GitHub Repository:**
 
-* **C++:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Multi-Device%20Samples/User%20Interface/CamerasTextures3D](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Multi-Device%20Samples/User%20Interface/CamerasTextures3D)
+* **C++:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Multi-Device%20Samples/User%20Interface/CamerasTextures3D](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Multi-Device%20Samples/User%20Interface/CamerasTextures3D)
 
 ## Description 
 

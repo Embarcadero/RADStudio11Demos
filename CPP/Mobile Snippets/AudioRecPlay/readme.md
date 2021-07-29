@@ -29,8 +29,8 @@ You can find the **AudioRecPlay** sample project at:
 
 * **GitHub Repository:**
 
-* **Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Mobile%20Snippets/AudioRecPlay](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Mobile%20Snippets/AudioRecPlay)
-* **C++:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Mobile%20Snippets/AudioRecPlay](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Mobile%20Snippets/AudioRecPlay)
+* **Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Mobile%20Snippets/AudioRecPlay](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Mobile%20Snippets/AudioRecPlay)
+* **C++:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Mobile%20Snippets/AudioRecPlay](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Mobile%20Snippets/AudioRecPlay)
 
 ## Description 
 

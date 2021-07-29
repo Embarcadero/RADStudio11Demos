@@ -27,7 +27,7 @@ You can find the **CloudAPITest** sample project at:
 
 * `Object Pascal\Database\CloudAPI\CloudAPITest`
 
-* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/CloudAPI/CloudAPITest](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/CloudAPI/CloudAPITest)
+* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/CloudAPI/CloudAPITest](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/CloudAPI/CloudAPITest)
 
 ## Description 
 

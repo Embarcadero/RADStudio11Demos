@@ -33,8 +33,8 @@ You can find the **PhotoWall** project at:
 
 * **GitHub Repository:**
 
-* [https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/RTL/Tethering/PhotoWall](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/RTL/Tethering/PhotoWall)
-* [https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Multi-Device%20Samples/Device%20Sensors%20and%20Services/App%20Tethering/PhotoWall](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Multi-Device%20Samples/Device%20Sensors%20and%20Services/App%20Tethering/PhotoWall)
+* [https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/RTL/Tethering/PhotoWall](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/RTL/Tethering/PhotoWall)
+* [https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Multi-Device%20Samples/Device%20Sensors%20and%20Services/App%20Tethering/PhotoWall](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Multi-Device%20Samples/Device%20Sensors%20and%20Services/App%20Tethering/PhotoWall)
 
 ## Description 
 

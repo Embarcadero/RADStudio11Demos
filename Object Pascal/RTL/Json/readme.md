@@ -42,7 +42,7 @@ You can find the **JSON Workbench** sample project at:
 
 * **GitHub Repository:**
 
-* [https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/RTL/Json](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/RTL/Json)
+* [https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/RTL/Json](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/RTL/Json)
 
 ## Description 
 

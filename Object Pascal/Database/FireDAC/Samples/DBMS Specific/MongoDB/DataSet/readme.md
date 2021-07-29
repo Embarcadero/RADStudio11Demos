@@ -30,8 +30,8 @@ You can find the **DataSet** sample project at:
 
 * **GitHub Repository:**
 
-* [https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/FireDAC/Samples/DBMS%20Specific/MongoDB/DataSet](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/FireDAC/Samples/DBMS%20Specific/MongoDB/DataSet)
-* [https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP//Database/FireDAC/Samples/DBMS%20Specific/MongoDB/DataSet](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP//Database/FireDAC/Samples/DBMS%20Specific/MongoDB/DataSet)
+* [https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/FireDAC/Samples/DBMS%20Specific/MongoDB/DataSet](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/FireDAC/Samples/DBMS%20Specific/MongoDB/DataSet)
+* [https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP//Database/FireDAC/Samples/DBMS%20Specific/MongoDB/DataSet](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP//Database/FireDAC/Samples/DBMS%20Specific/MongoDB/DataSet)
 
 ## Description 
 
@@ -63,8 +63,8 @@ Before using the **DataSet** sample project, review the following checklist:
 > 
 > * **GitHub Repository:**
 > 
-> * [https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/FireDAC/Samples/DBMS%20Specific/MongoDB/Restaurants](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/FireDAC/Samples/DBMS%20Specific/MongoDB/Restaurants)
-> * [https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Database/FireDAC/Samples/DBMS%20Specific/MongoDB/Restaurants](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Database/FireDAC/Samples/DBMS%20Specific/MongoDB/Restaurants)
+> * [https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/FireDAC/Samples/DBMS%20Specific/MongoDB/Restaurants](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/FireDAC/Samples/DBMS%20Specific/MongoDB/Restaurants)
+> * [https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Database/FireDAC/Samples/DBMS%20Specific/MongoDB/Restaurants](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Database/FireDAC/Samples/DBMS%20Specific/MongoDB/Restaurants)
 
 
 ## How to Use the Sample 

@@ -32,8 +32,8 @@ You can find the **FireDACResource** sample project at:
 * **Object Pascal\DataBase\EMS\FireDACResource**
 * **CPP\Database\EMS\FireDACResource**
 
-* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/EMS/FireDACResource/](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/EMS/FireDACResource/)
-* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Database/EMS/FireDACResource/](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Database/EMS/FireDACResource/)
+* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/EMS/FireDACResource/](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/EMS/FireDACResource/)
+* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Database/EMS/FireDACResource/](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Database/EMS/FireDACResource/)
 
 ## Description 
 

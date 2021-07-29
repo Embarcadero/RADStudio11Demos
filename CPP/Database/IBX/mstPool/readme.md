@@ -25,8 +25,8 @@ You can find the **MtsPool** project at:
 * **Object Pascal\DataBase\IBX\MtsPool**
 * **CPP\Database\IBX\mstPool**
 
-* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/IBX/MtsPool/](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/IBX/MtsPool/)
-* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Database/IBX/mstPool/](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Database/IBX/mstPool/)
+* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/IBX/MtsPool/](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/IBX/MtsPool/)
+* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Database/IBX/mstPool/](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Database/IBX/mstPool/)
 
 ## Description 
 

@@ -20,7 +20,7 @@ This sample project demonstrates the use of a **TBindLink**.
 
 You can find the **BindLinkVCL** sample project at:
 * **Start | Programs | Embarcadero RAD Studio Rio | Samples** and then navigate to Object Pascal\LiveBindings\bindlink\vcl
-* **GitHub Repository:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/LiveBindings/bindlink/vcl](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/LiveBindings/bindlink/vcl)
+* **GitHub Repository:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/LiveBindings/bindlink/vcl](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/LiveBindings/bindlink/vcl)
 
 ## Description 
 

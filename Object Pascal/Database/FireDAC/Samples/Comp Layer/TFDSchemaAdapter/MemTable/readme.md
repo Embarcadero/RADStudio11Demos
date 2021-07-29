@@ -27,7 +27,7 @@ You can find the **SchemaAdapterMemTable** sample project at:
 
 * **GitHub Repository:**
 
-* **Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/FireDAC/Samples/Comp%20Layer/TFDSchemaAdapter/MemTable](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/FireDAC/Samples/Comp%20Layer/TFDSchemaAdapter/MemTable)
+* **Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/FireDAC/Samples/Comp%20Layer/TFDSchemaAdapter/MemTable](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/FireDAC/Samples/Comp%20Layer/TFDSchemaAdapter/MemTable)
 
 ## Description 
 

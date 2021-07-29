@@ -29,7 +29,7 @@ You can find the **Android Notification Service** sample project at:
 
 * `Object Pascal\Multi-Device Samples\Device Sensors and Services\AndroidNotificationServiceDemo`
 
-* **GitHub Repository:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Multi-Device%20Samples/Device%20Sensors%20and%20Services/AndroidNotificationServiceDemo](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Multi-Device%20Samples/Device%20Sensors%20and%20Services/AndroidNotificationServiceDemo)
+* **GitHub Repository:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Multi-Device%20Samples/Device%20Sensors%20and%20Services/AndroidNotificationServiceDemo](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Multi-Device%20Samples/Device%20Sensors%20and%20Services/AndroidNotificationServiceDemo)
 
 ## Description 
 

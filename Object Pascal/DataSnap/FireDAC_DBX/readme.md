@@ -21,7 +21,7 @@ You can find the **DataSnap FireDAC dbExpress** sample project at:
 
 * `Object Pascal\DataSnap\FireDAC_DBX`
 
-* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/DataSnap/FireDAC_DBX](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/DataSnap/FireDAC_DBX)
+* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/DataSnap/FireDAC_DBX](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/DataSnap/FireDAC_DBX)
 
 ## Description 
 

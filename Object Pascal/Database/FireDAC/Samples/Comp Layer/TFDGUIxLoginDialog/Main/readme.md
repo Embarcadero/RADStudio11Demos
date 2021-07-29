@@ -29,7 +29,7 @@ You can find the **TFDGUIxLoginDialog** sample project at:
 
 * **Object Pascal\DataBase\FireDAC\Samples\Comp Layer\TFDGUIxLoginDialog\Main**.
 
-* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/FireDAC/Samples/Comp%20Layer/TFDGUIxLoginDialog/Main](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/FireDAC/Samples/Comp%20Layer/TFDGUIxLoginDialog/Main).
+* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/FireDAC/Samples/Comp%20Layer/TFDGUIxLoginDialog/Main](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/FireDAC/Samples/Comp%20Layer/TFDGUIxLoginDialog/Main).
 
 ## Description 
 

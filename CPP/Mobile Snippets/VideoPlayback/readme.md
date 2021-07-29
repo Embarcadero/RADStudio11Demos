@@ -32,8 +32,8 @@ You can find the **VideoPlayback** sample project at:
 
 * **Subversion repository:**
 
-* **C++:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Mobile%20Snippets/VideoPlayback](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Mobile%20Snippets/VideoPlayback)
-* **Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Mobile%20Snippets/VideoPlayback](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Mobile%20Snippets/VideoPlayback)
+* **C++:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Mobile%20Snippets/VideoPlayback](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Mobile%20Snippets/VideoPlayback)
+* **Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Mobile%20Snippets/VideoPlayback](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Mobile%20Snippets/VideoPlayback)
 
 ## Description 
 

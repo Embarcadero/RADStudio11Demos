@@ -20,7 +20,7 @@ This sample project demonstrates the use of a **TBindGridLink**.
 
 You can find the **BindGridLinkFMX** sample project at:
 * **Start | Programs | Embarcadero RAD Studio Rio | Samples** and then navigate to Object Pascal\LiveBindings\bindgridlink\fmx
-* **GitHub Repository:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/LiveBindings/bindgridlink/fmx](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/LiveBindings/bindgridlink/fmx)
+* **GitHub Repository:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/LiveBindings/bindgridlink/fmx](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/LiveBindings/bindgridlink/fmx)
 
 ## Description 
 

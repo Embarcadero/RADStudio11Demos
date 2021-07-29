@@ -27,7 +27,7 @@ You can find the **ViewPort3DTLightTexture3D** sample project at:
 
 * **GitHub Repository:**
 
-* **C++:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Multi-Device%20Samples/User%20Interface/ViewPort3DTLightTexture3D](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Multi-Device%20Samples/User%20Interface/ViewPort3DTLightTexture3D)
+* **C++:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Multi-Device%20Samples/User%20Interface/ViewPort3DTLightTexture3D](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Multi-Device%20Samples/User%20Interface/ViewPort3DTLightTexture3D)
 
 ## Description 
 

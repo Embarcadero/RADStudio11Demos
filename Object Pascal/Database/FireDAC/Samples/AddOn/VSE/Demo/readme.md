@@ -23,7 +23,7 @@ You can find the **Project1** project at:
 
 * **Object Pascal\Database\FireDAC\Samples\AddOn\VSE\Demo**
 
-* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/FireDAC/Samples/AddOn/VSE/Demo/](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/FireDAC/Samples/AddOn/VSE/Demo/)
+* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/FireDAC/Samples/AddOn/VSE/Demo/](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/FireDAC/Samples/AddOn/VSE/Demo/)
 
 ## Description 
 

@@ -21,7 +21,7 @@ This Windows sockets sample is a package that installs the **Web.Win.Sockets** c
 
 You can find the **InetWinSockets** sample project at:
 * **Start | Programs | Embarcadero RAD Studio Rio | Samples** and then navigate to **Object Pascal\VCL\InetWinSockets**
-* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/VCL/InetWinSockets/](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/VCL/InetWinSockets/)
+* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/VCL/InetWinSockets/](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/VCL/InetWinSockets/)
 
 ## Description 
 

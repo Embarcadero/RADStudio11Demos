@@ -7,7 +7,7 @@ This sample shows how to create a DataSnap Server and a DataSnap Client.
 
 You can find the **Basic DataSnap Client and Server Sample** sample project at:
 * **Start | Programs | Embarcadero RAD Studio Rio | Samples** and then navigate to **Object Pascal\DataSnap\Basic**.
-* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/DataSnap/Basic](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/DataSnap/Basic)
+* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/DataSnap/Basic](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/DataSnap/Basic)
 
 ## Contents
 

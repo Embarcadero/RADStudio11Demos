@@ -30,7 +30,7 @@ You can find the **DBX2FDMigration** project at:
 
 * **GitHub Repository for Delphi:**
 
-* [https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/FireDAC/Tool/reFind/DBX2FDMigration/Demo/Forms](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/FireDAC/Tool/reFind/DBX2FDMigration/Demo/Forms)
+* [https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/FireDAC/Tool/reFind/DBX2FDMigration/Demo/Forms](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/FireDAC/Tool/reFind/DBX2FDMigration/Demo/Forms)
 
 ## Description 
 

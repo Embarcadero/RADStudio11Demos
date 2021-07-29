@@ -27,8 +27,8 @@ You can find the **PhoneDialer** sample project at:
 
 * **GitHub Repository:**
 
-* **Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Mobile%20Snippets/PhoneDialer](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Mobile%20Snippets/PhoneDialer)
-* **C++:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Mobile%20Snippets/PhoneDialer](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Mobile%20Snippets/PhoneDialer)
+* **Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Mobile%20Snippets/PhoneDialer](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Mobile%20Snippets/PhoneDialer)
+* **C++:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Mobile%20Snippets/PhoneDialer](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Mobile%20Snippets/PhoneDialer)
 
 ## Description 
 

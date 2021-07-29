@@ -29,7 +29,7 @@ This sample shows how to use a DataSnap/DBX TCPIP connection.
 
 You can find the **EchoToChannel** sample project at:
 * **Start | Programs | Embarcadero RAD Studio Rio | Samples** and then navigate to **Object Pascal\DataSnap\EchoToChannel**.
-* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/DataSnap/EchoToChannel](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/DataSnap/EchoToChannel)
+* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/DataSnap/EchoToChannel](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/DataSnap/EchoToChannel)
 
 ## Description 
 

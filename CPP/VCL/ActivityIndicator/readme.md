@@ -26,8 +26,8 @@ You can find the **ActivityIndicator** sample project at:
 * `Object Pascal\VCL\ActivityIndicator`
 * `CPP\VCL\ActivityIndicator`
 
-* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/VCL/ActivityIndicator](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/VCL/ActivityIndicator)
-* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/VCL/ActivityIndicator](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/VCL/ActivityIndicator)
+* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/VCL/ActivityIndicator](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/VCL/ActivityIndicator)
+* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/VCL/ActivityIndicator](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/VCL/ActivityIndicator)
 
 ## Description 
 

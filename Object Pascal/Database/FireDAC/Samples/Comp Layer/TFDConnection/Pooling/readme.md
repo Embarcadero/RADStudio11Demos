@@ -25,7 +25,7 @@ You can find the **TFDConnection\Pooling** sample project at:
 
 * **Object Pascal\DataBase\FireDAC\Samples\Comp Layer\TFDConnection\Pooling**.
 
-* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/FireDAC/Samples/Comp%20Layer/TFDConnection/Pooling](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/FireDAC/Samples/Comp%20Layer/TFDConnection/Pooling).
+* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/FireDAC/Samples/Comp%20Layer/TFDConnection/Pooling](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/FireDAC/Samples/Comp%20Layer/TFDConnection/Pooling).
 
 ## Description 
 

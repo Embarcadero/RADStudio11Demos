@@ -26,8 +26,8 @@ You can find the **SearchBox** sample project at:
 * `Object Pascal\VCL\SearchBox`
 * `CPP\VCL\SearchBox`
 
-* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/VCL/SearchBox](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/VCL/SearchBox)
-* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/VCL/SearchBox](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/VCL/SearchBox)
+* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/VCL/SearchBox](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/VCL/SearchBox)
+* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/VCL/SearchBox](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/VCL/SearchBox)
 
 ## Description 
 

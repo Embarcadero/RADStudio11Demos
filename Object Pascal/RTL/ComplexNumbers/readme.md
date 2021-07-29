@@ -21,7 +21,7 @@ This sample demonstrates various features of records.
 
 You can find the **ComplexNumbers** sample project at:
 * **Start > Programs > Embarcadero RAD Studio > Samples > Delphi > RTL > ComplexNumbers**
-* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/RTL/ComplexNumbers/](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/RTL/ComplexNumbers/)
+* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/RTL/ComplexNumbers/](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/RTL/ComplexNumbers/)
 
 ## Description 
 

@@ -29,8 +29,8 @@ You can find the **ShareSheet** sample project at:
 
 * **GitHub Repository:**
 
-* **Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Mobile%20Snippets/ShareSheet](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Mobile%20Snippets/ShareSheet)
-* **C++:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Mobile%20Snippets/ShareSheet](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/Mobile%20Snippets/ShareSheet)
+* **Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Mobile%20Snippets/ShareSheet](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Mobile%20Snippets/ShareSheet)
+* **C++:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Mobile%20Snippets/ShareSheet](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/Mobile%20Snippets/ShareSheet)
 
 ## Description 
 

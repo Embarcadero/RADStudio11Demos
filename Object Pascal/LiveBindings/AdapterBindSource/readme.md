@@ -26,7 +26,7 @@ This sample project demonstrates the use of a [TAdapterBindSource](http://docwik
 
 You can find the **AdapterBindSource** sample project at:
 * **Start | Programs | Embarcadero RAD Studio Rio | Samples** and then navigate to Object Pascal\LiveBindings\AdapterBindSource
-* **GitHub Repository:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/LiveBindings/AdapterBindSource](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/LiveBindings/AdapterBindSource)
+* **GitHub Repository:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/LiveBindings/AdapterBindSource](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/LiveBindings/AdapterBindSource)
 
 ## Description 
 

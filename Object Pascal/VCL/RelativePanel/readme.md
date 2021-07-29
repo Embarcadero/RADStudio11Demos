@@ -26,8 +26,8 @@ You can find the **RelativePanel** sample project at:
 * `Object Pascal\VCL\RelativePanel`
 * `CPP\VCL\RelativePanel`
 
-* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/VCL/RelativePanel](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/VCL/RelativePanel)
-* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/VCL/RelativePanel](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/VCL/RelativePanel)
+* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/VCL/RelativePanel](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/VCL/RelativePanel)
+* **GitHub Repository for C++:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/VCL/RelativePanel](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/VCL/RelativePanel)
 
 ## Description 
 

@@ -27,7 +27,7 @@ You can find the **BatchErrorHandling** sample project at:
 
 * **GitHub Repository:**
 
-* **Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/FireDAC/Samples/Comp%20Layer/TFDQuery/ExecSQL/BatchErrorHandling](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/FireDAC/Samples/Comp%20Layer/TFDQuery/ExecSQL/BatchErrorHandling)
+* **Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/FireDAC/Samples/Comp%20Layer/TFDQuery/ExecSQL/BatchErrorHandling](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/FireDAC/Samples/Comp%20Layer/TFDQuery/ExecSQL/BatchErrorHandling)
 
 ## Description 
 

@@ -21,7 +21,7 @@ This sample demonstrates how to use the RTTI API.
 
 You can find the **AttributesAndRTTI** sample project at:
 * **Start > Programs > Embarcadero RAD Studio > Samples > Delphi > RTL > AttributesAndRTTI > rtti_browser**
-* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/RTL/AttributesAndRTTI/rtti_browser](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/RTL/AttributesAndRTTI/rtti_browser)
+* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/RTL/AttributesAndRTTI/rtti_browser](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/RTL/AttributesAndRTTI/rtti_browser)
 
 ## Description 
 

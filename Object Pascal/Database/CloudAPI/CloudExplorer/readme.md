@@ -19,7 +19,7 @@ This sample shows how to create a Cloud Explorer application.
 
 You can find the **CloudExplorer** sample project at:
 * **Start | Programs | Embarcadero RAD Studio Rio | Samples** and then navigate to **Object Pascal\Database\CloudAPI\CloudExplorer**.
-* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/CloudAPI/CloudExplorer/](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/Database/CloudAPI/CloudExplorer/).
+* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/CloudAPI/CloudExplorer/](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/Database/CloudAPI/CloudExplorer/).
 
 ## Description 
 

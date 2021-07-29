@@ -36,8 +36,8 @@ You can find the **MediaPlayer** project at:
 
 * **GitHub Repository:**
 
-* [https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/RTL/Tethering/MediaPlayer](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/RTL/Tethering/MediaPlayer)
-* [https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/RTL/Tethering/MediaPlayer](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/RTL/Tethering/MediaPlayer)
+* [https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/RTL/Tethering/MediaPlayer](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/RTL/Tethering/MediaPlayer)
+* [https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/RTL/Tethering/MediaPlayer](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/RTL/Tethering/MediaPlayer)
 
 ## Description 
 

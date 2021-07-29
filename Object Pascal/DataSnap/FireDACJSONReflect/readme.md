@@ -7,7 +7,7 @@ This sample demonstrates the use of the **Data.FireDACJSONReflect** unit to pass
 
 You can find the **FireDACJSONReflect** sample project at:
 * **Start | Programs | Embarcadero RAD Studio Rio | Samples** and then navigate to **Object Pascal\DataSnap\FireDACJSONReflect**.
-* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/DataSnap/FireDACJSONReflect](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/DataSnap/FireDACJSONReflect)
+* **GitHub Repository for Delphi:**[https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/DataSnap/FireDACJSONReflect](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/DataSnap/FireDACJSONReflect)
 
 ## Contents
 

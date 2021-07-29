@@ -27,8 +27,8 @@ You can find the **ConwaysLife** project at:
 
 * **GitHub Repository:**
 
-* [https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/RTL/Parallel%20Library/VCL](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/CPP/RTL/Parallel%20Library/VCL)
-* [https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/RTL/Parallel%20Library/VCL](https://github.com/Embarcadero/RADStudio10.4Demos/tree/master/Object%20Pascal/RTL/Parallel%20Library/VCL)
+* [https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/RTL/Parallel%20Library/VCL](https://github.com/Embarcadero/RADStudio11Demos/tree/main/CPP/RTL/Parallel%20Library/VCL)
+* [https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/RTL/Parallel%20Library/VCL](https://github.com/Embarcadero/RADStudio11Demos/tree/main/Object%20Pascal/RTL/Parallel%20Library/VCL)
 
 ## Description 
 
