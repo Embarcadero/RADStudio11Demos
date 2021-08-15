@@ -498,7 +498,6 @@ object Form2: TForm2
           AutoSize = True
           Position.X = 32.000000000000000000
           Position.Y = 48.000000000000000000
-          Size.Width = 261.000000000000000000
           Size.Height = 16.000000000000000000
           Size.PlatformDefault = False
           TextSettings.WordWrap = False
@@ -525,7 +524,6 @@ object Form2: TForm2
           AutoSize = True
           Position.X = 120.000000000000000000
           Position.Y = 106.000000000000000000
-          Size.Width = 116.000000000000000000
           Size.Height = 16.000000000000000000
           Size.PlatformDefault = False
           TextSettings.WordWrap = False
@@ -542,7 +540,6 @@ object Form2: TForm2
           AutoSize = True
           Position.X = 120.000000000000000000
           Position.Y = 138.000000000000000000
-          Size.Width = 15.000000000000000000
           Size.Height = 16.000000000000000000
           Size.PlatformDefault = False
           TextSettings.WordWrap = False
