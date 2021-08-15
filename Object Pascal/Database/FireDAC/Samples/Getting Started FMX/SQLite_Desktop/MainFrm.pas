@@ -24,7 +24,9 @@ uses
   FireDAC.Stan.ExprFuncs, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Error, FireDAC.Phys.Intf,
     FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Stan.Param,
     FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client,
-    FireDAC.Phys.SQLite, FireDAC.Phys.SQLiteWrapper.Stat;
+    FireDAC.Phys.SQLite, FireDAC.Phys.SQLiteWrapper.Stat, FMX.Grid.Style,
+  Data.Bind.Controls, FireDAC.Phys.SQLiteDef, FMX.ScrollBox,
+  FMX.Controls.Presentation;
 
 type
   TfrmMain = class(TForm)
@@ -40,11 +42,9 @@ type
     StringGrid1: TStringGrid;
     BindNavigator1: TBindNavigator;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
+
     procedure Button1Click(Sender: TObject);
-  private
-    { Private declarations }
-  public
-    { Public declarations }
+    procedure FDConnection1BeforeConnect(Sender: TObject);
   end;
 
 var
@@ -54,10 +54,22 @@ implementation
 
 {$R *.fmx}
 
+uses
+  System.IOUtils;
+
 procedure TfrmMain.Button1Click(Sender: TObject);
 begin
   FDConnection1.Connected := True;
   FDQuery1.Active := not FDQuery1.Active;
+end;
+
+procedure TfrmMain.FDConnection1BeforeConnect(Sender: TObject);
+begin
+{$IF Defined(MSWINDOWS)}
+  FDConnection1.ConnectionDefName := 'SQLite_Demo';
+{$ELSEIF Defined(OSX)}
+  FDConnection1.Params.Database := TPath.Combine(TPath.GetDocumentsPath, 'fddemo.sdb');
+{$ENDIF}
 end;
 
 end.

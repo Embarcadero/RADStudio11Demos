@@ -6,35 +6,38 @@ object frmMain: TfrmMain
   ClientWidth = 600
   FormFactor.Width = 320
   FormFactor.Height = 480
-  FormFactor.Devices = [Desktop, Phone, Pad]
-  DesignerMobile = False
-  DesignerWidth = 0
-  DesignerHeight = 0
-  DesignerDeviceName = ''
-  DesignerOrientation = 0
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMasterStyle = 0
   object Button1: TButton
-    Height = 22.000000000000000000
     Position.X = 16.000000000000000000
     Position.Y = 16.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
     TabOrder = 0
     Text = 'Open'
-    Width = 80.000000000000000000
     OnClick = Button1Click
   end
   object StringGrid1: TStringGrid
-    Height = 329.000000000000000000
+    CanFocus = True
+    ClipChildren = True
     Position.X = 16.000000000000000000
     Position.Y = 56.000000000000000000
+    Size.Width = 569.000000000000000000
+    Size.Height = 329.000000000000000000
+    Size.PlatformDefault = False
     TabOrder = 1
-    Width = 569.000000000000000000
-    RowCount = 0
     RowHeight = 21.000000000000000000
+    RowCount = 0
+    Viewport.Width = 565.000000000000000000
+    Viewport.Height = 304.000000000000000000
   end
   object BindNavigator1: TBindNavigator
-    Height = 25.000000000000000000
     Position.X = 106.000000000000000000
     Position.Y = 16.000000000000000000
-    Width = 240.000000000000000000
+    Size.Width = 240.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
     DataSource = BindScopeDB1
     xRadius = 4.000000000000000000
     yRadius = 4.000000000000000000
@@ -55,8 +58,10 @@ object frmMain: TfrmMain
   end
   object FDConnection1: TFDConnection
     Params.Strings = (
-      'ConnectionDef=SQLite_Demo')
+      'DriverID=SQLite'
+      'LockingMode=Normal')
     LoginDialog = FDGUIxLoginDialog1
+    BeforeConnect = FDConnection1BeforeConnect
     Left = 56
     Top = 208
   end
@@ -74,7 +79,6 @@ object frmMain: TfrmMain
   end
   object BindScopeDB1: TBindScopeDB
     DataSource = DataSource1
-    DataSet = FDQuery1
     ScopeMappings = <>
     Left = 352
     Top = 208
@@ -88,7 +92,6 @@ object frmMain: TfrmMain
       Category = 'DB Links'
       DataSource = BindScopeDB1
       GridControl = StringGrid1
-      AutoBufferCount = False
       Columns = <>
     end
   end

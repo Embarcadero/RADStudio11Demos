@@ -12,6 +12,7 @@
 program FMGettingStarted;
 
 uses
+  System.StartUpCopy,
   FMX.Forms,
   MainFrm in 'MainFrm.pas' {frmMain};
 
@@ -21,4 +22,5 @@ begin
   Application.Initialize;
   Application.CreateForm(TfrmMain, frmMain);
   Application.Run;
+
 end.
