@@ -51,7 +51,7 @@ __fastcall TAudioRecPlayForm::TAudioRecPlayForm(TComponent *Owner) : TForm(Owner
 	FMicrophone = TCaptureDeviceManager::Current->DefaultAudioCaptureDevice;
 }
 //---------------------------------------------------------------------------
-void __fastcall TAudioRecPlayForm::DisplayRationale(TObject *Sender, const DynamicArray<String> APermissions, const _di_TProc APostRationaleProc)
+void __fastcall TAudioRecPlayForm::DisplayRationale(TObject *Sender, const TClassicStringDynArray APermissions, const _di_TProc APostRationaleProc)
 {
 	// Show an explanation to the user *asynchronously* - don't block this thread waiting for the user's response!
 	// After the user sees the explanation, invoke the post-rationale routine to request the permissions
@@ -62,7 +62,7 @@ void __fastcall TAudioRecPlayForm::DisplayRationale(TObject *Sender, const Dynam
         });
 }
 //---------------------------------------------------------------------------
-void __fastcall TAudioRecPlayForm::RequestPermissionsResult(TObject *Sender, const DynamicArray<String> APermissions, const DynamicArray<TPermissionStatus> AGrantResults)
+void __fastcall TAudioRecPlayForm::RequestPermissionsResult(TObject *Sender, const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults)
 {
 	// 1 permission involved: RECORD_AUDIO
 	if (AGrantResults.Length == 1)
@@ -132,9 +132,7 @@ void __fastcall TAudioRecPlayForm::actStartRecordingExecute(TObject *Sender)
 		// and attempt to record to 'test.caf' file
 		FMicrophone->FileName = GetAudioFileName(AUDIO_FILENAME);
 
-		DynamicArray<String> permissions;
-		permissions.Length = 1;
-		permissions[0] = FPermission;
+		DynamicArray<String> permissions { FPermission };
 
 		PermissionsService()->RequestPermissions(permissions, RequestPermissionsResult, DisplayRationale);
 	}

@@ -47,7 +47,7 @@ __fastcall TBaseMainForm::~TBaseMainForm()
 	delete FRawBitmap;
 }
 //---------------------------------------------------------------------------
-void __fastcall TBaseMainForm::DisplayRationale(TObject *Sender, const DynamicArray<String> APermissions, const _di_TProc APostRationaleProc)
+void __fastcall TBaseMainForm::DisplayRationale(TObject *Sender, const TClassicStringDynArray APermissions, const _di_TProc APostRationaleProc)
 {
 	String RationaleMsg;
 
@@ -67,7 +67,7 @@ void __fastcall TBaseMainForm::DisplayRationale(TObject *Sender, const DynamicAr
         });
 }
 //---------------------------------------------------------------------------
-void __fastcall TBaseMainForm::LoadPicturePermissionRequestResult(TObject *Sender, const DynamicArray<String> APermissions, const DynamicArray<TPermissionStatus> AGrantResults) {
+void __fastcall TBaseMainForm::LoadPicturePermissionRequestResult(TObject *Sender, const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults) {
 	// 2 permissions involved: READ_EXTERNAL_STORAGE and WRITE_EXTERNAL_STORAGE
 	if ((AGrantResults.Length == 2) &&
 		(AGrantResults[0] == TPermissionStatus::Granted) &&
@@ -77,7 +77,7 @@ void __fastcall TBaseMainForm::LoadPicturePermissionRequestResult(TObject *Sende
 		TDialogService::ShowMessage("Cannot do photo editing because the required permissions are not granted");
 }
 //---------------------------------------------------------------------------
-void __fastcall TBaseMainForm::TakePicturePermissionRequestResult(TObject *Sender, const DynamicArray<String> APermissions, const DynamicArray<TPermissionStatus> AGrantResults) {
+void __fastcall TBaseMainForm::TakePicturePermissionRequestResult(TObject *Sender, const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults) {
 	// 3 permissions involved: CAMERA, READ_EXTERNAL_STORAGE and WRITE_EXTERNAL_STORAGE
 	if ((AGrantResults.Length == 3) &&
 		(AGrantResults[0] == TPermissionStatus::Granted) &&
@@ -252,21 +252,14 @@ void __fastcall TBaseMainForm::FilterComboBoxChange(TObject *Sender)
 //---------------------------------------------------------------------------
 void __fastcall TBaseMainForm::ButtonTakePhotoFromLibraryClick(TObject *Sender)
 {
-	DynamicArray<String> permissions;
-	permissions.Length = 2;
-	permissions[0] = FPermissionReadExternalStorage;
-	permissions[1] = FPermissionWriteExternalStorage;
+	DynamicArray<String> permissions { FPermissionReadExternalStorage, FPermissionWriteExternalStorage };
 
 	PermissionsService()->RequestPermissions(permissions, LoadPicturePermissionRequestResult, DisplayRationale);
 }
 //---------------------------------------------------------------------------
 void __fastcall TBaseMainForm::ButtonTakePhotoFromCameraClick(TObject *Sender)
 {
-	DynamicArray<String> permissions;
-	permissions.Length = 3;
-	permissions[0] = FPermissionCamera;
-	permissions[1] = FPermissionReadExternalStorage;
-	permissions[2] = FPermissionWriteExternalStorage;
+	DynamicArray<String> permissions { FPermissionCamera, FPermissionReadExternalStorage, FPermissionWriteExternalStorage };
 
 	PermissionsService()->RequestPermissions(permissions, TakePicturePermissionRequestResult, DisplayRationale);
 }

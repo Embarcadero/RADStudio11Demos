@@ -301,19 +301,13 @@ void __fastcall TForm1::ActionRemoveGroupExecute(TObject * Sender) {
 // ---------------------------------------------------------------------------
 
 void __fastcall TForm1::btnLoadPictureClick(TObject *Sender) {
-	TStringDynArray perms;
-	perms.set_length(1);
-	perms[0] = FPermissionReadExternalStorage;
+	DynamicArray<String> perms { FPermissionReadExternalStorage };
 	PermissionsService()->RequestPermissions(perms, LoadPicturePermissionRequestResult, DisplayRationale);
 }
 // ---------------------------------------------------------------------------
 
 void __fastcall TForm1::btnTakePictureClick(TObject *Sender) {
-	TStringDynArray perms;
-	perms.set_length(3);
-	perms[0] = FPermissionCamera;
-	perms[1] = FPermissionReadExternalStorage;
-	perms[2] = FPermissionWriteExternalStorage;
+	DynamicArray<String> perms { FPermissionCamera, FPermissionReadExternalStorage, FPermissionWriteExternalStorage };
 	PermissionsService()->RequestPermissions(perms, TakePicturePermissionRequestResult, DisplayRationale);
 }
 // ---------------------------------------------------------------------------
@@ -331,7 +325,7 @@ void __fastcall TForm1::TakePhotoFromCameraAction1DidFinishTaking(TBitmap * Imag
 // ---------------------------------------------------------------------------
 
 // Optional rationale display routine to display permission requirement rationale to the user
-void __fastcall TForm1::DisplayRationale(TObject* Sender, const TStringDynArray APermissions,
+void __fastcall TForm1::DisplayRationale(TObject* Sender, const TClassicStringDynArray APermissions,
     const _di_TProc APostRationaleProc) {
     String RationaleMsg;
     for (int i = 0; i < APermissions.Length; i++) {
@@ -355,8 +349,8 @@ void __fastcall TForm1::DisplayRationale(TObject* Sender, const TStringDynArray 
 }
 // ---------------------------------------------------------------------------
 
-void __fastcall TForm1::TakePicturePermissionRequestResult(TObject* Sender, const System::TArray__1<String>APermissions,
-    const System::TArray__1<TPermissionStatus>AGrantResults) {
+void __fastcall TForm1::TakePicturePermissionRequestResult(TObject* Sender, const TClassicStringDynArray APermissions,
+    const TClassicPermissionStatusDynArray AGrantResults) {
     // 3 permissions involved: CAMERA, READ_EXTERNAL_STORAGE and WRITE_EXTERNAL_STORAGE
     if ((AGrantResults.Length == 3) && (AGrantResults[0] == TPermissionStatus::Granted) &&
         (AGrantResults[1] == TPermissionStatus::Granted) && (AGrantResults[2] == TPermissionStatus::Granted))
@@ -366,8 +360,8 @@ void __fastcall TForm1::TakePicturePermissionRequestResult(TObject* Sender, cons
 }
 // ---------------------------------------------------------------------------
 
-void __fastcall TForm1::LoadPicturePermissionRequestResult(TObject* Sender, const System::TArray__1<String>APermissions,
-    const System::TArray__1<TPermissionStatus>AGrantResults) {
+void __fastcall TForm1::LoadPicturePermissionRequestResult(TObject* Sender, const TClassicStringDynArray APermissions,
+    const TClassicPermissionStatusDynArray AGrantResults) {
     // 1 permission involved: CAMERA
     if ((AGrantResults.Length == 1) && (AGrantResults[0] == TPermissionStatus::Granted))
         TakePhotoFromLibraryAction1->Execute();

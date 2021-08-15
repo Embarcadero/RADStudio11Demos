@@ -114,7 +114,7 @@ const
 begin
 {$IFDEF ANDROID}
   PermissionsService.RequestPermissions([PermissionAccessFineLocation],
-    procedure(const APermissions: TArray<string>; const AGrantResults: TArray<TPermissionStatus>)
+    procedure(const APermissions: TClassicStringDynArray; const AGrantResults: TClassicPermissionStatusDynArray)
     begin
       if (Length(AGrantResults) = 1) and (AGrantResults[0] = TPermissionStatus.Granted) then
         { activate or deactivate the location sensor }

@@ -30,14 +30,12 @@ __fastcall TForm1::TForm1(TComponent *Owner) : TForm(Owner)
 #ifdef __ANDROID__
     FPermissionFineLocation = JStringToString(TJManifest_permission::JavaClass->ACCESS_FINE_LOCATION);
 #endif
-    DynamicArray<String> permissions;
-    permissions.Length = 1;
-    permissions[0] = FPermissionFineLocation;
+    DynamicArray<String> permissions { FPermissionFineLocation };
 
     PermissionsService()->RequestPermissions(permissions, LocationPermissionRequestResult, DisplayRationale);
 }
 //---------------------------------------------------------------------------
-void __fastcall TForm1::DisplayRationale(TObject *Sender, const DynamicArray<String> APermissions, const _di_TProc APostRationaleProc)
+void __fastcall TForm1::DisplayRationale(TObject *Sender, const TClassicStringDynArray APermissions, const _di_TProc APostRationaleProc)
 {
 	// Show an explanation to the user *asynchronously* - don't block this thread waiting for the user's response!
 	// After the user sees the explanation, invoke the post-rationale routine to request the permissions
@@ -48,7 +46,7 @@ void __fastcall TForm1::DisplayRationale(TObject *Sender, const DynamicArray<Str
 		});
 }
 //---------------------------------------------------------------------------
-void __fastcall TForm1::LocationPermissionRequestResult(TObject *Sender, const DynamicArray<String> APermissions, const DynamicArray<TPermissionStatus> AGrantResults)
+void __fastcall TForm1::LocationPermissionRequestResult(TObject *Sender, const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults)
 {
 	// 1 permission involved: ACCESS_FINE_LOCATION
 	if ((AGrantResults.Length == 1) && (AGrantResults[0] == TPermissionStatus::Granted))

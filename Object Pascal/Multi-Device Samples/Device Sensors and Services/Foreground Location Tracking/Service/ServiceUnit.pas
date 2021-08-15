@@ -163,7 +163,7 @@ begin
     NotificationContent := string.Empty;
   end;
 
-  Result := TJNotificationCompat_Builder.JavaClass.init(TAndroidHelper.Context, StringToJString(NotificationChannelId))
+  Result := TJapp_NotificationCompat_Builder.JavaClass.init(TAndroidHelper.Context, StringToJString(NotificationChannelId))
     .addAction(TAndroidHelper.Context.getApplicationInfo.icon, StrToJCharSequence('Stop location tracking'), GetServicePendingIntent)
     .setPriority(TJNotification.JavaClass.PRIORITY_HIGH)
     .setOngoing(True)

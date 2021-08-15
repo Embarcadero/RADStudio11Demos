@@ -53,8 +53,8 @@ private:	// User declarations
     String FPermission;
 	TAudioCaptureDevice *FMicrophone;
 	const String AUDIO_FILENAME;
-	void __fastcall DisplayRationale(TObject *Sender, const DynamicArray<String> APermissions, const _di_TProc APostRationaleProc);
-	void __fastcall RequestPermissionsResult(TObject *Sender, const DynamicArray<String> APermissions, const DynamicArray<TPermissionStatus> AGrantResults);
+	void __fastcall DisplayRationale(TObject *Sender, const TClassicStringDynArray APermissions, const _di_TProc APostRationaleProc);
+	void __fastcall RequestPermissionsResult(TObject *Sender, const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults);
 	bool __fastcall HasMicrophone();
 	bool __fastcall IsMicrophoneRecording();
 public:		// User declarations

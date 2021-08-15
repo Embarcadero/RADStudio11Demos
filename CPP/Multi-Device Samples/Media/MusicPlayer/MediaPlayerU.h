@@ -96,8 +96,8 @@ __published: // IDE-managed Components
     void __fastcall FormDestroy(TObject *Sender);
 private: // User declarations
     String FPermissionReadExternalStorage;
-    void __fastcall DisplayRationale(TObject *Sender, const DynamicArray<String> APermissions, const _di_TProc APostRationaleProc);
-    void __fastcall ReadStoragePermissionRequestResult(TObject *Sender, const DynamicArray<String> APermissions, const DynamicArray<TPermissionStatus> AGrantResults);
+    void __fastcall DisplayRationale(TObject *Sender, const TClassicStringDynArray APermissions, const _di_TProc APostRationaleProc);
+    void __fastcall ReadStoragePermissionRequestResult(TObject *Sender, const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults);
 	void __fastcall DoUpdateUI(float newPos);
 	void __fastcall UpdateNowPlaying(int newIndex);
 	void __fastcall UpdateSongs();

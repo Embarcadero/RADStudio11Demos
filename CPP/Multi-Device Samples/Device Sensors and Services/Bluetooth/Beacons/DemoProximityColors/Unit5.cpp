@@ -89,7 +89,7 @@ void __fastcall TForm5::BeaconProximity(System::TObject* const Sender, _di_IBeac
 void TForm5::StartScan()
 {
   PermissionsService()->RequestPermissions({ LOCATION_PERMISSION },
-    [this](const DynamicArray<String> Permissions, const DynamicArray<TPermissionStatus> GrantResults)
+    [this](const TClassicStringDynArray Permissions, const TClassicPermissionStatusDynArray GrantResults)
     {
       if (GrantResults.Length == 1 && GrantResults[0] == TPermissionStatus::Granted)
       {

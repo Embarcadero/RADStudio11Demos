@@ -61,7 +61,7 @@ type
     procedure ContactLoaded(const ATotalCount:Integer; const ANumber: Integer; const ABirthday: TDateTime; const ADisplayName: string;
       const APhoto: TBitmapSurface);
     procedure ContactLoadingEnd(Sender: TObject);
-    procedure DisplayRationale(Sender: TObject; const APermissions: TArray<string>; const APostRationaleProc: TProc);
+    procedure DisplayRationale(Sender: TObject; const APermissions: TClassicStringDynArray; const APostRationaleProc: TProc);
   public
     procedure SortContacts;
   end;
@@ -212,7 +212,7 @@ begin
 end;
 
 // Optional rationale display routine to display permission requirement rationale to the user
-procedure TFormMain.DisplayRationale(Sender: TObject; const APermissions: TArray<string>; const APostRationaleProc: TProc);
+procedure TFormMain.DisplayRationale(Sender: TObject; const APermissions: TClassicStringDynArray; const APostRationaleProc: TProc);
 var
   I: Integer;
   RationaleMsg: string;

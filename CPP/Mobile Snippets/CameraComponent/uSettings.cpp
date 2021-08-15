@@ -42,8 +42,8 @@ void TSettingsForm::SetCamera(TCameraComponent *ACamera)
 //---------------------------------------------------------------------------
 void TSettingsForm::UpdateResolutionTitle()
 {
-	TVideoCaptureSetting Setting = this->Camera->CaptureSetting;
-	lbiResolution->ItemData->Detail = Format("%d x %d x %f", Setting.Width, Setting.Height, Setting.FrameRate);
+	TVideoCaptureSetting Setting = Camera->CaptureSetting;
+	lbiResolution->ItemData->Detail = Format("%d x %d x %f", Setting.Width, Setting.Height, (long double) Setting.FrameRate);
 }
 //---------------------------------------------------------------------------
 void TSettingsForm::UpdateQualityTitle()
@@ -128,7 +128,7 @@ DynamicArray<String> TSettingsForm::CollectResolutionsTitles()
 	for (int i = 0; i < Camera->AvailableCaptureSettings.Length; i++)
 	{
 		TVideoCaptureSetting Setting = Camera->AvailableCaptureSettings[i];
-		title = Format("%d x %d x %f", Setting.Width, Setting.Height, Setting.FrameRate);
+		title = Format("%d x %d x %f", Setting.Width, Setting.Height, (long double) Setting.FrameRate);
 		sl->Add(title);
 	};
 

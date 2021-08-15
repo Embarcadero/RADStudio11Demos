@@ -50,8 +50,8 @@ private:	// User declarations
 	DWORD ScanningStart;
     void StartBLEDiscovery();
     void StopBLEDiscovery();
-    void __fastcall DisplayRationale(TObject* Sender, const TStringDynArray APermissions, const _di_TProc APostRationaleProc);
-    void __fastcall RequestPermissionsResult(TObject* Sender, const System::TArray__1<String> APermissions, const System::TArray__1<TPermissionStatus> AGrantResults);
+    void __fastcall DisplayRationale(TObject* Sender, const TClassicStringDynArray APermissions, const _di_TProc APostRationaleProc);
+    void __fastcall RequestPermissionsResult(TObject* Sender, const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults);
 public:		// User declarations
 	__fastcall TForm6(TComponent* Owner);
 };

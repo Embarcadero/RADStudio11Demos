@@ -46,8 +46,8 @@ __published:	// IDE-managed Components
 	void __fastcall TrackBar1Change(TObject *Sender);
 private:	// User declarations
     String FPermissionFineLocation;
-	void __fastcall DisplayRationale(TObject *Sender, const TStringDynArray APermissions, const _di_TProc APostRationaleProc);
-	void __fastcall LocationPermissionRequestResult(TObject *Sender, const System::TArray__1<String>  APermissions, const System::TArray__1<TPermissionStatus> AGrantResults);
+	void __fastcall DisplayRationale(TObject *Sender, const TClassicStringDynArray APermissions, const _di_TProc APostRationaleProc);
+	void __fastcall LocationPermissionRequestResult(TObject *Sender, const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults);
 public:		// User declarations
 	__fastcall TForm1(TComponent *Owner);
 };

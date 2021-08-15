@@ -69,7 +69,7 @@ private:	// User declarations
 	String __fastcall GetTypeNameLight(TLightSensorType AType);
 	String __fastcall GetTypeNameScanner(TScannerSensorType AType);
 	String __fastcall GetSensorType(TCustomSensor *ASensor);
-	String __fastcall ToFormStr(String AProp, double AVal);
+	String __fastcall ToFormStr(String AProp, long double AVal);
 	String __fastcall ToFormStrS(String AProp, String AVal);
 	String __fastcall ToFormStrB(String AProp, bool AVal);
 public:		// User declarations

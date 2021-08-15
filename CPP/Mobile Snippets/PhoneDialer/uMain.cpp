@@ -33,7 +33,7 @@ __fastcall TPhoneDialerForm::TPhoneDialerForm(TComponent *Owner) : TForm(Owner)
     TPlatformServices::Current->SupportsPlatformService(__uuidof(IFMXPhoneDialerService), &FPhoneDialerService);
 }
 //---------------------------------------------------------------------------
-void __fastcall TPhoneDialerForm::DisplayRationale(TObject *Sender, const DynamicArray<String> APermissions, const _di_TProc APostRationaleProc)
+void __fastcall TPhoneDialerForm::DisplayRationale(TObject *Sender, const TClassicStringDynArray APermissions, const _di_TProc APostRationaleProc)
 {
     // Show an explanation to the user *asynchronously* - don't block this thread waiting for the user's response!
     // After the user sees the explanation, invoke the post-rationale routine to request the permissions
@@ -44,7 +44,7 @@ void __fastcall TPhoneDialerForm::DisplayRationale(TObject *Sender, const Dynami
         });
 }
 //---------------------------------------------------------------------------
-void __fastcall TPhoneDialerForm::MakePhoneCallPermissionRequestResult(TObject *Sender, const DynamicArray<String> APermissions, const DynamicArray<TPermissionStatus> AGrantResults)
+void __fastcall TPhoneDialerForm::MakePhoneCallPermissionRequestResult(TObject *Sender, const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults)
 {
 	// 1 permission involved: CALL_PHONE
 	if ((AGrantResults.Length == 1) && (AGrantResults[0] == TPermissionStatus::Granted))
@@ -78,9 +78,7 @@ void __fastcall TPhoneDialerForm::btnMakeCallClick(TObject *Sender)
 		/* if the Telephone Number is entered in the edit box then make the call, else display an error message */
 		if (edtTelephoneNumber->Text != "")
 		{
-            DynamicArray<String> permissions;
-            permissions.Length = 1;
-            permissions[0] = FCallPhonePermission;
+            DynamicArray<String> permissions { FCallPhonePermission };
 
             PermissionsService()->RequestPermissions(permissions, MakePhoneCallPermissionRequestResult, DisplayRationale);
 		}

@@ -72,11 +72,11 @@ type
     FPermissionCamera,
     FPermissionReadExternalStorage,
     FPermissionWriteExternalStorage: string;
-    procedure DisplayRationale(Sender: TObject; const APermissions: TArray<string>; const APostRationaleProc: TProc);
+    procedure DisplayRationale(Sender: TObject; const APermissions: TClassicStringDynArray; const APostRationaleProc: TProc);
     procedure DoOnChangedEffectParam(Sender: TObject);
     procedure LoadFilterSettings(Rec: TFilterRec);
-    procedure LoadPicturePermissionRequestResult(Sender: TObject; const APermissions: TArray<string>; const AGrantResults: TArray<TPermissionStatus>);
-    procedure TakePicturePermissionRequestResult(Sender: TObject; const APermissions: TArray<string>; const AGrantResults: TArray<TPermissionStatus>);
+    procedure LoadPicturePermissionRequestResult(Sender: TObject; const APermissions: TClassicStringDynArray; const AGrantResults: TClassicPermissionStatusDynArray);
+    procedure TakePicturePermissionRequestResult(Sender: TObject; const APermissions: TClassicStringDynArray; const AGrantResults: TClassicPermissionStatusDynArray);
   public
     constructor Create(AOwner: TComponent); override;
     destructor Destroy; override;
@@ -117,7 +117,7 @@ begin
 end;
 
 // Optional rationale display routine to display permission requirement rationale to the user
-procedure TBaseMainForm.DisplayRationale(Sender: TObject; const APermissions: TArray<string>; const APostRationaleProc: TProc);
+procedure TBaseMainForm.DisplayRationale(Sender: TObject; const APermissions: TClassicStringDynArray; const APostRationaleProc: TProc);
 var
   I: Integer;
   RationaleMsg: string;
@@ -324,7 +324,7 @@ begin
   end;
 end;
 
-procedure TBaseMainForm.LoadPicturePermissionRequestResult(Sender: TObject; const APermissions: TArray<string>; const AGrantResults: TArray<TPermissionStatus>);
+procedure TBaseMainForm.LoadPicturePermissionRequestResult(Sender: TObject; const APermissions: TClassicStringDynArray; const AGrantResults: TClassicPermissionStatusDynArray);
 begin
   // 2 permissions involved: READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE
   if (Length(AGrantResults) = 2) and
@@ -335,7 +335,7 @@ begin
     TDialogService.ShowMessage('Cannot do photo editing because the required permissions are not granted');
 end;
 
-procedure TBaseMainForm.TakePicturePermissionRequestResult(Sender: TObject; const APermissions: TArray<string>; const AGrantResults: TArray<TPermissionStatus>);
+procedure TBaseMainForm.TakePicturePermissionRequestResult(Sender: TObject; const APermissions: TClassicStringDynArray; const AGrantResults: TClassicPermissionStatusDynArray);
 begin
   // 3 permissions involved: CAMERA, READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE
   if (Length(AGrantResults) = 3) and

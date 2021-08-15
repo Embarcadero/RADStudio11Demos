@@ -50,7 +50,7 @@ void __fastcall TFormMain::FormShow(TObject *Sender) {
 // ---------------------------------------------------------------------------
 
 // Optional rationale display routine to display permission requirement rationale to the user
-void __fastcall TFormMain::DisplayRationale(TObject* Sender, const TStringDynArray APermissions, const _di_TProc APostRationaleProc) {
+void __fastcall TFormMain::DisplayRationale(TObject* Sender, const TClassicStringDynArray APermissions, const _di_TProc APostRationaleProc) {
 	String RationaleMsg;
 	for (int i = 0; i < APermissions.Length; i++)
 	{

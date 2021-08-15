@@ -38,9 +38,9 @@ __published:	// IDE-managed Components
 	void __fastcall ImageOnClick(TObject *Sender);
 private:	// User declarations
     String FPermissionCamera;
-	void __fastcall DisplayRationale(TObject *Sender, const DynamicArray<String> APermissions, const _di_TProc APostRationaleProc);
-	void __fastcall AccessCameraPermissionRequestResult(TObject *Sender, const DynamicArray<String> APermissions, const DynamicArray<TPermissionStatus> AGrantResults);
-	void __fastcall ActivateCameraPermissionRequestResult(TObject *Sender, const DynamicArray<String> APermissions, const DynamicArray<TPermissionStatus> AGrantResults);
+	void __fastcall DisplayRationale(TObject *Sender, const TClassicStringDynArray APermissions, const _di_TProc APostRationaleProc);
+	void __fastcall AccessCameraPermissionRequestResult(TObject *Sender, const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults);
+	void __fastcall ActivateCameraPermissionRequestResult(TObject *Sender, const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults);
 	void __fastcall SetFlashlightState(bool Active);
 public:		// User declarations
 	__fastcall TFlashLightForm(TComponent *Owner);

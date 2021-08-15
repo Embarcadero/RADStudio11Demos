@@ -35,8 +35,8 @@ type
     FPermissionReadExternalStorage: string;
     FPermissionWriteExternalStorage: string;
 
-    procedure DisplayRationale(Sender: TObject; const APermissions: TArray<string>; const APostRationaleProc: TProc);
-    procedure LoadPicturePermissionRequestResult(Sender: TObject; const APermissions: TArray<string>; const AGrantResults: TArray<TPermissionStatus>);
+    procedure DisplayRationale(Sender: TObject; const APermissions: TClassicStringDynArray; const APostRationaleProc: TProc);
+    procedure LoadPicturePermissionRequestResult(Sender: TObject; const APermissions: TClassicStringDynArray; const AGrantResults: TClassicPermissionStatusDynArray);
   public
     constructor Create(AOwner: TComponent); override;
     destructor Destroy; override;
@@ -80,7 +80,7 @@ begin
 end;
 
 // Optional rationale display routine to display permission requirement rationale to the user
-procedure TCameraRollForm.DisplayRationale(Sender: TObject; const APermissions: TArray<string>; const APostRationaleProc: TProc);
+procedure TCameraRollForm.DisplayRationale(Sender: TObject; const APermissions: TClassicStringDynArray; const APostRationaleProc: TProc);
 var
   I: Integer;
   RationaleMsg: string;
@@ -99,12 +99,12 @@ begin
     end)
 end;
 
-procedure TCameraRollForm.LoadPicturePermissionRequestResult(Sender: TObject; const APermissions: TArray<string>; const AGrantResults: TArray<TPermissionStatus>);
+procedure TCameraRollForm.LoadPicturePermissionRequestResult(Sender: TObject; const APermissions: TClassicStringDynArray; const AGrantResults: TClassicPermissionStatusDynArray);
 begin
   if (Length(AGrantResults) = 2) and
      (AGrantResults[0] = TPermissionStatus.Granted) and
      (AGrantResults[1] = TPermissionStatus.Granted) then
-      TakePhotoFromLibraryAction1.Execute
+    TakePhotoFromLibraryAction1.Execute
   else
     TDialogService.ShowMessage('Cannot do photo editing because the required permissions are not granted');
 end;

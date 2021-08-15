@@ -39,7 +39,7 @@ void __fastcall TCameraRollForm::TakePhotoFromLibraryAction1DidFinishTaking(TBit
 	imgPhotoLibraryImage->Bitmap->Assign(Image);
 }
 //---------------------------------------------------------------------------
-void __fastcall TCameraRollForm::DisplayRationale(TObject *Sender, const DynamicArray<String> APermissions, const _di_TProc APostRationaleProc)
+void __fastcall TCameraRollForm::DisplayRationale(TObject *Sender, const TClassicStringDynArray APermissions, const _di_TProc APostRationaleProc)
 {
 	String RationaleMsg;
 
@@ -57,7 +57,7 @@ void __fastcall TCameraRollForm::DisplayRationale(TObject *Sender, const Dynamic
         });
 }
 //---------------------------------------------------------------------------
-void __fastcall TCameraRollForm::LoadPicturePermissionRequestResult(TObject *Sender, const DynamicArray<String> APermissions, const DynamicArray<TPermissionStatus> AGrantResults)
+void __fastcall TCameraRollForm::LoadPicturePermissionRequestResult(TObject *Sender, const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults)
 {
 	// 2 permissions involved: READ_EXTERNAL_STORAGE and WRITE_EXTERNAL_STORAGE
 	if ((AGrantResults.Length == 2) &&
@@ -70,10 +70,7 @@ void __fastcall TCameraRollForm::LoadPicturePermissionRequestResult(TObject *Sen
 //---------------------------------------------------------------------------
 void __fastcall TCameraRollForm::btnPhotoLibraryClick(TObject *Sender)
 {
-    DynamicArray<String> permissions;
-	permissions.Length = 2;
-	permissions[0] = FPermissionReadExternalStorage;
-	permissions[1] = FPermissionWriteExternalStorage;
+	DynamicArray<String> permissions { FPermissionReadExternalStorage, FPermissionWriteExternalStorage };
 
 	PermissionsService()->RequestPermissions(permissions, LoadPicturePermissionRequestResult, DisplayRationale);
 }

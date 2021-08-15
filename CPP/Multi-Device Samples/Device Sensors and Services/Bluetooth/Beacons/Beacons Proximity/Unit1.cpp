@@ -214,7 +214,7 @@ void __fastcall TForm1::BtnDeleteRegionClick(TObject *Sender)
 
 void __fastcall TForm1::StringToRegion(String AString, String &Guid,int &Major, int &Minor)
 {
-  TStringDynArray LSplitted = System::Strutils::SplitString(AString,';');
+  DynamicArray<String> LSplitted = System::Strutils::SplitString(AString, ';');
   Guid = LSplitted[0];
   Major = StrToInt(LSplitted[1]);
   Minor = StrToInt(LSplitted[2]);
@@ -226,7 +226,7 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
   CheckManager();
 
   PermissionsService()->RequestPermissions({ LOCATION_PERMISSION },
-    [this](const DynamicArray<String> APermissions, const DynamicArray<TPermissionStatus> AGrantResults)
+    [this](const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults)
     {
       if (AGrantResults.Length == 1 && AGrantResults[0] == TPermissionStatus::Granted)
       {

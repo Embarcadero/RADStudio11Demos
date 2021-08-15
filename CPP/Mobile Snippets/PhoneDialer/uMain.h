@@ -43,8 +43,8 @@ __published:	// IDE-managed Components
 private:	// User declarations
     String FCallPhonePermission;
     _di_IFMXPhoneDialerService FPhoneDialerService;
-	void __fastcall DisplayRationale(TObject *Sender, const DynamicArray<String> APermissions, const _di_TProc APostRationaleProc);
-	void __fastcall MakePhoneCallPermissionRequestResult(TObject *Sender, const DynamicArray<String> APermissions, const DynamicArray<TPermissionStatus> AGrantResults);
+	void __fastcall DisplayRationale(TObject *Sender, const TClassicStringDynArray APermissions, const _di_TProc APostRationaleProc);
+	void __fastcall MakePhoneCallPermissionRequestResult(TObject *Sender, const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults);
 public:		// User declarations
 	__fastcall TPhoneDialerForm(TComponent *Owner);
 };

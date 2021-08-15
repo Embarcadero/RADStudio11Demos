@@ -79,9 +79,9 @@ private:	// User declarations
     String FPermissionWriteExternalStorage;
     TBitmap *FRawBitmap;
 	TFilter *FEffect;
-	void __fastcall DisplayRationale(TObject *Sender, const DynamicArray<String> APermissions, const _di_TProc APostRationaleProc);
-	void __fastcall LoadPicturePermissionRequestResult(TObject *Sender, const DynamicArray<String> APermissions, const DynamicArray<TPermissionStatus> AGrantResults);
-	void __fastcall TakePicturePermissionRequestResult(TObject *Sender, const DynamicArray<String> APermissions, const DynamicArray<TPermissionStatus> AGrantResults);
+	void __fastcall DisplayRationale(TObject *Sender, const TClassicStringDynArray APermissions, const _di_TProc APostRationaleProc);
+	void __fastcall LoadPicturePermissionRequestResult(TObject *Sender, const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults);
+	void __fastcall TakePicturePermissionRequestResult(TObject *Sender, const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults);
 	void __fastcall DoOnChangedEffectParam(TObject *Sender);
 	void __fastcall LoadFilterSettings(TFilterRec Rec);
 public:		// User declarations

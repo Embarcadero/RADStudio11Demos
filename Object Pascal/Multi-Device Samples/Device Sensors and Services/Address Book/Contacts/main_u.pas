@@ -106,9 +106,9 @@ type
     function ContactExists(ID: Integer): Boolean;
     procedure DeleteContact(const AKey: TModalResult);
     procedure ClearAddContactForm;
-    procedure DisplayRationale(Sender: TObject; const APermissions: TArray<string>; const APostRationaleProc: TProc);
-    procedure TakePicturePermissionRequestResult(Sender: TObject; const APermissions: TArray<string>; const AGrantResults: TArray<TPermissionStatus>);
-    procedure LoadPicturePermissionRequestResult(Sender: TObject; const APermissions: TArray<string>; const AGrantResults: TArray<TPermissionStatus>);
+    procedure DisplayRationale(Sender: TObject; const APermissions: TClassicStringDynArray; const APostRationaleProc: TProc);
+    procedure TakePicturePermissionRequestResult(Sender: TObject; const APermissions: TClassicStringDynArray; const AGrantResults: TClassicPermissionStatusDynArray);
+    procedure LoadPicturePermissionRequestResult(Sender: TObject; const APermissions: TClassicStringDynArray; const AGrantResults: TClassicPermissionStatusDynArray);
   end;
 
 var
@@ -210,7 +210,7 @@ begin
 end;
 
 // Optional rationale display routine to display permission requirement rationale to the user
-procedure TForm1.DisplayRationale(Sender: TObject; const APermissions: TArray<string>; const APostRationaleProc: TProc);
+procedure TForm1.DisplayRationale(Sender: TObject; const APermissions: TClassicStringDynArray; const APostRationaleProc: TProc);
 var
   I: Integer;
   RationaleMsg: string;
@@ -257,7 +257,7 @@ begin
   TabControl1.ActiveTab := TabItemContacts;
 end;
 
-procedure TForm1.TakePicturePermissionRequestResult(Sender: TObject; const APermissions: TArray<string>; const AGrantResults: TArray<TPermissionStatus>);
+procedure TForm1.TakePicturePermissionRequestResult(Sender: TObject; const APermissions: TClassicStringDynArray; const AGrantResults: TClassicPermissionStatusDynArray);
 begin
   // 3 permissions involved: CAMERA, READ_EXTERNAL_STORAGE and WRITE_EXTERNAL_STORAGE
   if (Length(AGrantResults) = 3) and
@@ -269,7 +269,7 @@ begin
     ShowMessage('Cannot take a photo because the required permissions are not all granted')
 end;
 
-procedure TForm1.LoadPicturePermissionRequestResult(Sender: TObject; const APermissions: TArray<string>; const AGrantResults: TArray<TPermissionStatus>);
+procedure TForm1.LoadPicturePermissionRequestResult(Sender: TObject; const APermissions: TClassicStringDynArray; const AGrantResults: TClassicPermissionStatusDynArray);
 begin
   // 1 permission involved: CAMERA
   if (Length(AGrantResults) = 1) and (AGrantResults[0] = TPermissionStatus.Granted) then

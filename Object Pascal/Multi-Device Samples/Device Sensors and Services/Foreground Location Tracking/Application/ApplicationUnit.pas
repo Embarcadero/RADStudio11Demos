@@ -40,7 +40,7 @@ implementation
 {$R *.fmx}
 
 uses
-  System.SysUtils, System.UITypes,
+  System.SysUtils, System.Types, System.UITypes,
   Androidapi.Helpers, Androidapi.JNI.JavaTypes, Androidapi.JNI.Widget,
   FMX.DialogService;
 
@@ -68,12 +68,12 @@ begin
     StartLocationTracking
   else
     TPermissionsService.DefaultService.RequestPermissions([LocationPermission],
-      procedure(const Permissions: TArray<string>; const GrantResults: TArray<TPermissionStatus>)
+      procedure(const Permissions: TClassicStringDynArray; const GrantResults: TClassicPermissionStatusDynArray)
       begin
         if (Length(GrantResults) = 1) and (GrantResults[0] = TPermissionStatus.Granted) then
           StartLocationTracking;
       end,
-      procedure(const Permissions: TArray<string>; const PostRationaleProc: TProc)
+      procedure(const Permissions: TClassicStringDynArray; const PostRationaleProc: TProc)
       begin
         TDialogService.ShowMessage('Location permission is needed for tracking the user''s location',
           procedure(const &Result: TModalResult)

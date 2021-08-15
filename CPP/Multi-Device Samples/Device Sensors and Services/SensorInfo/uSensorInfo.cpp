@@ -98,7 +98,7 @@ void __fastcall TfrmAboutSensors::ListBoxItemClick(TObject *Sender) {
 		if (FActiveSensor != NULL && !FActiveSensor->Started) {
             if (FActiveSensor->Category == TSensorCategory::Location) {
                 PermissionsService()->RequestPermissions({ cLocationPermission },
-                    [this](const DynamicArray<String> APermissions, const DynamicArray<TPermissionStatus> AGrantResults)
+                    [this](const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults)
                     {
                         if ((AGrantResults.Length == 1) && (AGrantResults[0] == TPermissionStatus::Granted))
                             this->FActiveSensor->Start();
@@ -374,7 +374,7 @@ String __fastcall TfrmAboutSensors::GetSensorType(TCustomSensor *ASensor) {
 	return Result;
 }
 // ---------------------------------------------------------------------------
-String __fastcall TfrmAboutSensors::ToFormStr(String AProp, double AVal) {
+String __fastcall TfrmAboutSensors::ToFormStr(String AProp, long double AVal) {
 	return Format(cForm, ARRAYOFCONST((AProp, "",  AVal)));
 }
 // ---------------------------------------------------------------------------

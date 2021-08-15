@@ -21,7 +21,7 @@ uses
   MusicPlayer.iOS, iOSapi.MediaPlayer,
   {$ENDIF}
   {$IFDEF ANDROID}
-  MusicPlayer.Android,
+  System.Types, MusicPlayer.Android,
   {$ENDIF}
   FMX.Types, System.SysUtils, System.UITypes, System.Classes, System.Permissions,
   FMX.Controls, FMX.Forms, FMX.StdCtrls, FMX.ListBox, FMX.Layouts, FMX.TabControl, System.Actions,
@@ -90,8 +90,8 @@ type
 {$IFDEF ANDROID}
     FPermissionReadExternalStorage: string;
 
-    procedure DisplayRationale(Sender: TObject; const APermissions: TArray<string>; const APostRationaleProc: TProc);
-    procedure ReadStoragePermissionRequestResult(Sender: TObject; const APermissions: TArray<string>; const AGrantResults: TArray<TPermissionStatus>);
+    procedure DisplayRationale(Sender: TObject; const APermissions: TClassicStringDynArray; const APostRationaleProc: TProc);
+    procedure ReadStoragePermissionRequestResult(Sender: TObject; const APermissions: TClassicStringDynArray; const AGrantResults: TClassicPermissionStatusDynArray);
 {$ENDIF}
 {$IFDEF IOS}
     procedure RequestMediaLibraryAccessHandler(Status: MPMediaLibraryAuthorizationStatus);
@@ -203,7 +203,7 @@ end;
 
 {$IFDEF ANDROID}
 // Optional rationale display routine to display permission requirement rationale to the user
-procedure TFMXMusicPlayerFrm.DisplayRationale(Sender: TObject; const APermissions: TArray<string>; const APostRationaleProc: TProc);
+procedure TFMXMusicPlayerFrm.DisplayRationale(Sender: TObject; const APermissions: TClassicStringDynArray; const APostRationaleProc: TProc);
 begin
   // Show an explanation to the user *asynchronously* - don't block this thread waiting for the user's response!
   // After the user sees the explanation, invoke the post-rationale routine to request the permissions
@@ -214,7 +214,7 @@ begin
     end);
 end;
 
-procedure TFMXMusicPlayerFrm.ReadStoragePermissionRequestResult(Sender: TObject; const APermissions: TArray<string>; const AGrantResults: TArray<TPermissionStatus>);
+procedure TFMXMusicPlayerFrm.ReadStoragePermissionRequestResult(Sender: TObject; const APermissions: TClassicStringDynArray; const AGrantResults: TClassicPermissionStatusDynArray);
 begin
   // 1 permission involved: READ_EXTERNAL_STORAGE
   if (Length(AGrantResults) = 1) and (AGrantResults[0] = TPermissionStatus.Granted) then

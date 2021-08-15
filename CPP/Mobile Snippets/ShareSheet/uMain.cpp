@@ -34,7 +34,7 @@ __fastcall TfrmShareSheet::TfrmShareSheet(TComponent *Owner) : TForm(Owner)
 #endif
 }
 //---------------------------------------------------------------------------
-void __fastcall TfrmShareSheet::DisplayRationale(TObject *Sender, const DynamicArray<String> APermissions, const _di_TProc APostRationaleProc)
+void __fastcall TfrmShareSheet::DisplayRationale(TObject *Sender, const TClassicStringDynArray APermissions, const _di_TProc APostRationaleProc)
 {
 	String RationaleMsg;
 	for (int i = 0; i < APermissions.Length; i++)
@@ -54,7 +54,7 @@ void __fastcall TfrmShareSheet::DisplayRationale(TObject *Sender, const DynamicA
 		});
 }
 //---------------------------------------------------------------------------
-void __fastcall TfrmShareSheet::TakePicturePermissionRequestResult(TObject *Sender, const DynamicArray<String> APermissions, const DynamicArray<TPermissionStatus> AGrantResults)
+void __fastcall TfrmShareSheet::TakePicturePermissionRequestResult(TObject *Sender, const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults)
 {
 	// 3 permissions involved: CAMERA, READ_EXTERNAL_STORAGE and WRITE_EXTERNAL_STORAGE
 	if ((AGrantResults.Length == 3) &&
@@ -79,11 +79,7 @@ void __fastcall TfrmShareSheet::TakePhotoFromCameraAction1DidFinishTaking(TBitma
 //---------------------------------------------------------------------------
 void __fastcall TfrmShareSheet::btnTakePhotoClick(TObject *Sender)
 {
-	DynamicArray<String> permissions;
-	permissions.Length = 3;
-	permissions[0] = FPermissionCamera;
-	permissions[1] = FPermissionReadExternalStorage;
-	permissions[2] = FPermissionWriteExternalStorage;
+	DynamicArray<String> permissions { FPermissionCamera, FPermissionReadExternalStorage, FPermissionWriteExternalStorage };
 
 	PermissionsService()->RequestPermissions(permissions, TakePicturePermissionRequestResult, DisplayRationale);
 }

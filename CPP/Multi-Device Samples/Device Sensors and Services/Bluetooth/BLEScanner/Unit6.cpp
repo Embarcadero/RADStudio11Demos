@@ -56,7 +56,7 @@ __fastcall TForm6::TForm6(TComponent* Owner)
 #endif
 }
 //---------------------------------------------------------------------------
-void __fastcall TForm6::DisplayRationale(TObject* Sender, const TStringDynArray APermissions, const _di_TProc APostRationaleProc)
+void __fastcall TForm6::DisplayRationale(TObject* Sender, const TClassicStringDynArray APermissions, const _di_TProc APostRationaleProc)
 {
     // Show an explanation to the user *asynchronously* - don't block this thread waiting for the user's response!
     // After the user sees the explanation, invoke the post-rationale routine to request the permissions
@@ -67,7 +67,7 @@ void __fastcall TForm6::DisplayRationale(TObject* Sender, const TStringDynArray 
         });
 }
 //---------------------------------------------------------------------------
-void __fastcall TForm6::RequestPermissionsResult(TObject* Sender, const System::TArray__1<String> APermissions, const System::TArray__1<TPermissionStatus> AGrantResults)
+void __fastcall TForm6::RequestPermissionsResult(TObject* Sender, const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults)
 {
     // 1 permission involved: ACCESS_FINE_LOCATION
 	if ((AGrantResults.Length == 1) && (AGrantResults[0] == TPermissionStatus::Granted))
@@ -78,9 +78,8 @@ void __fastcall TForm6::RequestPermissionsResult(TObject* Sender, const System::
 //---------------------------------------------------------------------------
 void __fastcall TForm6::btnStartScanClick(TObject *Sender)
 {
-    TStringDynArray perms;
-    perms.set_length(1);
-    perms[0] = FLocationPermission;
+    DynamicArray<String> perms { FLocationPermission };
+
     PermissionsService()->RequestPermissions(perms, RequestPermissionsResult, DisplayRationale);
 }
 //---------------------------------------------------------------------------

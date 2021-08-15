@@ -29,14 +29,12 @@ __fastcall TFlashLightForm::TFlashLightForm(TComponent *Owner) : TForm(Owner) {
 #ifdef __ANDROID__
 	FPermissionCamera = JStringToString(TJManifest_permission::JavaClass->CAMERA);
 #endif
-	DynamicArray<String> permissions;
-	permissions.Length = 1;
-	permissions[0] = FPermissionCamera;
+	DynamicArray<String> permissions { FPermissionCamera };
 
 	PermissionsService()->RequestPermissions(permissions, AccessCameraPermissionRequestResult, DisplayRationale);
 }
 //---------------------------------------------------------------------------
-void __fastcall TFlashLightForm::DisplayRationale(TObject *Sender, const DynamicArray<String> APermissions, const _di_TProc APostRationaleProc) {
+void __fastcall TFlashLightForm::DisplayRationale(TObject *Sender, const TClassicStringDynArray APermissions, const _di_TProc APostRationaleProc) {
 	// Show an explanation to the user *asynchronously* - don't block this thread waiting for the user's response!
 	// After the user sees the explanation, invoke the post-rationale routine to request the permissions
 	TDialogService::ShowMessage("The app needs to access the camera in order to work",
@@ -46,7 +44,7 @@ void __fastcall TFlashLightForm::DisplayRationale(TObject *Sender, const Dynamic
         });
 }
 //---------------------------------------------------------------------------
-void __fastcall TFlashLightForm::AccessCameraPermissionRequestResult(TObject *Sender, const DynamicArray<String> APermissions, const DynamicArray<TPermissionStatus> AGrantResults) {
+void __fastcall TFlashLightForm::AccessCameraPermissionRequestResult(TObject *Sender, const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults) {
 	// 1 permission involved: CAMERA
 	if ((AGrantResults.Length == 1) && (AGrantResults[0] == TPermissionStatus::Granted))
 		ImageOff->Enabled = Camera->HasFlash;
@@ -54,7 +52,7 @@ void __fastcall TFlashLightForm::AccessCameraPermissionRequestResult(TObject *Se
 		TDialogService::ShowMessage("Cannot access the camera flashlight because the required permission has not been granted");
 }
 //---------------------------------------------------------------------------
-void __fastcall TFlashLightForm::ActivateCameraPermissionRequestResult(TObject *Sender, const DynamicArray<String> APermissions, const DynamicArray<TPermissionStatus> AGrantResults) {
+void __fastcall TFlashLightForm::ActivateCameraPermissionRequestResult(TObject *Sender, const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults) {
 	// 1 permission involved: CAMERA
 	if ((AGrantResults.Length == 1) && (AGrantResults[0] == TPermissionStatus::Granted)) {
 		Camera->Active = True;
@@ -75,9 +73,7 @@ void __fastcall TFlashLightForm::SetFlashlightState(bool Active) {
 }
 //---------------------------------------------------------------------------
 void __fastcall TFlashLightForm::ImageOffClick(TObject *Sender) {
-	DynamicArray<String> permissions;
-	permissions.Length = 1;
-	permissions[0] = FPermissionCamera;
+	DynamicArray<String> permissions { FPermissionCamera };
 
 	PermissionsService()->RequestPermissions(permissions, ActivateCameraPermissionRequestResult, DisplayRationale);
 }

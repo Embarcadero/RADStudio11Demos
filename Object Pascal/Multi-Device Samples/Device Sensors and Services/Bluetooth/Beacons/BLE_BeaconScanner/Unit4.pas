@@ -91,12 +91,12 @@ begin
     FManager.StartDiscovery(DISCOVERY_TIMEOUT)
   else
     PermissionsService.DefaultService.RequestPermissions([LOCATION_PERMISSION],
-      procedure(const Permissions: TArray<string>; const GrantResults: TArray<TPermissionStatus>)
+      procedure(const Permissions: TClassicStringDynArray; const GrantResults: TClassicPermissionStatusDynArray)
       begin
         if (Length(GrantResults) = 1) and (GrantResults[0] = TPermissionStatus.Granted) then
           FManager.StartDiscovery(DISCOVERY_TIMEOUT);
       end,
-      procedure(const Permissions: TArray<string>; const PostRationaleProc: TProc)
+      procedure(const Permissions: TClassicStringDynArray; const PostRationaleProc: TProc)
       begin
         TDialogService.ShowMessage('Please grant the location permission to discover nearby BLE devices',
           procedure(const AResult: TModalResult)

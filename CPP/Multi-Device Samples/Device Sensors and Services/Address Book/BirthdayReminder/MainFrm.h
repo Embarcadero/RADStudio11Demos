@@ -53,7 +53,7 @@ private:
 
 	String FPermissionReadContacts;
 
-	void __fastcall DisplayRationale(TObject* Sender, const TStringDynArray APermissions, const _di_TProc APostRationaleProc);
+	void __fastcall DisplayRationale(TObject* Sender, const TClassicStringDynArray APermissions, const _di_TProc APostRationaleProc);
 
 	/* TFetchContactThread events handlers */
 	void __fastcall ContactLoadingBegin(TObject *Sender);

@@ -124,9 +124,9 @@ private: // User declarations
 	void __fastcall DeleteContact(TObject* Sender, TModalResult AKey);
 	void __fastcall ClearAddContactForm();
 
-	void __fastcall DisplayRationale(TObject* Sender, const TStringDynArray APermissions, const _di_TProc APostRationaleProc);
-	void __fastcall TakePicturePermissionRequestResult(TObject* Sender, const System::TArray__1<String> APermissions, const System::TArray__1<TPermissionStatus> AGrantResults);
-	void __fastcall LoadPicturePermissionRequestResult(TObject* Sender, const System::TArray__1<String> APermissions, const System::TArray__1<TPermissionStatus> AGrantResults);
+	void __fastcall DisplayRationale(TObject* Sender, const TClassicStringDynArray APermissions, const _di_TProc APostRationaleProc);
+	void __fastcall TakePicturePermissionRequestResult(TObject* Sender, const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults);
+	void __fastcall LoadPicturePermissionRequestResult(TObject* Sender, const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults);
 
 public: // User declarations
 	__fastcall TForm1(TComponent* Owner);

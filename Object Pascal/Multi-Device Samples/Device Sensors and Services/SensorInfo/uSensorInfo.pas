@@ -633,7 +633,7 @@ begin
       if FActiveSensor.Category = TSensorCategory.Location then
       begin
         PermissionsService.RequestPermissions([cLocationPermission],
-          procedure(const APermissions: TArray<string>; const AGrantResults: TArray<TPermissionStatus>)
+          procedure(const APermissions: TClassicStringDynArray; const AGrantResults: TClassicPermissionStatusDynArray)
           begin
             if (Length(AGrantResults) = 1) and (AGrantResults[0] = TPermissionStatus.Granted) then
               FActiveSensor.Start

@@ -59,8 +59,8 @@ type
 
     function HasMicrophone: Boolean;
     function IsMicrophoneRecording: Boolean;
-    procedure RequestPermissionsResult(Sender: TObject; const APermissions: TArray<string>; const AGrantResults: TArray<TPermissionStatus>);
-    procedure DisplayRationale(Sender: TObject; const APermissions: TArray<string>; const APostRationaleProc: TProc);
+    procedure RequestPermissionsResult(Sender: TObject; const APermissions: TClassicStringDynArray; const AGrantResults: TClassicPermissionStatusDynArray);
+    procedure DisplayRationale(Sender: TObject; const APermissions: TClassicStringDynArray; const APostRationaleProc: TProc);
   end;
 
 var
@@ -135,7 +135,7 @@ begin
 end;
 
 // Optional rationale display routine to display permission requirement rationale to the user
-procedure TAudioRecPlayForm.DisplayRationale(Sender: TObject; const APermissions: TArray<string>; const APostRationaleProc: TProc);
+procedure TAudioRecPlayForm.DisplayRationale(Sender: TObject; const APermissions: TClassicStringDynArray; const APostRationaleProc: TProc);
 begin
   // Show an explanation to the user *asynchronously* - don't block this thread waiting for the user's response!
   // After the user sees the explanation, invoke the post-rationale routine to request the permissions
@@ -146,7 +146,7 @@ begin
     end)
 end;
 
-procedure TAudioRecPlayForm.RequestPermissionsResult(Sender: TObject; const APermissions: TArray<string>; const AGrantResults: TArray<TPermissionStatus>);
+procedure TAudioRecPlayForm.RequestPermissionsResult(Sender: TObject; const APermissions: TClassicStringDynArray; const AGrantResults: TClassicPermissionStatusDynArray);
 begin
   if (Length(AGrantResults) = 1) then
   begin

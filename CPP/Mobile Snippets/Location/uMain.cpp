@@ -28,12 +28,10 @@ __fastcall TForm2::TForm2(TComponent *Owner) : TForm(Owner)
 void __fastcall TForm2::swLocationSensorActiveSwitch(TObject *Sender)
 {
 #ifdef __ANDROID__
-	DynamicArray<String> permissions;
-	permissions.Length = 1;
-	permissions[0] = "android.permission.ACCESS_FINE_LOCATION";
+	DynamicArray<String> permissions { "android.permission.ACCESS_FINE_LOCATION" };
 
 	PermissionsService()->RequestPermissions(permissions,
-		[this](const DynamicArray<String> APermissions, const DynamicArray<TPermissionStatus> AGrantResults)
+		[this](const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults)
 		{
 			if ((AGrantResults.Length == 1) && (AGrantResults[0] == TPermissionStatus::Granted))
 			{

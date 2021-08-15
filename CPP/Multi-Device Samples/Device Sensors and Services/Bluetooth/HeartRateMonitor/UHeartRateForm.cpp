@@ -307,7 +307,7 @@ void __fastcall TfrmHeartMonitor::DoScan(void) {
 	lblContactStatus->Text = "";
 
 	PermissionsService()->RequestPermissions({ LOCATION_PERMISSION },
-		[this](const DynamicArray<String> Permissions, const DynamicArray<TPermissionStatus> GrantResults)
+		[this](const TClassicStringDynArray Permissions, const TClassicPermissionStatusDynArray GrantResults)
 		{
 			if (GrantResults.Length == 1 && GrantResults[0] == TPermissionStatus::Granted)
 			{

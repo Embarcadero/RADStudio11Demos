@@ -35,8 +35,8 @@ type
     PermissionReadExternalStorage = 'android.permission.READ_EXTERNAL_STORAGE';
     PermissionWriteExternalStorage = 'android.permission.WRITE_EXTERNAL_STORAGE';
 
-    procedure DisplayRationale(Sender: TObject; const APermissions: TArray<string>; const APostRationaleProc: TProc);
-    procedure TakePicturePermissionRequestResult(Sender: TObject; const APermissions: TArray<string>; const AGrantResults: TArray<TPermissionStatus>);
+    procedure DisplayRationale(Sender: TObject; const APermissions: TClassicStringDynArray; const APostRationaleProc: TProc);
+    procedure TakePicturePermissionRequestResult(Sender: TObject; const APermissions: TClassicStringDynArray; const AGrantResults: TClassicPermissionStatusDynArray);
   end;
 
 var
@@ -51,7 +51,7 @@ uses
 {$R *.LgXhdpiPh.fmx ANDROID}
 
 // Optional rationale display routine to display permission requirement rationale to the user
-procedure TAccessCameraAppForm.DisplayRationale(Sender: TObject; const APermissions: TArray<string>; const APostRationaleProc: TProc);
+procedure TAccessCameraAppForm.DisplayRationale(Sender: TObject; const APermissions: TClassicStringDynArray; const APostRationaleProc: TProc);
 begin
   var RationaleMsg: string;
 
@@ -77,7 +77,7 @@ begin
   PermissionsService.RequestPermissions([PermissionCamera, PermissionReadExternalStorage, PermissionWriteExternalStorage], TakePicturePermissionRequestResult, DisplayRationale)
 end;
 
-procedure TAccessCameraAppForm.TakePicturePermissionRequestResult(Sender: TObject; const APermissions: TArray<string>; const AGrantResults: TArray<TPermissionStatus>);
+procedure TAccessCameraAppForm.TakePicturePermissionRequestResult(Sender: TObject; const APermissions: TClassicStringDynArray; const AGrantResults: TClassicPermissionStatusDynArray);
 begin
   // 3 permissions involved: CAMERA, READ_EXTERNAL_STORAGE and WRITE_EXTERNAL_STORAGE
   if (Length(AGrantResults) = 3) and (AGrantResults[0] = TPermissionStatus.Granted) and (AGrantResults[1] = TPermissionStatus.Granted) and (AGrantResults[2] = TPermissionStatus.Granted) then

@@ -53,7 +53,7 @@ void __fastcall TCameraComponentForm::ApplicationEventChangedHandler(System::TOb
 	}
 }
 //---------------------------------------------------------------------------
-void __fastcall TCameraComponentForm::DisplayRationale(TObject* Sender, const TStringDynArray APermissions, const _di_TProc APostRationaleProc)
+void __fastcall TCameraComponentForm::DisplayRationale(TObject* Sender, const TClassicStringDynArray APermissions, const _di_TProc APostRationaleProc)
 {
 	// Show an explanation to the user *asynchronously* - don't block this thread waiting for the user's response!
 	// After the user sees the explanation, invoke the post-rationale routine to request the permissions
@@ -64,11 +64,12 @@ void __fastcall TCameraComponentForm::DisplayRationale(TObject* Sender, const TS
 		});
 }
 //---------------------------------------------------------------------------
-void __fastcall TCameraComponentForm::ActivateCameraPermissionRequestResult(TObject* Sender, const System::TArray__1<String> APermissions, const System::TArray__1<TPermissionStatus> AGrantResults)
+void __fastcall TCameraComponentForm::ActivateCameraPermissionRequestResult(TObject* Sender, const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults)
 {
 	// 1 permission involved: CAMERA
 	if ((AGrantResults.Length == 1) && (AGrantResults[0] == TPermissionStatus::Granted)) {
 		CameraComponent->Active = True;
+		FSavedCameraActive = True;
 	} else {
 		ShowMessage("Cannot start the camera because the required permission has not been granted");
 	}
@@ -98,7 +99,7 @@ void __fastcall TCameraComponentForm::ActionListExecute(TBasicAction *Action, bo
 {
 	if (!PermissionsService()->IsPermissionGranted(FPermissionCamera)) {
 		Handled = true;
-		PermissionsService()->RequestPermissions({FPermissionCamera}, ActivateCameraPermissionRequestResult, DisplayRationale);
+		PermissionsService()->RequestPermissions({ FPermissionCamera }, ActivateCameraPermissionRequestResult, DisplayRationale);
 	}
 }
 //---------------------------------------------------------------------------

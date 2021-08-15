@@ -43,8 +43,8 @@ type
     Scanning: Boolean;
     ScanningStart: Cardinal;
     FLocationPermission: string;
-    procedure RequestPermissionsResult(Sender: TObject; const APermissions: TArray<string>; const AGrantResults: TArray<TPermissionStatus>);
-    procedure DisplayRationale(Sender: TObject; const APermissions: TArray<string>; const APostRationaleProc: TProc);
+    procedure RequestPermissionsResult(Sender: TObject; const APermissions: TClassicStringDynArray; const AGrantResults: TClassicPermissionStatusDynArray);
+    procedure DisplayRationale(Sender: TObject; const APermissions: TClassicStringDynArray; const APostRationaleProc: TProc);
     procedure StartBLEDiscovery;
     procedure StopBLEDiscovery;
   public
@@ -171,7 +171,7 @@ begin
   Listbox1.Enabled := False;
 end;
 
-procedure TForm6.DisplayRationale(Sender: TObject; const APermissions: TArray<string>; const APostRationaleProc: TProc);
+procedure TForm6.DisplayRationale(Sender: TObject; const APermissions: TClassicStringDynArray; const APostRationaleProc: TProc);
 begin
   TDialogService.ShowMessage('We need to be given permission to discover BLE devices',
     procedure(const AResult: TModalResult)
@@ -180,7 +180,7 @@ begin
     end)
 end;
 
-procedure TForm6.RequestPermissionsResult(Sender: TObject; const APermissions: TArray<string>; const AGrantResults: TArray<TPermissionStatus>);
+procedure TForm6.RequestPermissionsResult(Sender: TObject; const APermissions: TClassicStringDynArray; const AGrantResults: TClassicPermissionStatusDynArray);
 begin
   // 1 permissions involved: ACCESS_FINE_LOCATION
   if (Length(AGrantResults) = 1) and (AGrantResults[0] = TPermissionStatus.Granted) then

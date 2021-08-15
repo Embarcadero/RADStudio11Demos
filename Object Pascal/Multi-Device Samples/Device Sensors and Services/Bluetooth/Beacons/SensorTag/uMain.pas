@@ -260,7 +260,7 @@ begin
     CompletionHandler
   else
     PermissionsService.RequestPermissions([LOCATION_PERMISSION],
-      procedure(const Permissions: TArray<string>; const GrantResults: TArray<TPermissionStatus>)
+      procedure(const Permissions: TClassicStringDynArray; const GrantResults: TClassicPermissionStatusDynArray)
       begin
         if (Length(GrantResults) = 1) and (GrantResults[0] = TPermissionStatus.Granted) then
           CompletionHandler

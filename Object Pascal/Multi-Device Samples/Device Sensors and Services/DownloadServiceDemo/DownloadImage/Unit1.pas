@@ -45,7 +45,7 @@ implementation
 {$R *.fmx}
 
 uses
-  System.Permissions, System.SysUtils, System.UITypes,
+  System.Permissions, System.SysUtils, System.Types, System.UITypes,
   Androidapi.Helpers, Androidapi.JNI.App,
   Posix.Unistd,
   FMX.DialogService,
@@ -54,7 +54,7 @@ uses
 procedure TForm1.Button1Click(Sender: TObject);
 begin
   TPermissionsService.DefaultService.RequestPermissions(['android.permission.WRITE_EXTERNAL_STORAGE'],
-    procedure(const APermissions: TArray<string>; const AGrantResults: TArray<TPermissionStatus>)
+    procedure(const APermissions: TClassicStringDynArray; const AGrantResults: TClassicPermissionStatusDynArray)
     var
       LIntentService: TIntentServiceHelper;
       LURL: string;
@@ -68,7 +68,7 @@ begin
         TAndroidHelper.Activity.startService(LIntentService.Intent);
       end;
     end,
-    procedure(const APermissions: TArray<string>; const APostRationaleProc: TProc)
+    procedure(const APermissions: TClassicStringDynArray; const APostRationaleProc: TProc)
     begin
       TDialogService.ShowMessage('The external storage permission is needed to download the image',
         procedure(const AResult: TModalResult)

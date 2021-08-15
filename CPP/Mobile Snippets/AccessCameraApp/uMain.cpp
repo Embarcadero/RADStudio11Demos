@@ -34,7 +34,7 @@ __fastcall TAccessCameraAppForm::TAccessCameraAppForm(TComponent *Owner) : TForm
 #endif
 }
 // ---------------------------------------------------------------------------
-void __fastcall TAccessCameraAppForm::DisplayRationale(TObject *Sender, const DynamicArray<String> APermissions, const _di_TProc APostRationaleProc)
+void __fastcall TAccessCameraAppForm::DisplayRationale(TObject *Sender, const TClassicStringDynArray APermissions, const _di_TProc APostRationaleProc)
 {
 	String RationaleMsg;
 	for (int i = 0; i < APermissions.Length; i++)
@@ -54,7 +54,7 @@ void __fastcall TAccessCameraAppForm::DisplayRationale(TObject *Sender, const Dy
         });
 }
 // ---------------------------------------------------------------------------
-void __fastcall TAccessCameraAppForm::TakePicturePermissionRequestResult(TObject *Sender, const DynamicArray<String> APermissions, const DynamicArray<TPermissionStatus> AGrantResults)
+void __fastcall TAccessCameraAppForm::TakePicturePermissionRequestResult(TObject *Sender, const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults)
 {
 	// 3 permissions involved: CAMERA, READ_EXTERNAL_STORAGE and WRITE_EXTERNAL_STORAGE
 	if ((AGrantResults.Length == 3) &&
@@ -74,11 +74,7 @@ void __fastcall TAccessCameraAppForm::TakePhotoFromCameraAction1DidFinishTaking(
 // ---------------------------------------------------------------------------
 void __fastcall TAccessCameraAppForm::btnTakePhotoClick(TObject *Sender)
 {
-	DynamicArray<String> permissions;
-	permissions.Length = 3;
-	permissions[0] = FPermissionCamera;
-	permissions[1] = FPermissionReadExternalStorage;
-	permissions[2] = FPermissionWriteExternalStorage;
+	DynamicArray<String> permissions { FPermissionCamera, FPermissionReadExternalStorage, FPermissionWriteExternalStorage };
 
 	PermissionsService()->RequestPermissions(permissions, TakePicturePermissionRequestResult, DisplayRationale);
 }

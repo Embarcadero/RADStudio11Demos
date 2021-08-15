@@ -44,9 +44,7 @@ void __fastcall TTFMXMusicPlayerFrm::FormCreate(TObject *Sender) {
     TMusicPlayer::DefaultPlayer()->OnSongChange = SongChanged;
     TMusicPlayer::DefaultPlayer()->OnProcessPlay = DoUpdateUI;
 
-    DynamicArray<String> permissions;
-    permissions.Length = 1;
-    permissions[0] = FPermissionReadExternalStorage;
+    DynamicArray<String> permissions { FPermissionReadExternalStorage };
 
     PermissionsService()->RequestPermissions(permissions, ReadStoragePermissionRequestResult, DisplayRationale);
 }
@@ -56,7 +54,7 @@ void __fastcall TTFMXMusicPlayerFrm::FormDestroy(TObject *Sender) {
     TMusicPlayer::DefaultPlayer()->OnProcessPlay = (Musicplayer::Utils::TOnProcessPlayEvent)NULL;
 }
 // ---------------------------------------------------------------------------
-void __fastcall TTFMXMusicPlayerFrm::DisplayRationale(TObject *Sender, const DynamicArray<String> APermissions, const _di_TProc APostRationaleProc) {
+void __fastcall TTFMXMusicPlayerFrm::DisplayRationale(TObject *Sender, const TClassicStringDynArray APermissions, const _di_TProc APostRationaleProc) {
     // Show an explanation to the user *asynchronously* - don't block this thread waiting for the user's response!
     // After the user sees the explanation, invoke the post-rationale routine to request the permissions
     TDialogService::ShowMessage("The app needs to read files from your device storage to show you the songs and albums available to you",
@@ -66,7 +64,7 @@ void __fastcall TTFMXMusicPlayerFrm::DisplayRationale(TObject *Sender, const Dyn
         });
 }
 // ---------------------------------------------------------------------------
-void __fastcall TTFMXMusicPlayerFrm::ReadStoragePermissionRequestResult(TObject *Sender, const DynamicArray<String> APermissions, const DynamicArray<TPermissionStatus> AGrantResults) {
+void __fastcall TTFMXMusicPlayerFrm::ReadStoragePermissionRequestResult(TObject *Sender, const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults) {
     // 1 permission involved: READ_EXTERNAL_STORAGE
 	if ((AGrantResults.Length == 1) && (AGrantResults[0] == TPermissionStatus::Granted))
     {

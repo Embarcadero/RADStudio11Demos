@@ -38,20 +38,20 @@ void __fastcall TForm2::Button1Click(TObject *Sender)
 {
 	FBeaconDeviceList.clear();
 
-	if (PermissionsService()->DefaultService->IsPermissionGranted(LOCATION_PERMISSION)) {
+	if (PermissionsService()->IsPermissionGranted(LOCATION_PERMISSION)) {
 		FManager->StartDiscovery(DISCOVERY_TIMEOUT);
 	}
 	else
 	{
-		PermissionsService()->DefaultService->RequestPermissions({ LOCATION_PERMISSION },
-			[this](const DynamicArray<String> APermissions, const DynamicArray<TPermissionStatus> AGrantResults)
+		PermissionsService()->RequestPermissions({ LOCATION_PERMISSION },
+			[this](const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults)
 			{
 				if (AGrantResults.Length == 1 && AGrantResults[0] == TPermissionStatus::Granted)
 				{
 					FManager->StartDiscovery(DISCOVERY_TIMEOUT);
 				}
 			},
-			[](const DynamicArray<String> APermissions, const _di_TProc APostRationaleProc)
+			[](const TClassicStringDynArray APermissions, const _di_TProc APostRationaleProc)
 			{
 				TDialogService::ShowMessage(L"Please grant the location permission to discover nearby BLE devices",
 					[APostRationaleProc](const TModalResult AResult)
@@ -124,7 +124,7 @@ void __fastcall MyThreadProcedure::Invoke(void)
 			}
 		 }
 	}
-	TVarRec v[] = { LBeaconDevice.Distance };
+	TVarRec v[] = { (long double) LBeaconDevice.Distance };
 	if (!BeaconFound)
 	{
 		Form2->FBeaconDeviceList.push_back(LBeaconDevice);
@@ -140,7 +140,7 @@ void __fastcall MyThreadProcedure::Invoke(void)
 		BeaconName = "Device Complete name: ";
 		if (ScanResponse->ContainsKey(TScanResponseKey::CompleteLocalName))
 		{
-			TByteDynArray value;
+			TClassicByteDynArray value;
 			ScanResponse->TryGetValue(TScanResponseKey::CompleteLocalName, value);
 			BeaconName = BeaconName + (TEncoding::UTF8->GetString(value));
 		}

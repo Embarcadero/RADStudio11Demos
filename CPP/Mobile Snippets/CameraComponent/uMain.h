@@ -54,10 +54,10 @@ private: // User declarations
 	bool FSavedCameraActive;
 
 	void __fastcall DisplayRationale(TObject* Sender,
-		const TStringDynArray APermissions, const _di_TProc APostRationaleProc);
+		const TClassicStringDynArray APermissions, const _di_TProc APostRationaleProc);
 	void __fastcall ActivateCameraPermissionRequestResult(TObject* Sender,
-		const System::TArray__1<String>APermissions,
-		const System::TArray__1<TPermissionStatus>AGrantResults);
+		const TClassicStringDynArray APermissions,
+		const TClassicPermissionStatusDynArray AGrantResults);
 	void __fastcall DisplayCameraPreviewFrame();
 	void __fastcall ApplicationEventChangedHandler
 		(System::TObject* const Sender, TMessageBase* const M);
