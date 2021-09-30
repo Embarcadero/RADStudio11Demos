@@ -12,7 +12,8 @@ uses
   FMX.Layouts, FMX.ListBox, FMX.Colors, FMX.ListView, System.Rtti,
   FMX.Grid.Style, FMX.Grid, FMX.TabControl, FMX.ComboTrackBar, FMX.ComboEdit,
   FMX.Edit, FMX.EditBox, FMX.SpinBox, FMX.TreeView, FMX.Calendar,
-  FMX.Types3D, FMX.Controls3D, FMX.Objects3D, FMX.Layers3D, FMX.Viewport3D;
+  FMX.Types3D, FMX.Controls3D, FMX.Objects3D, FMX.Layers3D, FMX.Viewport3D,
+  FMX.MultiView;
 
 type
   TPreviewForm = class(TForm)

@@ -38,13 +38,8 @@ __fastcall TForm1::TForm1(TComponent* Owner) : TForm(Owner) {
 // Add a new contact to List box
 void __fastcall TForm1::AddListViewItem(TAddressBookContact *Contact) {
 	TListViewItem *ListViewItem = ListViewContacts->Items->Add();
-	__try {
-		ListViewItem->Text = Contact->DisplayName;
-		ListViewItem->Tag = Contact->ID;
-	}
-	__finally {
-		ListViewItem->Free();
-	}
+	ListViewItem->Text = Contact->DisplayName;
+	ListViewItem->Tag = Contact->ID;
 }
 // ---------------------------------------------------------------------------
 

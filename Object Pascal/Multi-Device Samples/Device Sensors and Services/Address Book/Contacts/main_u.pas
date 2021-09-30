@@ -440,12 +440,8 @@ var
   ListViewItem: TListViewItem;
 begin
   ListViewItem := ListViewContacts.Items.Add;
-  try
-    ListViewItem.Text := Contact.DisplayName;
-    ListViewItem.Tag := Contact.ID;
-  finally
-    ListViewItem.Free;
-  end;
+  ListViewItem.Text := Contact.DisplayName;
+  ListViewItem.Tag := Contact.ID;
 end;
 
 // --------------------------------------------------------------------

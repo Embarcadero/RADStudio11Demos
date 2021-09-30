@@ -8,7 +8,7 @@ object Form1: TForm1
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   OnShow = FormShow
-  DesignerMasterStyle = 3
+  DesignerMasterStyle = 2
   object TabControl1: TTabControl
     Align = Client
     Size.Width = 570.000000000000000000
@@ -44,13 +44,13 @@ object Form1: TForm1
       object ToolBar2: TToolBar
         Align = MostTop
         Size.Width = 570.000000000000000000
-        Size.Height = 48.000000000000000000
+        Size.Height = 44.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
         object Label1: TLabel
           Align = Contents
           Size.Width = 570.000000000000000000
-          Size.Height = 48.000000000000000000
+          Size.Height = 44.000000000000000000
           Size.PlatformDefault = False
           StyleLookup = 'toollabel'
           TextSettings.HorzAlign = Center
@@ -63,7 +63,7 @@ object Form1: TForm1
           ImageIndex = -1
           Margins.Right = 5.000000000000000000
           Position.X = 497.000000000000000000
-          Position.Y = 9.000000000000000000
+          Position.Y = 7.000000000000000000
           Size.Width = 68.000000000000000000
           Size.Height = 30.000000000000000000
           Size.PlatformDefault = False
@@ -74,7 +74,7 @@ object Form1: TForm1
           Align = Left
           Margins.Left = 5.000000000000000000
           Position.X = 5.000000000000000000
-          Position.Y = 9.000000000000000000
+          Position.Y = 7.000000000000000000
           Size.Width = 68.000000000000000000
           Size.Height = 30.000000000000000000
           Size.PlatformDefault = False
@@ -85,14 +85,12 @@ object Form1: TForm1
         end
       end
       object ContactList: TListBox
-        Align = Top
+        Align = Client
         Margins.Left = 5.000000000000000000
         Margins.Top = 5.000000000000000000
         Margins.Right = 5.000000000000000000
-        Position.X = 5.000000000000000000
-        Position.Y = 53.000000000000000000
         Size.Width = 560.000000000000000000
-        Size.Height = 400.000000000000000000
+        Size.Height = 583.000000000000000000
         Size.PlatformDefault = False
         StyleLookup = 'transparentlistboxstyle'
         TabOrder = 0
@@ -102,7 +100,7 @@ object Form1: TForm1
         DefaultItemStyles.GroupFooterStyle = ''
         GroupingKind = Grouped
         Viewport.Width = 560.000000000000000000
-        Viewport.Height = 400.000000000000000000
+        Viewport.Height = 583.000000000000000000
         object ContactInfoHeader: TListBoxGroupHeader
           Size.Width = 560.000000000000000000
           Size.Height = 56.000000000000000000
@@ -118,9 +116,9 @@ object Form1: TForm1
           object btnLoadPicture: TButton
             Align = Right
             Margins.Right = 3.000000000000000000
-            Position.X = 509.000000000000000000
-            Size.Width = 48.000000000000000000
-            Size.Height = 48.000000000000000000
+            Position.X = 513.000000000000000000
+            Size.Width = 44.000000000000000000
+            Size.Height = 44.000000000000000000
             Size.PlatformDefault = False
             StyleLookup = 'organizetoolbuttonbordered'
             TabOrder = 0
@@ -133,7 +131,7 @@ object Form1: TForm1
               end>
             Align = Right
             Margins.Right = 3.000000000000000000
-            Position.X = 405.000000000000000000
+            Position.X = 413.000000000000000000
             Size.Width = 50.000000000000000000
             Size.Height = 44.000000000000000000
             Size.PlatformDefault = False
@@ -141,9 +139,9 @@ object Form1: TForm1
           object btnTakePicture: TButton
             Align = Right
             Margins.Right = 3.000000000000000000
-            Position.X = 458.000000000000000000
-            Size.Width = 48.000000000000000000
-            Size.Height = 48.000000000000000000
+            Position.X = 466.000000000000000000
+            Size.Width = 44.000000000000000000
+            Size.Height = 44.000000000000000000
             Size.PlatformDefault = False
             StyleLookup = 'cameratoolbuttonbordered'
             TabOrder = 1
@@ -165,11 +163,11 @@ object Form1: TForm1
             TabOrder = 0
             ReturnKeyType = Done
             Position.X = 370.000000000000000000
-            Position.Y = 6.000000000000000000
+            Position.Y = 7.000000000000000000
             Margins.Left = 20.000000000000000000
             Margins.Right = 10.000000000000000000
             Size.Width = 180.000000000000000000
-            Size.Height = 32.000000000000000000
+            Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
             KillFocusByReturn = True
           end
@@ -189,11 +187,11 @@ object Form1: TForm1
             TabOrder = 0
             ReturnKeyType = Done
             Position.X = 370.000000000000000000
-            Position.Y = 6.000000000000000000
+            Position.Y = 7.000000000000000000
             Margins.Left = 20.000000000000000000
             Margins.Right = 10.000000000000000000
             Size.Width = 180.000000000000000000
-            Size.Height = 32.000000000000000000
+            Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
             KillFocusByReturn = True
           end
@@ -214,11 +212,11 @@ object Form1: TForm1
             KeyboardType = EmailAddress
             ReturnKeyType = Done
             Position.X = 370.000000000000000000
-            Position.Y = 6.000000000000000000
+            Position.Y = 7.000000000000000000
             Margins.Left = 20.000000000000000000
             Margins.Right = 10.000000000000000000
             Size.Width = 180.000000000000000000
-            Size.Height = 32.000000000000000000
+            Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
             KillFocusByReturn = True
           end
@@ -235,9 +233,9 @@ object Form1: TForm1
             Align = Right
             Margins.Right = 10.000000000000000000
             Position.X = 370.000000000000000000
-            Position.Y = 6.000000000000000000
+            Position.Y = 7.000000000000000000
             Size.Width = 180.000000000000000000
-            Size.Height = 32.000000000000000000
+            Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 0
           end
@@ -262,7 +260,7 @@ object Form1: TForm1
       ExplicitSize.cy = 22.000000000000000000
       object ToolBar1: TToolBar
         Size.Width = 570.000000000000000000
-        Size.Height = 48.000000000000000000
+        Size.Height = 44.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
         object btnRemove: TSpeedButton
@@ -272,8 +270,8 @@ object Form1: TForm1
           ImageIndex = -1
           Margins.Left = 3.000000000000000000
           Position.X = 3.000000000000000000
-          Size.Width = 48.000000000000000000
-          Size.Height = 48.000000000000000000
+          Size.Width = 44.000000000000000000
+          Size.Height = 44.000000000000000000
           Size.PlatformDefault = False
           StyleLookup = 'trashtoolbuttonbordered'
         end
@@ -283,16 +281,16 @@ object Form1: TForm1
           Enabled = True
           ImageIndex = -1
           Margins.Right = 3.000000000000000000
-          Position.X = 519.000000000000000000
-          Size.Width = 48.000000000000000000
-          Size.Height = 48.000000000000000000
+          Position.X = 523.000000000000000000
+          Size.Width = 44.000000000000000000
+          Size.Height = 44.000000000000000000
           Size.PlatformDefault = False
           StyleLookup = 'refreshtoolbuttonbordered'
         end
         object Label7: TLabel
           Align = Contents
           Size.Width = 570.000000000000000000
-          Size.Height = 48.000000000000000000
+          Size.Height = 44.000000000000000000
           Size.PlatformDefault = False
           StyleLookup = 'toollabel'
           TextSettings.HorzAlign = Center
@@ -306,7 +304,7 @@ object Form1: TForm1
         FooterAppearanceClassName = 'TListHeaderObjects'
         Align = Client
         Size.Width = 570.000000000000000000
-        Size.Height = 584.000000000000000000
+        Size.Height = 588.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
         ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
@@ -331,13 +329,13 @@ object Form1: TForm1
       ExplicitSize.cy = 26.000000000000000000
       object ToolBar3: TToolBar
         Size.Width = 570.000000000000000000
-        Size.Height = 48.000000000000000000
+        Size.Height = 44.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
         object Label8: TLabel
           Align = Contents
           Size.Width = 570.000000000000000000
-          Size.Height = 48.000000000000000000
+          Size.Height = 44.000000000000000000
           Size.PlatformDefault = False
           StyleLookup = 'toollabel'
           TextSettings.HorzAlign = Center
@@ -350,7 +348,7 @@ object Form1: TForm1
         Margins.Top = 5.000000000000000000
         Margins.Right = 5.000000000000000000
         Position.X = 5.000000000000000000
-        Position.Y = 53.000000000000000000
+        Position.Y = 49.000000000000000000
         Size.Width = 560.000000000000000000
         Size.Height = 256.000000000000000000
         Size.PlatformDefault = False
@@ -384,10 +382,11 @@ object Form1: TForm1
             Align = Right
             TabOrder = 1
             ReturnKeyType = Done
-            Position.X = 339.000000000000000000
+            Position.X = 343.000000000000000000
+            Position.Y = 7.000000000000000000
             Margins.Right = 5.000000000000000000
             Size.Width = 150.000000000000000000
-            Size.Height = 44.000000000000000000
+            Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
             KillFocusByReturn = True
           end
@@ -398,8 +397,8 @@ object Form1: TForm1
             ImageIndex = -1
             Margins.Left = 10.000000000000000000
             Margins.Right = 8.000000000000000000
-            Position.X = 504.000000000000000000
-            Size.Width = 48.000000000000000000
+            Position.X = 508.000000000000000000
+            Size.Width = 44.000000000000000000
             Size.Height = 44.000000000000000000
             Size.PlatformDefault = False
             StyleLookup = 'addtoolbuttonbordered'
@@ -424,9 +423,10 @@ object Form1: TForm1
           object ComboBox2: TComboBox
             Align = Right
             Margins.Right = 5.000000000000000000
-            Position.X = 339.000000000000000000
+            Position.X = 343.000000000000000000
+            Position.Y = 7.000000000000000000
             Size.Width = 150.000000000000000000
-            Size.Height = 44.000000000000000000
+            Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 1
           end
@@ -437,8 +437,8 @@ object Form1: TForm1
             ImageIndex = -1
             Margins.Left = 10.000000000000000000
             Margins.Right = 8.000000000000000000
-            Position.X = 504.000000000000000000
-            Size.Width = 48.000000000000000000
+            Position.X = 508.000000000000000000
+            Size.Width = 44.000000000000000000
             Size.Height = 44.000000000000000000
             Size.PlatformDefault = False
             StyleLookup = 'trashtoolbuttonbordered'
