@@ -74,12 +74,12 @@ void __fastcall TForm1::TetherBDTestProfileResources0ResourceReceived(const TObj
 {
 	TStringList * lStrings = NULL;
 	ListView1->Items->Clear();
-	if(AResource->Value.AsString != "NONE") {
+	if(const_cast<TRemoteResource*>(AResource)->Value.AsString != "NONE") {
 		lStrings = new TStringList();
 		try
 		{
 			lStrings->Delimiter = ':';
-			lStrings->DelimitedText = AResource->Value.AsString;
+			lStrings->DelimitedText = const_cast<TRemoteResource*>(AResource)->Value.AsString;
 			for(int i = 0; i < lStrings->Count; i++){
 				TListViewItem * lItem = ListView1->Items->Add();
 				TStringList * itemParts = new TStringList();

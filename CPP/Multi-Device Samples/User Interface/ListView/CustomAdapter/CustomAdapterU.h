@@ -152,37 +152,27 @@ public:
 	__property System::Classes::TNotifyEvent OnResetView =
 	{write = SetOnResetView};
 
-public: // ILIstViewAdapter virtual pure method
-
-	virtual void __fastcall SetOnChanged(const System::Classes::TNotifyEvent Value)
-	{
-	}
-	virtual void __fastcall SetOnItemsCouldHaveChanged(const System::Classes::TNotifyEvent Value);
-
-	virtual void __fastcall SetOnItemsInvalidate(const System::Classes::TNotifyEvent Value)
-	{
-	}
-
-	virtual void __fastcall SetOnResetView(const System::Classes::TNotifyEvent Value)
+public: 
+	// ILIstViewAdapter
+	void __fastcall Changed()
+	{}
+	void __fastcall SetOnChanged(const System::Classes::TNotifyEvent Value)
+	{}
+	void __fastcall SetOnItemsCouldHaveChanged(const System::Classes::TNotifyEvent Value);
+	void __fastcall SetOnItemsInvalidate(const System::Classes::TNotifyEvent Value)
+	{}
+	void __fastcall SetOnResetView(const System::Classes::TNotifyEvent Value)
 	{
 		FOnResetView = Value;
 	}
-
-	virtual void __fastcall Sort
+	void __fastcall Sort
 	  (System::DelphiInterface<System::Generics::Defaults::IComparer__1<TListItem*> >AComparer)
-	{
-	}
-
-	virtual void __fastcall CreateNewViews(void)
-	{
-	}
-
-	virtual void __fastcall ResetViews(const TListItemPurposes Purposes)
-	{
-	}
-	virtual void __fastcall ResetView(TListItem* const Item);
+	{}
+	void __fastcall CreateNewViews(void)
+	{}
+	void __fastcall ResetViews(const TListItemPurposes Purposes)
+	{}
+	void __fastcall ResetView(TListItem* const Item);
 };
-
-static TObject * synObj = new TObject();
 
 #endif

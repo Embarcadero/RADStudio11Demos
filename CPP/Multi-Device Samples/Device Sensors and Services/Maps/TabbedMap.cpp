@@ -12,6 +12,7 @@
 #include <fmx.h>
 #pragma hdrstop
 
+#include <math.h>
 #include "TabbedMap.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)

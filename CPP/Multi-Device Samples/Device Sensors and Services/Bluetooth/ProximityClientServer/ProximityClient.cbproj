@@ -9,6 +9,7 @@
         <Platform Condition="'$(Platform)'==''">Android</Platform>
         <TargetedPlatforms>33808</TargetedPlatforms>
         <AppType>Application</AppType>
+        <CC_Suffix Condition="'$(CC_Suffix)'==''">c</CC_Suffix>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
         <Base>true</Base>
@@ -91,7 +92,6 @@
         <Base>true</Base>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base)'!=''">
-        <IncludePath>$(BDS)\experiments\RTL\Bluetooth\CPP\ProximityClient\;$(IncludePath)</IncludePath>
         <_TCHARMapping>wchar_t</_TCHARMapping>
         <AUP_WRITE_CALENDAR>true</AUP_WRITE_CALENDAR>
         <AUP_INTERNET>true</AUP_INTERNET>
@@ -100,7 +100,6 @@
         <Multithreaded>true</Multithreaded>
         <AUP_ACCESS_COARSE_LOCATION>true</AUP_ACCESS_COARSE_LOCATION>
         <AUP_READ_PHONE_STATE>true</AUP_READ_PHONE_STATE>
-        <ILINK_LibraryPath>$(BDS)\experiments\RTL\Bluetooth\CPP\ProximityClient\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
         <AUP_WRITE_EXTERNAL_STORAGE>true</AUP_WRITE_EXTERNAL_STORAGE>
         <AUP_READ_CALENDAR>true</AUP_READ_CALENDAR>
         <Icns_MainIcns>$(BDS)\bin\cbuilder_PROJECTICNS.icns</Icns_MainIcns>
@@ -293,8 +292,9 @@
         <PF_DevDebug>iPhone Developer</PF_DevDebug>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
-        <ILINK_LibraryPath>$(BDS)\lib\Win32\debug\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+        <ILINK_LibraryPath>$(BDSLIB)\$(PLATFORM)$(CC_SUFFIX)\debug;$(ILINK_LibraryPath)</ILINK_LibraryPath>
         <LinkPackageImports>rtl.bpi;fmx.bpi</LinkPackageImports>
+        <BCC_UseClassicCompiler>false</BCC_UseClassicCompiler>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <Defines>NDEBUG;$(Defines)</Defines>

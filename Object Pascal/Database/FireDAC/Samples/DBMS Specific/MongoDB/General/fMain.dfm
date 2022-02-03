@@ -10,12 +10,11 @@ object frmMain: TfrmMain
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
   OnCreate = FormCreate
+  PixelsPerInch = 96
   DesignSize = (
     575
     336)
-  PixelsPerInch = 96
   TextHeight = 13
   object Memo1: TMemo
     Left = 8
@@ -24,7 +23,6 @@ object frmMain: TfrmMain
     Height = 258
     Anchors = [akLeft, akTop, akRight, akBottom]
     TabOrder = 0
-    ExplicitWidth = 604
   end
   object btnInsert: TButton
     Left = 8
@@ -142,6 +140,15 @@ object frmMain: TfrmMain
     Caption = 'Time Zone'
     TabOrder = 13
     OnClick = btnTimeZone
+  end
+  object btnSession: TButton
+    Left = 493
+    Top = 39
+    Width = 75
+    Height = 25
+    Caption = 'Session'
+    TabOrder = 14
+    OnClick = btnSessionClick
   end
   object FDPhysMongoDriverLink1: TFDPhysMongoDriverLink
     Left = 176

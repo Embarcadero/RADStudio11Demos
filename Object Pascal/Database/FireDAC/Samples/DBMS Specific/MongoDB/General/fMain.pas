@@ -47,6 +47,7 @@ type
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
     btnNear: TButton;
     Button1: TButton;
+    btnSession: TButton;
     procedure FormCreate(Sender: TObject);
     procedure btnInsertClick(Sender: TObject);
     procedure btnPingClick(Sender: TObject);
@@ -61,6 +62,7 @@ type
     procedure btnCurrentOpClick(Sender: TObject);
     procedure btnNearClick(Sender: TObject);
     procedure btnTimeZone(Sender: TObject);
+    procedure btnSessionClick(Sender: TObject);
   private
     FEnv: TMongoEnv;
     FCon: TMongoConnection;
@@ -565,7 +567,7 @@ var
 begin
   // For details see:
   // http://docs.mongodb.org/manual/reference/method/db.currentOp/
-  oCrs := FCon['admin']['$cmd.sys.inprog'].Command('{"query": {"$all": [true]}}');
+  oCrs := FCon['admin'].Command('{"currentOp": true, "$all": 1}}');
   while oCrs.Next do
     Memo1.Text := Memo1.Text + #13#10 + oCrs.Doc.AsJSON;
 end;
@@ -629,6 +631,63 @@ begin
     FCon['test']['date_test'].Insert(oDoc);
   finally
     oDoc.Free;
+  end;
+end;
+
+procedure TfrmMain.btnSessionClick(Sender: TObject);
+var
+  oCol: TMongoCollection;
+  oSess: TMongoSession;
+  oDoc: TMongoDocument;
+  i: Integer;
+begin
+  // To setup:
+  // https://stackoverflow.com/questions/51461952/mongodb-v4-0-transaction-mongoerror-transaction-numbers-are-only-allowed-on-a
+  oCol := FCon['test']['zzz'];
+
+  oSess := FCon.NewSession;
+  oDoc := FEnv.NewDoc;
+  try
+    oCol.Session := oSess;
+    oSess.Options.ReadConcern.Level := TMongoReadConcern.TReadLevel.Snapshot;
+
+    oCol.RemoveAll;
+    oSess.StartTransaction;
+    try
+      for i := 1 to 100 do begin
+        oDoc
+          .Clear
+          .Add('f1', i div 10)
+          .Add('f2', i mod 10)
+          .Add('f3', 'str' + IntToStr(i));
+        oCol.Insert(oDoc);
+      end;
+      oSess.CommitTransaction;
+    except
+      oSess.AbortTransaction;
+      raise;
+    end;
+    Memo1.Text := 'Docs after commit=' + oCol.Count(nil, []).ToString;
+
+    oCol.RemoveAll;
+    oSess.StartTransaction;
+    try
+      for i := 1 to 100 do begin
+        oDoc
+          .Clear
+          .Add('f1', i div 10)
+          .Add('f2', i mod 10)
+          .Add('f3', 'str' + IntToStr(i));
+        oCol.Insert(oDoc);
+      end;
+    finally
+      oSess.AbortTransaction;
+    end;
+    Memo1.Text := Memo1.Text + #13#10 + 'Docs after rollback=' + oCol.Count(nil, []).ToString;
+
+  finally
+    oDoc.Free;
+    oSess.Free;
   end;
 end;
 

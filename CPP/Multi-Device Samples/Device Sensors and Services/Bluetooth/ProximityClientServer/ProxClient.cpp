@@ -92,8 +92,9 @@ void __fastcall TfrmProximityForm::SynchronizedMemoAdd()
 	Memo1->Lines->Add(FLastMessage);
 }
 
-void __fastcall TfrmProximityForm::DoCharacteristicRead(TObject *Sender, TBluetoothGattCharacteristic *ACharacteristic,
-  TBluetoothGattStatus *AGattStatus)
+void __fastcall TfrmProximityForm::DoCharacteristicRead(TObject* const Sender, 
+                                                        TBluetoothGattCharacteristic* const ACharacteristic, 
+                                                        TBluetoothGattStatus AGattStatus)
 {
   int LValue;
 
@@ -137,9 +138,9 @@ void __fastcall TfrmProximityForm::DoDiscoveryEndEvent(TObject *Sender, TBluetoo
 	LBLEDevice->DiscoverServices();
 	if (LBLEDevice->GetService(TX_POWER_SERVICE) != NULL) {
 	  FBLEDevice = LBLEDevice;
-	  FBLEDevice->OnCharacteristicRead = (TGattCharacteristicEvent) & DoCharacteristicRead;
-	  FBLEDevice->OnDisconnect = (System::Classes::TNotifyEvent) & OnDeviceDisconnect;
-	  FBLEDevice->OnReadRSSI = (TGattDeviceRSSIEvent) & DoReadRSSI;
+	  FBLEDevice->OnCharacteristicRead = DoCharacteristicRead;
+	  FBLEDevice->OnDisconnect = OnDeviceDisconnect;
+	  FBLEDevice->OnReadRSSI = DoReadRSSI;
 	  TThread::Synchronize(NULL, Connect);
 	  break;
 	}

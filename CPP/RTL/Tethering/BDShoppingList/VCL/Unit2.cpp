@@ -72,7 +72,7 @@ void __fastcall TForm2::TetherBDTestProfileResources0ResourceReceived(const TObj
           const TRemoteResource *AResource)
 {
 	if(AResource->ResType == TRemoteResourceType::Data) {
-		int pId = StrToInt(AResource->Value.AsString);
+		int pId = StrToInt(const_cast<TRemoteResource*>(AResource)->Value.AsString);
 		CDSProducts->First();
 		while(!CDSProducts->Eof) {
 			if(CDSProductsCode->Value == pId) {
@@ -82,8 +82,8 @@ void __fastcall TForm2::TetherBDTestProfileResources0ResourceReceived(const TObj
 				break;
 			}
 			CDSProducts->Next();
-        }
-    }
+		}
+	}
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm2::actGetListExecute(TObject *Sender)

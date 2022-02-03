@@ -26,7 +26,8 @@ __fastcall TNotesResource1::TNotesResource1(TComponent* Owner)
 
 __fastcall TNotesResource1::~TNotesResource1(void)
 {
-    FreeAndNil(&FNotesStorage);
+	delete FNotesStorage;
+	FNotesStorage = 0;
 }
 
 void TNotesResource1::HandleException(void)
@@ -51,8 +52,8 @@ void TNotesResource1::HandleException(void)
 					throw lException;
 				}
 			}
-        }
-    }
+		}
+	}
 }
 
 void TNotesResource1::Get(TEndpointContext* AContext, TEndpointRequest* ARequest,
@@ -148,14 +149,14 @@ String GetModuleDirectory(void)
 		"", TReplaceFlags() << System::Sysutils::rfReplaceAll));
 }
 
-void TNotesResource1::CheckNotesManager(const TEndpointContext * AContext)
+void TNotesResource1::CheckNotesManager(const TEndpointContext* AContext)
 {
 	if(const_cast<TEndpointContext*>(AContext)->User == NULL) {
 		const_cast<TEndpointContext*>(AContext)->Response->RaiseUnauthorized("The operation is only permitted for logged in users");
 	}
-	if(FNotesStorage == NULL) {
+	if (!FNotesStorage) {
 		FNotesStorage = new TNotesStorage(GetModuleDirectory(), const_cast<TEndpointContext*>(AContext)->User->UserID);
-    }
+	}
 }
 
 void TNotesResource1::DeleteItem(TEndpointContext* AContext, TEndpointRequest* ARequest, TEndpointResponse* AResponse)

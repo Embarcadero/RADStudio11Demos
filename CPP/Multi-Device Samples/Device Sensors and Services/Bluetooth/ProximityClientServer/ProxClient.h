@@ -87,8 +87,9 @@ private:	// User declarations
 
 	void __fastcall CheckDistanceThreshold(int PathLoss);
 	void __fastcall OnDeviceDisconnect(TObject *Sender);
-	void __fastcall DoCharacteristicRead(TObject *Sender, TBluetoothGattCharacteristic *ACharacteristic,
-										TBluetoothGattStatus *AGattStatus);
+	void __fastcall DoCharacteristicRead(TObject* const Sender, 
+                                       TBluetoothGattCharacteristic* const ACharacteristic, 
+                                       TBluetoothGattStatus AGattStatus);
 	void __fastcall DoDiscoveryEndEvent(TObject *Sender, TBluetoothLEDeviceList *ADeviceList);
 	void __fastcall CheckDeviceName();
 	void __fastcall AddTextToMemo(UnicodeString S);

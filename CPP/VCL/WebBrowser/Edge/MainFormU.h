@@ -12,7 +12,7 @@
 #include <Vcl.Menus.hpp>
 #include <Vcl.ToolWin.hpp>
 #include <Vcl.Dialogs.hpp>
-#include <WebView2.hpp>
+#include <Winapi.WebView2.hpp>
 #include <Winapi.ActiveX.hpp>
 #include <Vcl.Edge.hpp>
 //---------------------------------------------------------------------------

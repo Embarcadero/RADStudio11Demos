@@ -25,7 +25,7 @@ class TNotesResource1 : public TDataModule
 {
 __published:
 private:
-	TNotesStorage * FNotesStorage;
+	TNotesStorage* FNotesStorage;
 public:
 	__fastcall TNotesResource1(TComponent* Owner);
 	__fastcall ~TNotesResource1(void);

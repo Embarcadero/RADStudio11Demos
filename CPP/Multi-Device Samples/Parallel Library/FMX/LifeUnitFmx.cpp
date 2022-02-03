@@ -149,7 +149,7 @@ void TLifeForm::DrawLifeCells(TCanvas* aCanvas) {
 		for (int row = 0; row < FViewSize.X; row++)
 			for (int col = 0; col < FViewSize.Y; col++) {
 				TRectF cellRect = GetCellRect(row, col);
-				cellRect.Offset(-aCanvas->StrokeThickness / 2, -aCanvas->StrokeThickness / 2);
+				cellRect.Offset(-aCanvas->Stroke->Thickness / 2, -aCanvas->Stroke->Thickness / 2);
 				if (FLifeBoard[Min(FViewOffset.X + row, FLifeBoard.High)][Min(FViewOffset.Y + col, FLifeBoard[0].High)] != 0) {
 					aCanvas->FillRect(cellRect, 0, 0, AllCorners, 1);
 				}
@@ -164,7 +164,7 @@ void TLifeForm::DrawGrid(TCanvas* aCanvas) {
 	for (int row = 0; row < FViewSize.X; row++)
 		for (int col = 0; col < FViewSize.Y; col++) {
 			TRectF cellRect = GetCellRect(row, col);
-			cellRect.Offset(-aCanvas->StrokeThickness / 2, -aCanvas->StrokeThickness / 2);
+			cellRect.Offset(-aCanvas->Stroke->Thickness / 2, -aCanvas->Stroke->Thickness / 2);
 			aCanvas->DrawRect(cellRect, 0, 0, AllCorners, 1);
 		}
 }

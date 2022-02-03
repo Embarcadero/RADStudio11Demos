@@ -1298,8 +1298,6 @@
                 <Platform value="Android">True</Platform>
                 <Platform value="iOSDevice64">False</Platform>
                 <Platform value="OSX32">False</Platform>
-                <Platform value="Win32">False</Platform>
-                <Platform value="Win64">False</Platform>
             </Platforms>
         </BorlandProject>
         <ProjectFileVersion>12</ProjectFileVersion>

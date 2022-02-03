@@ -354,8 +354,6 @@
                 <Platform value="Android">True</Platform>
                 <Platform value="Android64">True</Platform>
                 <Platform value="iOSDevice64">True</Platform>
-                <Platform value="Win32">True</Platform>
-                <Platform value="Win64">True</Platform>
             </Platforms>
             <Deployment Version="3">
                 <DeployFile LocalName=".\OSX32\Debug\BeaconsProximityCPP.entitlements" Configuration="Debug" Class="ProjectOSXEntitlements">
