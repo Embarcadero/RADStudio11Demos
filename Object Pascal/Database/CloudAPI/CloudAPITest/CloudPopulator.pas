@@ -8,6 +8,7 @@
 // and is subject to that software license agreement.
 
 //---------------------------------------------------------------------------
+{$WARN SYMBOL_DEPRECATED OFF}
 
 unit CloudPopulator;
 
