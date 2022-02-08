@@ -134,10 +134,7 @@ object Form3: TForm3
     Manager = CommandManager
     Text = 'CommandApp'
     Actions = <>
-    Resources = <
-      item
-        IsPublic = True
-      end>
+    Resources = <>
     Left = 180
     Top = 116
   end
