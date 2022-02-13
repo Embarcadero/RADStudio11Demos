@@ -16,8 +16,8 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, StdCtrls, FileCtrl, ComCtrls, ExtCtrls, ImgList, pngimage, GIFImg,
-  Generics.Collections, Data.Cloud.CloudAPI, Data.Cloud.AmazonAPI, Data.Cloud.AzureAPI, CloudPopulator, Menus,
-  Vcl.Grids, System.ImageList;
+  Generics.Collections, Data.Cloud.CloudAPI, Data.Cloud.AmazonAPI, Data.Cloud.AzureAPI,
+  CloudPopulator, Menus, Vcl.Grids, System.ImageList;
 
 type
 
@@ -191,7 +191,7 @@ var
 
 implementation
 
-uses StrUtils, CloudAccountsIO;
+uses System.StrUtils, System.UITypes, CloudAccountsIO;
 
 {$R *.dfm}
 

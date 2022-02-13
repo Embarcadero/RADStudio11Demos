@@ -12,13 +12,11 @@ object CloudUIForm: TCloudUIForm
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
   OnActivate = FormActivate
   OnDestroy = FormDestroy
   DesignSize = (
     484
     280)
-  PixelsPerInch = 96
   TextHeight = 13
   object CloudLabel: TLabel
     Left = 8

@@ -11,6 +11,8 @@
 // your acknowledgement of your agreement to the foregoing software license 
 // and support agreement. 
 //---------------------------------------------------------------------------
+{$WARN SYMBOL_DEPRECATED OFF}
+
 unit CloudPopulator;
 
 interface
