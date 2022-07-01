@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, System.UITypes, System.Types,
   Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Menus, Vcl.ComCtrls, Vcl.ToolWin, Vcl.ExtCtrls,
-  Vcl.Edge, Winapi.ActiveX, WebView2;
+  Vcl.Edge, Winapi.ActiveX, Winapi.WebView2;
 
 type
   TfrmMain = class(TForm)
@@ -95,10 +95,12 @@ type
     procedure mniScriptSubscribeToCDPEventClick(Sender: TObject);
     procedure mniScriptInjectScriptClick(Sender: TObject);
     procedure EdgeBrowserCapturePreviewCompleted(Sender: TCustomEdgeBrowser; AResult: HResult);
-    procedure EdgeBrowserContainsFullScreenElementChanged(Sender: TCustomEdgeBrowser; ContainsFullScreenElement: Boolean);
+    procedure EdgeBrowserContainsFullScreenElementChanged(Sender: TCustomEdgeBrowser;
+      ContainsFullScreenElement: Boolean);
     procedure EdgeBrowserContentLoading(Sender: TCustomEdgeBrowser; IsErrorPage: Boolean; NavigationId: TUInt64);
     procedure EdgeBrowserCreateWebViewCompleted(Sender: TCustomEdgeBrowser; AResult: HResult);
-    procedure EdgeBrowserDevToolsProtocolEventReceived(Sender: TCustomEdgeBrowser; const CDPEventName, AParameterObjectAsJson: string);
+    procedure EdgeBrowserDevToolsProtocolEventReceived(Sender: TCustomEdgeBrowser; const CDPEventName,
+      AParameterObjectAsJson: string);
     procedure EdgeBrowserDocumentTitleChanged(Sender: TCustomEdgeBrowser; const ADocumentTitle: string);
     procedure EdgeBrowserExecuteScript(Sender: TCustomEdgeBrowser; AResult: HResult; const AResultObjectAsJson: string);
     procedure EdgeBrowserFrameNavigationStarting(Sender: TCustomEdgeBrowser; Args: TNavigationStartingEventArgs);
@@ -792,7 +794,7 @@ begin
       if ResourceContext = COREWEBVIEW2_WEB_RESOURCE_CONTEXT_IMAGE then
       begin
         // Override the response with an empty one to block the image.
-        // If put_Response is not called, the request will continue as normal.
+        // If Set_Response is not called, the request will continue as normal.
         var Response: ICoreWebView2WebResourceResponse;
         if Succeeded(EdgeBrowser.EnvironmentInterface.CreateWebResourceResponse(
              nil, 403 { NoContent }, 'Blocked', '', Response)) then

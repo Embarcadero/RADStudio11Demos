@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{D159511C-DDF9-4041-B25D-9B5098A44F11}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="App\ForegroundLocationApp.dproj">
+            <Dependencies>Service\ForegroundLocationService.dproj</Dependencies>
+        </Projects>
+        <Projects Include="Service\ForegroundLocationService.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ForegroundLocationApp" DependsOnTargets="ForegroundLocationService">
+        <MSBuild Projects="App\ForegroundLocationApp.dproj"/>
+    </Target>
+    <Target Name="ForegroundLocationApp:Clean" DependsOnTargets="ForegroundLocationService:Clean">
+        <MSBuild Projects="App\ForegroundLocationApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ForegroundLocationApp:Make" DependsOnTargets="ForegroundLocationService:Make">
+        <MSBuild Projects="App\ForegroundLocationApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ForegroundLocationService">
+        <MSBuild Projects="Service\ForegroundLocationService.dproj"/>
+    </Target>
+    <Target Name="ForegroundLocationService:Clean">
+        <MSBuild Projects="Service\ForegroundLocationService.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ForegroundLocationService:Make">
+        <MSBuild Projects="Service\ForegroundLocationService.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ForegroundLocationApp;ForegroundLocationService"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ForegroundLocationApp:Clean;ForegroundLocationService:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ForegroundLocationApp:Make;ForegroundLocationService:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

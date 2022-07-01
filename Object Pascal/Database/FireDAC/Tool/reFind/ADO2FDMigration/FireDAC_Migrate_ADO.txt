@@ -1,0 +1,159 @@
+#unuse ADODB
+#unuse ADOInt
+#unuse OleDB
+#unuse Data.Win.ADODB
+#unuse Winapi.ADOInt
+#unuse Winapi.OleDB
+
+// Generic types -------------------------------------------------------------------------------
+#migrate TParameterDirection -> TParamType
+#migrate pdInput -> ptInput
+#migrate pdOutput -> ptOutput
+#migrate pdInputOutput -> ptInputOutput
+#migrate pdReturnValue -> ptResult
+
+#migrate TCursorLocation -> TFDFetchMode, FireDAC.Stan.Option
+#migrate clUseClient -> fmAll, FireDAC.Stan.Option
+#migrate clUseServer -> fmOnDemand, FireDAC.Stan.Option
+
+#migrate TCursorType -> TFDCursorKind, FireDAC.Stan.Option
+#migrate ctOpenForwardOnly -> ckForwardOnly, FireDAC.Stan.Option
+#migrate ctKeyset -> ckAutomatic, FireDAC.Stan.Option
+#migrate ctDynamic -> ckDynamic, FireDAC.Stan.Option
+#migrate ctStatic -> ckStatic, FireDAC.Stan.Option
+
+;TADOLockType
+\bLockType( *[:]*= *)ltUnspecified -> UpdateOptions.LockMode\1lmNone
+\bLockType( *[:]*= *)ltReadOnly -> UpdateOptions.ReadOnly\1True
+\bLockType( *[:]*= *)ltPessimistic -> UpdateOptions.LockMode\1lmPessimistic
+\bLockType( *[:]*= *)ltOptimistic -> UpdateOptions.LockMode\1lmOptimistic
+\bLockType( *[:]*= *)ltBatchOptimistic -> CachedUpdates\1True
+
+#migrate TIsolationLevel -> TFDTxIsolation, FireDAC.Stan.Option
+#migrate ilUnspecified -> xiUnspecified, FireDAC.Stan.Option
+#migrate ilChaos -> xiDirtyRead, FireDAC.Stan.Option
+#migrate ilReadUncommitted -> xiDirtyRead, FireDAC.Stan.Option
+#migrate ilBrowse -> xiReadCommitted, FireDAC.Stan.Option
+#migrate ilCursorStability -> xiReadCommitted, FireDAC.Stan.Option
+#migrate ilReadCommitted -> xiReadCommitted, FireDAC.Stan.Option
+#migrate ilRepeatableRead -> xiRepeatableRead, FireDAC.Stan.Option
+#migrate ilSerializable -> xiSerializible, FireDAC.Stan.Option
+#migrate ilIsolated -> xiSerializible, FireDAC.Stan.Option
+
+#migrate TParameters -> TFDParams, FireDAC.Stan.Param, FireDAC.ADO.Migrate
+#migrate TParameter -> TFDParam, FireDAC.Stan.Param
+#migrate Direction -> ParamType
+;Helpers:
+;  TParameters.CreateParameter
+;  TParameters.AddParameter
+
+#remove Attributes
+;#remove ConnectionString
+#remove EnableBCD
+#remove ExecuteOptions
+#remove MarshalOptions
+;#remove Provider
+#remove TableDirect
+
+// TADOConnection -------------------------------------------------------------------------------
+#migrate TADOConnection:CursorLocation -> FetchOptions.Mode, FireDAC.Stan.Option
+#migrate TADOConnection:CommandTimeout -> ResourceOptions.CmdExecTimeout, FireDAC.Stan.Option
+#migrate TADOConnection:IsolationLevel -> TxOptions.Isolation, FireDAC.Stan.Option
+#migrate TADOConnection:BeginTrans -> StartTransaction
+#migrate TADOConnection:CommitTrans -> Commit
+#migrate TADOConnection:RollbackTrans -> Rollback
+#migrate TADOConnection:ConnectionObject -> ConnectionIntf
+#migrate TADOConnection:DefaultDatabase -> Params.Database
+#migrate TADOConnection:KeepConnection -> ResourceOptions.KeepConnection, FireDAC.Stan.Option
+#migrate TADOConnection:OnDisconnect -> AfterDisconnect
+#migrate TADOConnection:OnBeginTransComplete -> AfterStartTransaction
+#migrate TADOConnection:OnCommitTransComplete -> AfterCommit
+#migrate TADOConnection:OnRollbackTransComplete -> AfterRollback
+#migrate TADOConnection:OnConnectComplete -> AfterConnect
+#migrate TADOConnection:OnWillConnect -> BeforeConnect
+;Helpers:
+;  Execute
+;  GetProcedureNames -> GetStoredProcNames
+;  GetFieldNames
+;  GetTableNames
+;  OpenSchema
+;  ConnectionTimeout -> Params.ConnectTimeout
+;Not supported:
+;  Cancel
+;  Execute: _Recordset
+;  Errors
+;  Properties
+;  State
+;  Version
+;  ConnectOptions
+;  Mode
+;  OnInfoMessage -> Messages
+;  OnExecuteComplete
+;  OnWillExecute
+
+// TCustomADODataSet -------------------------------------------------------------------------------
+#migrate TCustomADODataSet, TADODataSet, TADOQuery, TADOTable, TADOStoredProc:CacheSize -> FetchOptions.RowsetSize, FireDAC.Stan.Option
+#migrate PAS:TCustomADODataSet:CommandText -> SQL.Text
+#migrate TCustomADODataSet, TADODataSet, TADOQuery, TADOTable, TADOStoredProc:CommandTimeout -> ResourceOptions.CmdExecTimeout, FireDAC.Stan.Option
+#remove CommandType
+#migrate TCustomADODataSet, TADODataSet, TADOQuery, TADOTable, TADOStoredProc:CursorLocation -> FetchOptions.Mode, FireDAC.Stan.Option
+#migrate TCustomADODataSet, TADODataSet, TADOQuery, TADOTable, TADOStoredProc:CursorType -> FetchOptions.CursorKind, FireDAC.Stan.Option
+#migrate TCustomADODataSet, TADODataSet, TADOQuery, TADOTable, TADOStoredProc:DataSource -> MasterSource
+#migrate TCustomADODataSet, TADODataSet, TADOQuery, TADOTable, TADOStoredProc:MaxRecords -> FetchOptions.RecsMax, FireDAC.Stan.Option
+#migrate TCustomADODataSet, TADODataSet, TADOQuery, TADOTable, TADOStoredProc:ParamCheck -> ResourceOptions.ParamCreate, FireDAC.Stan.Option
+#migrate TCustomADODataSet, TADODataSet, TADOQuery, TADOTable, TADOStoredProc:Parameters -> Params, FireDAC.Stan.Params
+#migrate TCustomADODataSet, TADODataSet, TADOQuery, TADOTable, TADOStoredProc:Requery -> Refresh
+;Helpers
+;  EnableBCD
+;  CancelBatch
+;  UpdateBatch
+;  RecordStatus
+;  Clone
+;  DeleteRecords
+;  Seek
+;  Sort
+;Not supported
+;  NextRecordset
+;  Supports
+;  Properties
+;  Recordset
+;  RecordsetState
+;  FilterOnBookmarks
+
+// TADODataSet -------------------------------------------------------------------------------
+#migrate PAS:TADODataSet:CommandText -> SQL.Text
+#remove CommandType
+
+// TADOQuery -------------------------------------------------------------------------------
+
+// TADOTable -------------------------------------------------------------------------------
+#migrate TADOTable:ReadOnly -> UpdateOptions.ReadOnly, FireDAC.Stan.Option
+
+// TADOStoredProc -------------------------------------------------------------------------------
+#migrate TADOStoredProc:ProcedureName -> StoredProcName
+
+// TADOCommand -------------------------------------------------------------------------------
+#migrate PAS:TADOCommand:CommandText -> CommandText.Text
+#migrate TADOCommand:CommandTimeout -> ResourceOptions.CmdExecTimeout, FireDAC.Stan.Option
+#migrate TADOCommand:ParamCheck -> ResourceOptions.ParamCreate, FireDAC.Stan.Option
+#migrate TADOCommand:Parameters -> Params, FireDAC.Stan.Params
+#migrate TADOCommand:Cancel -> AbortJob(True)
+#migrate TADOCommand:CommandObject -> CommandIntf, FireDAC.Phys.Intf
+;Helpers
+;  Execute
+;Not supported
+;  Assign
+;  CommandType
+;  Properties
+
+// Components -------------------------------------------------------------------------------
+#migrate TADOConnection -> TFDConnection, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Comp.Client, FireDAC.ADO.Migrate
+#migrate TADOTable -> TFDTable, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client, FireDAC.ADO.Migrate
+#migrate TADOQuery -> TFDQuery, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client, FireDAC.ADO.Migrate
+#migrate TADOStoredProc -> TFDStoredProc, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client, FireDAC.ADO.Migrate
+#migrate TADODataSet -> TFDQuery, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client, FireDAC.ADO.Migrate
+#migrate TADOCommand -> TFDCommand, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client, FireDAC.ADO.Migrate
+#migrate TCustomADODataSet -> TFDRdbmsDataSet, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client, FireDAC.ADO.Migrate
+#migrate TADOBlobStream -> TFDBlobStream, FireDAC.Comp.DataSet
+#migrate TAutoIncField -> TFDAutoIncField, FireDAC.Comp.DataSet
+#migrate EADOError -> EFDDBEngineException, FireDAC.Stan.Error

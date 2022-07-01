@@ -3,7 +3,7 @@ EdgeBrowser demo
 
 This sample Delphi application demonstrates the use of the `TEdgeBrowser` VCL component.
 
-`TEdgeBrowser` is a successor to `TWebBrowser`. Where `TWebBrowser` uses the Internet Explorer WebBrowser control as its browser UI, `TEdgeBrowser` uses Edge browser's WebView2 control. Because if this `TEdgeBrowser` relies on:
+`TEdgeBrowser` is a successor to `TWebBrowser`. Where `TWebBrowser` uses the Internet Explorer WebBrowser control as its browser UI, `TEdgeBrowser` uses Edge browser's WebView2 control. Because of this `TEdgeBrowser` relies on:
 
 1.  the Edge browser being installed
 2.  the WebView2 control loader DLL being available (part of the Microsoft WebView2 SDK)
