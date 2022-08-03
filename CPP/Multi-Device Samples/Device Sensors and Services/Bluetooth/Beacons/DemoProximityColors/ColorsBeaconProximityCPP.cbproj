@@ -43,18 +43,6 @@
         <CfgParent>Base</CfgParent>
         <Base>true</Base>
     </PropertyGroup>
-    <PropertyGroup Condition="('$(Platform)'=='Android' and '$(Cfg_1)'=='true') or '$(Cfg_1_Android)'!=''">
-        <Cfg_1_Android>true</Cfg_1_Android>
-        <CfgParent>Cfg_1</CfgParent>
-        <Cfg_1>true</Cfg_1>
-        <Base>true</Base>
-    </PropertyGroup>
-    <PropertyGroup Condition="('$(Platform)'=='Android64' and '$(Cfg_1)'=='true') or '$(Cfg_1_Android64)'!=''">
-        <Cfg_1_Android64>true</Cfg_1_Android64>
-        <CfgParent>Cfg_1</CfgParent>
-        <Cfg_1>true</Cfg_1>
-        <Base>true</Base>
-    </PropertyGroup>
     <PropertyGroup Condition="('$(Platform)'=='iOSDevice64' and '$(Cfg_1)'=='true') or '$(Cfg_1_iOSDevice64)'!=''">
         <Cfg_1_iOSDevice64>true</Cfg_1_iOSDevice64>
         <CfgParent>Cfg_1</CfgParent>
@@ -150,6 +138,13 @@
         <Android_NotificationIcon72>$(BDS)\bin\Artwork\Android\FM_NotificationIcon_72x72.png</Android_NotificationIcon72>
         <Android_NotificationIcon96>$(BDS)\bin\Artwork\Android\FM_NotificationIcon_96x96.png</Android_NotificationIcon96>
         <Android_LauncherIcon192>$(BDS)\bin\Artwork\Android\FM_LauncherIcon_192x192.png</Android_LauncherIcon192>
+        <AUP_BLUETOOTH>true</AUP_BLUETOOTH>
+        <AUP_BLUETOOTH_ADMIN>true</AUP_BLUETOOTH_ADMIN>
+        <AUP_BLUETOOTH_ADVERTISE>true</AUP_BLUETOOTH_ADVERTISE>
+        <AUP_BLUETOOTH_CONNECT>true</AUP_BLUETOOTH_CONNECT>
+        <AUP_BLUETOOTH_SCAN>true</AUP_BLUETOOTH_SCAN>
+        <VerInfo_Build>1</VerInfo_Build>
+        <Android_NotificationAccentColor>#000000</Android_NotificationAccentColor>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Android64)'!=''">
         <Android_LauncherIcon192>$(BDS)\bin\Artwork\Android\FM_LauncherIcon_192x192.png</Android_LauncherIcon192>
@@ -177,6 +172,14 @@
         <Android_NotificationIcon48>$(BDS)\bin\Artwork\Android\FM_NotificationIcon_48x48.png</Android_NotificationIcon48>
         <Android_NotificationIcon72>$(BDS)\bin\Artwork\Android\FM_NotificationIcon_72x72.png</Android_NotificationIcon72>
         <Android_NotificationIcon96>$(BDS)\bin\Artwork\Android\FM_NotificationIcon_96x96.png</Android_NotificationIcon96>
+        <Base_Android64>true</Base_Android64>
+        <AUP_BLUETOOTH>true</AUP_BLUETOOTH>
+        <AUP_BLUETOOTH_ADMIN>true</AUP_BLUETOOTH_ADMIN>
+        <AUP_BLUETOOTH_ADVERTISE>true</AUP_BLUETOOTH_ADVERTISE>
+        <AUP_BLUETOOTH_CONNECT>true</AUP_BLUETOOTH_CONNECT>
+        <AUP_BLUETOOTH_SCAN>true</AUP_BLUETOOTH_SCAN>
+        <VerInfo_Build>1</VerInfo_Build>
+        <Android_NotificationAccentColor>#000000</Android_NotificationAccentColor>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_iOSDevice64)'!=''">
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
@@ -256,27 +259,6 @@
         <CLANG_UnwindTables>true</CLANG_UnwindTables>
         <ILINK_LibraryPath>$(BDSLIB)\$(PLATFORM)\debug;$(ILINK_LibraryPath)</ILINK_LibraryPath>
         <ILINK_TranslatedLibraryPath>$(BDSLIB)\$(PLATFORM)\debug\$(LANGDIR);$(ILINK_TranslatedLibraryPath)</ILINK_TranslatedLibraryPath>
-    </PropertyGroup>
-    <PropertyGroup Condition="'$(Cfg_1_Android)'!=''">
-        <VerInfo_Build>1</VerInfo_Build>
-        <AUP_BLUETOOTH_ADMIN>true</AUP_BLUETOOTH_ADMIN>
-        <Android_SplashGravity>center</Android_SplashGravity>
-        <AUP_BLUETOOTH>true</AUP_BLUETOOTH>
-        <Android_SplashTileMode>disabled</Android_SplashTileMode>
-        <LinkPackageStatics>rtl.lib;fmx.lib</LinkPackageStatics>
-        <ILINK_LibraryPath>$(BDS)\lib\Android\debug\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
-    </PropertyGroup>
-    <PropertyGroup Condition="'$(Cfg_1_Android64)'!=''">
-        <Cfg_1_Android>true</Cfg_1_Android>
-        <CfgParent>Cfg_1</CfgParent>
-        <Cfg_1>true</Cfg_1>
-        <VerInfo_Build>1</VerInfo_Build>
-        <AUP_BLUETOOTH_ADMIN>true</AUP_BLUETOOTH_ADMIN>
-        <Android_SplashGravity>center</Android_SplashGravity>
-        <AUP_BLUETOOTH>true</AUP_BLUETOOTH>
-        <Android_SplashTileMode>disabled</Android_SplashTileMode>
-        <LinkPackageStatics>rtl.lib;fmx.lib</LinkPackageStatics>
-        <ILINK_LibraryPath>$(BDS)\lib\Android\debug\;$(ILINK_LibraryPath);$(ILINK_LibraryPath)</ILINK_LibraryPath>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_iOSDevice64)'!=''">
         <DCC_RemoteDebug>true</DCC_RemoteDebug>

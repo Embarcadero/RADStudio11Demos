@@ -53,6 +53,9 @@ type
     procedure FormShow(Sender: TObject);
   private const
     LOCATION_PERMISSION = 'android.permission.ACCESS_FINE_LOCATION';
+    BLUETOOTH_SCAN_PERMISSION = 'android.permission.BLUETOOTH_SCAN';
+    BLUETOOTH_ADVERTISE_PERMISSION = 'android.permission.BLUETOOTH_ADVERTISE';
+    BLUETOOTH_CONNECT_PERMISSION = 'android.permission.BLUETOOTH_CONNECT';
   private
     { Private declarations }
     FBLEManager: TBluetoothLEManager;
@@ -242,13 +245,23 @@ end;
 procedure TfrmProximityForm.DoScan;
 var
   LList: TBluetoothUUIDsList;
+  Permissions: TArray<string>;
 begin
   EnableRSSIMonitorize(False);
 
-  PermissionsService.RequestPermissions([LOCATION_PERMISSION],
+  if TOSVersion.Check(12) then
+    Permissions := [LOCATION_PERMISSION, BLUETOOTH_SCAN_PERMISSION, BLUETOOTH_ADVERTISE_PERMISSION, BLUETOOTH_CONNECT_PERMISSION]
+  else
+    Permissions := [LOCATION_PERMISSION];
+
+  PermissionsService.RequestPermissions(Permissions,
     procedure(const Permissions: TClassicStringDynArray; const GrantResults: TClassicPermissionStatusDynArray)
     begin
-      if (Length(GrantResults) = 1) and (GrantResults[0] = TPermissionStatus.Granted) then
+      if ((Length(GrantResults) = 4) and (GrantResults[0] = TPermissionStatus.Granted)
+                                     and (GrantResults[1] = TPermissionStatus.Granted)
+                                     and (GrantResults[2] = TPermissionStatus.Granted)
+                                     and (GrantResults[3] = TPermissionStatus.Granted)) or
+         ((Length(GrantResults) = 1) and (GrantResults[0] = TPermissionStatus.Granted)) then
       begin
         lblDevice.Text := 'Scanning for devices';
 
@@ -262,9 +275,7 @@ begin
         finally
           LList.Free;
         end;
-      end
-      else
-        ShowMessage('BLE scanning requires the location permission');
+      end;
     end);
 end;
 

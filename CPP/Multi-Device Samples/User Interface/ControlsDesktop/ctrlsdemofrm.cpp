@@ -13,6 +13,7 @@
 #pragma hdrstop
 
 #include "ctrlsdemofrm.h"
+#include <memory>
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.fmx"
@@ -111,31 +112,29 @@ void __fastcall TfrmCtrlsDemo::SwitchTo3D()
 {
 	if (FContainer != NULL)
 	  delete FViewport;
+
 	FViewport = new TViewport3D(this);
 	FViewport->Parent = this;
 	FViewport->Align = TAlignLayout::Client;
 	FViewport->Color = TAlphaColorRec::Null;
 
-	FContainer = new TLayer3D(FViewport);
+	FContainer = new TLayer3D(this);
 	FContainer->Parent = FViewport;
 	FContainer->Projection = TProjection::Screen;
 	FContainer->Align = TAlignLayout::Client;
 
-	TImage *img = new TImage(NULL);
-	img->Height = FSavedHeight;
+	TImage *img = new TImage(this);
+	img->Parent = FContainer;
 	img->Width = FSavedWidth;
+	img->Height = FSavedHeight;
 	img->Margins = ControlRoot->Margins;
 	img->WrapMode = TImageWrapMode::Original;
 	img->Scale->X = ScaleTrack->Value;
 	img->Scale->Y = ScaleTrack->Value;
-	img->Bitmap->Height = (int)(FSavedHeight);
-	img->Bitmap->Width = (int)(FSavedWidth);
-	TBitmap *LScreenShot = new TBitmap();
-	LScreenShot = ControlRoot->MakeScreenshot();
-	img->Bitmap->CopyFromBitmap(LScreenShot);
-	img->Margins = ControlRoot->Margins;
-	delete LScreenShot;
-	img->Parent = FContainer;
+
+	std::unique_ptr<TBitmap> LScreenshot(ControlRoot->MakeScreenshot());
+
+	img->Bitmap->Assign(LScreenshot.get());
 
 	ControlRoot->Visible = false;
 }

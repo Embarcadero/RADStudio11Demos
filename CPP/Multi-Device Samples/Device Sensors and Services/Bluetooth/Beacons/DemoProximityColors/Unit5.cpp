@@ -88,19 +88,29 @@ void __fastcall TForm5::BeaconProximity(System::TObject* const Sender, _di_IBeac
 //---------------------------------------------------------------------------
 void TForm5::StartScan()
 {
-  PermissionsService()->RequestPermissions({ LOCATION_PERMISSION },
+  DynamicArray<UnicodeString> permissions;
+
+  if (TOSVersion::Check(12))
+  {
+    permissions = { LOCATION_PERMISSION, BLUETOOTH_SCAN_PERMISSION, BLUETOOTH_ADVERTISE_PERMISSION, BLUETOOTH_CONNECT_PERMISSION };
+  }
+  else
+  {
+    permissions = { LOCATION_PERMISSION };
+  }
+
+  PermissionsService()->RequestPermissions(permissions,
     [this](const TClassicStringDynArray Permissions, const TClassicPermissionStatusDynArray GrantResults)
     {
-      if (GrantResults.Length == 1 && GrantResults[0] == TPermissionStatus::Granted)
+      if ((GrantResults.Length == 4 && GrantResults[0] == TPermissionStatus::Granted
+                                    && GrantResults[1] == TPermissionStatus::Granted
+                                    && GrantResults[2] == TPermissionStatus::Granted
+                                    && GrantResults[3] == TPermissionStatus::Granted) ||
+          (GrantResults.Length == 1 && GrantResults[0] == TPermissionStatus::Granted))
       {
         FBeaconManager->StartScan();
         Button1->Text = "STOP";
         FisScanning = True;
-      }
-      else
-      {
-        Button1->Text = "START";
-        ShowMessage("Beacon scanning requires the location permission");
       }
     });
 }

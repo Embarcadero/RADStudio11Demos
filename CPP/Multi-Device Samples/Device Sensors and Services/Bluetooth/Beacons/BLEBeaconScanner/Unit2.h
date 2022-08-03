@@ -26,6 +26,9 @@
 //---------------------------------------------------------------------------
 const Integer DISCOVERY_TIMEOUT = 20000;
 const String LOCATION_PERMISSION = "android.permission.ACCESS_FINE_LOCATION";
+const String BLUETOOTH_SCAN_PERMISSION = "android.permission.BLUETOOTH_SCAN";
+const String BLUETOOTH_ADVERTISE_PERMISSION = "android.permission.BLUETOOTH_ADVERTISE";
+const String BLUETOOTH_CONNECT_PERMISSION = "android.permission.BLUETOOTH_CONNECT";
 const Integer BEACON_TYPE_POSITION = 2;
 const Integer BEACON_GUID_POSITION = 4;
 const Integer BEACON_MAJOR_POSITION = 20;

@@ -65,6 +65,9 @@ type
       AGattStatus: TBluetoothGattStatus);
   private const
     LOCATION_PERMISSION = 'android.permission.ACCESS_FINE_LOCATION';
+    BLUETOOTH_SCAN_PERMISSION = 'android.permission.BLUETOOTH_SCAN';
+    BLUETOOTH_ADVERTISE_PERMISSION = 'android.permission.BLUETOOTH_ADVERTISE';
+    BLUETOOTH_CONNECT_PERMISSION = 'android.permission.BLUETOOTH_CONNECT';
   private
     { Private declarations }
     //FBluetoothLE: TBluetoothLE;
@@ -363,20 +366,29 @@ begin
 end;
 
 procedure TfrmHeartMonitor.DoScan;
+var
+  Permissions: TArray<string>;
 begin
   ClearData;
   lblDevice.Text := '';
   lblBodyLocation.Text := '';
   lblContactStatus.Text := '';
 
-  PermissionsService.RequestPermissions([LOCATION_PERMISSION],
+  if TOSVersion.Check(12) then
+    Permissions := [LOCATION_PERMISSION, BLUETOOTH_SCAN_PERMISSION, BLUETOOTH_ADVERTISE_PERMISSION, BLUETOOTH_CONNECT_PERMISSION]
+  else
+    Permissions := [LOCATION_PERMISSION];
+
+  PermissionsService.RequestPermissions(Permissions,
     procedure(const Permissions: TClassicStringDynArray; const GrantResults: TClassicPermissionStatusDynArray)
     begin
-      if (Length(GrantResults) = 1) and (GrantResults[0] = TPermissionStatus.Granted) then
+      if ((Length(GrantResults) = 4) and (GrantResults[0] = TPermissionStatus.Granted)
+                                     and (GrantResults[1] = TPermissionStatus.Granted)
+                                     and (GrantResults[2] = TPermissionStatus.Granted)
+                                     and (GrantResults[3] = TPermissionStatus.Granted)) or
+         ((Length(GrantResults) = 1) and (GrantResults[0] = TPermissionStatus.Granted)) then
         BluetoothLE1.DiscoverDevices(2500, [HRSERVICE])
-      else
-        ShowMessage('BLE scanning requires the location permission');
-      end);
+    end);
 end;
 
 end.

@@ -55,12 +55,11 @@ type
     procedure imgOnClick(Sender: TObject);
     procedure imgOffClick(Sender: TObject);
   private
+    FFileName: string;
     FMicrophone: TAudioCaptureDevice;
 
-    function HasMicrophone: Boolean;
     function IsMicrophoneRecording: Boolean;
-    procedure RequestPermissionsResult(Sender: TObject; const APermissions: TClassicStringDynArray; const AGrantResults: TClassicPermissionStatusDynArray);
-    procedure DisplayRationale(Sender: TObject; const APermissions: TClassicStringDynArray; const APostRationaleProc: TProc);
+    procedure MicrophonePermissionRequest(Sender: TObject; const &Message: string; const AccessGranted: Boolean);
   end;
 
 var
@@ -95,14 +94,14 @@ procedure TAudioRecPlayForm.ActionListUpdate(Action: TBasicAction; var Handled: 
 begin
   { Provide feedback on capture on/off}
 
-  imgOn.Visible := HasMicrophone and (FMicrophone.State = TCaptureDeviceState.Capturing);
+  imgOn.Visible := IsMicrophoneRecording;
 
   { ... and enable buttons accordingly }
 
-  actStartRecording.Enabled := not IsMicrophoneRecording and HasMicrophone;
+  actStartRecording.Enabled := not IsMicrophoneRecording;
   actStopRecording.Enabled := IsMicrophoneRecording;
   actStop.Enabled := Assigned(MediaPlayer.Media) and (MediaPlayer.State = TMediaState.Playing);
-  actPlay.Enabled := FileExists(GetAudioFileName(AUDIO_FILENAME)) and (MediaPlayer.State <> TMediaState.Playing);
+  actPlay.Enabled := FileExists(FFileName) and (MediaPlayer.State <> TMediaState.Playing);
 end;
 
 procedure TAudioRecPlayForm.actPlayExecute(Sender: TObject);
@@ -110,59 +109,24 @@ begin
   if IsMicrophoneRecording then
     actStopRecording.Execute;
 
-  MediaPlayer.FileName := GetAudioFileName(AUDIO_FILENAME);
+  MediaPlayer.FileName := FFileName;
   MediaPlayer.Play;
 end;
 
 procedure TAudioRecPlayForm.actStartRecordingExecute(Sender: TObject);
-const
-  PermissionRecordAudio = 'android.permission.RECORD_AUDIO';
 begin
   actStop.Execute;
 
-  { get the microphone device }
-  FMicrophone := TCaptureDeviceManager.Current.DefaultAudioCaptureDevice;
-
-  if HasMicrophone then
-  begin
-    { and attempt to record to 'test.caf' file }
-    FMicrophone.FileName := GetAudioFileName(AUDIO_FILENAME);
-
-    PermissionsService.RequestPermissions([PermissionRecordAudio], RequestPermissionsResult, DisplayRationale);
-  end
-  else
-    TDialogService.ShowMessage('No microphone is available.');
+  { and attempt to record to 'test.caf' file }
+  FMicrophone.RequestPermission;
 end;
 
-// Optional rationale display routine to display permission requirement rationale to the user
-procedure TAudioRecPlayForm.DisplayRationale(Sender: TObject; const APermissions: TClassicStringDynArray; const APostRationaleProc: TProc);
+procedure TAudioRecPlayForm.MicrophonePermissionRequest(Sender: TObject; const &Message: string; const AccessGranted: Boolean);
 begin
-  // Show an explanation to the user *asynchronously* - don't block this thread waiting for the user's response!
-  // After the user sees the explanation, invoke the post-rationale routine to request the permissions
-  TDialogService.ShowMessage('We need to be given permission to record some audio with your microphone',
-    procedure(const AResult: TModalResult)
-    begin
-      APostRationaleProc;
-    end)
-end;
-
-procedure TAudioRecPlayForm.RequestPermissionsResult(Sender: TObject; const APermissions: TClassicStringDynArray; const AGrantResults: TClassicPermissionStatusDynArray);
-begin
-  if (Length(AGrantResults) = 1) then
-  begin
-    case AGrantResults[0] of
-      TPermissionStatus.Granted:
-        try
-          FMicrophone.StartCapture;
-        except
-          TDialogService.ShowMessage('StartCapture: Operation not supported by this device');
-        end;
-      TPermissionStatus.Denied: TDialogService.ShowMessage('Cannot record audio without the relevant permission being granted');
-      TPermissionStatus.PermanentlyDenied: TDialogService.ShowMessage('If you decide you wish to use the audio recording feature of this app, please go to app settings and enable the microphone permission');
-    end;
-  end
+  if AccessGranted then
+    FMicrophone.StartCapture
   else
-    TDialogService.ShowMessage('Something went wrong with the permission checking');
+    TDialogService.ShowMessage('Cannot record audio without the relevant permission being granted');
 end;
 
 procedure TAudioRecPlayForm.actStopExecute(Sender: TObject);
@@ -174,11 +138,7 @@ procedure TAudioRecPlayForm.actStopRecordingExecute(Sender: TObject);
 begin
   { stop capturing audio from the microphone }
   if IsMicrophoneRecording then
-    try
-      FMicrophone.StopCapture;
-    except
-      TDialogService.ShowMessage('Get state: Operation not supported by this device');
-    end;
+    FMicrophone.StopCapture;
 end;
 
 procedure TAudioRecPlayForm.imgOffClick(Sender: TObject);
@@ -194,25 +154,25 @@ end;
 
 procedure TAudioRecPlayForm.FormCreate(Sender: TObject);
 begin
+  FFileName := GetAudioFileName(AUDIO_FILENAME);
+
+  { get the microphone device }
   FMicrophone := TCaptureDeviceManager.Current.DefaultAudioCaptureDevice;
+  FMicrophone.FileName := FFileName;
+  FMicrophone.OnPermissionRequest := MicrophonePermissionRequest;
 
-  {$IFDEF IOS}
-    if GetUserInterfaceStyle = UIUserInterfaceStyleDark then
-    begin
-      InvertEffect1.Enabled := True;
-      InvertEffect2.Enabled := True;
-    end;
-  {$ENDIF}
-end;
-
-function TAudioRecPlayForm.HasMicrophone: Boolean;
-begin
-  Result := Assigned(FMicrophone);
+{$IFDEF IOS}
+  if GetUserInterfaceStyle = UIUserInterfaceStyleDark then
+  begin
+    InvertEffect1.Enabled := True;
+    InvertEffect2.Enabled := True;
+  end;
+{$ENDIF}
 end;
 
 function TAudioRecPlayForm.IsMicrophoneRecording: Boolean;
 begin
-  Result := HasMicrophone and (FMicrophone.State = TCaptureDeviceState.Capturing);
+  Result := FMicrophone.State = TCaptureDeviceState.Capturing;
 end;
 
 end.

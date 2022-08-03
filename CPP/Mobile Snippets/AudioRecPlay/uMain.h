@@ -50,12 +50,10 @@ __published:	// IDE-managed Components
 	void __fastcall imgOffClick(TObject *Sender);
 	void __fastcall imgOnClick(TObject *Sender);
 private:	// User declarations
-    String FPermission;
+	String FFileName;
 	TAudioCaptureDevice *FMicrophone;
 	const String AUDIO_FILENAME;
-	void __fastcall DisplayRationale(TObject *Sender, const TClassicStringDynArray APermissions, const _di_TProc APostRationaleProc);
-	void __fastcall RequestPermissionsResult(TObject *Sender, const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults);
-	bool __fastcall HasMicrophone();
+	void __fastcall MicrophonePermissionRequest(TObject *Sender, const String Message, const bool AccessGranted);
 	bool __fastcall IsMicrophoneRecording();
 public:		// User declarations
 	__fastcall TAudioRecPlayForm(TComponent *Owner);

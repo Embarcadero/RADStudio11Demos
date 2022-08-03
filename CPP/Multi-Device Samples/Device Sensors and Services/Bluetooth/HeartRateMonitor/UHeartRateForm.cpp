@@ -306,17 +306,30 @@ void __fastcall TfrmHeartMonitor::DoScan(void) {
 	lblBodyLocation->Text = "";
 	lblContactStatus->Text = "";
 
-	PermissionsService()->RequestPermissions({ LOCATION_PERMISSION },
+	DynamicArray<UnicodeString> permissions;
+
+	if (TOSVersion::Check(12))
+	{
+		permissions = { LOCATION_PERMISSION, BLUETOOTH_SCAN_PERMISSION, BLUETOOTH_ADVERTISE_PERMISSION, BLUETOOTH_CONNECT_PERMISSION };
+	}
+	else
+	{
+		permissions = { LOCATION_PERMISSION };
+	}
+
+	PermissionsService()->RequestPermissions(permissions,
 		[this](const TClassicStringDynArray Permissions, const TClassicPermissionStatusDynArray GrantResults)
 		{
-			if (GrantResults.Length == 1 && GrantResults[0] == TPermissionStatus::Granted)
+			if ((GrantResults.Length == 4 && GrantResults[0] == TPermissionStatus::Granted
+                                          && GrantResults[1] == TPermissionStatus::Granted
+                                          && GrantResults[2] == TPermissionStatus::Granted
+                                          && GrantResults[3] == TPermissionStatus::Granted) ||
+                (GrantResults.Length == 1 && GrantResults[0] == TPermissionStatus::Granted))
 			{
 				GUID Services[] { HRSERVICE };
 
 				BluetoothLE1->DiscoverDevices(2500, &Services[0], 0);
 			}
-			else
-				ShowMessage("BLE scanning requires the location permission");
 		});
 }
 

@@ -11,10 +11,6 @@
 
 #include <fmx.h>
 #include <System.IOUtils.hpp>
-#ifdef __ANDROID__
-#include <Androidapi.Helpers.hpp>
-#include <Androidapi.JNI.Os.hpp>
-#endif
 #include <FMX.DialogService.hpp>
 #pragma hdrstop
 
@@ -45,75 +41,47 @@ __fastcall TAudioRecPlayForm::TAudioRecPlayForm(TComponent *Owner) : TForm(Owner
 	AUDIO_FILENAME("test.wav")
 #endif
 {
-#ifdef __ANDROID__
-	FPermission = JStringToString(TJManifest_permission::JavaClass->RECORD_AUDIO);
-#endif
+	FFileName = GetAudioFileName(AUDIO_FILENAME);
+
 	FMicrophone = TCaptureDeviceManager::Current->DefaultAudioCaptureDevice;
+	FMicrophone->FileName = FFileName;
 }
 //---------------------------------------------------------------------------
-void __fastcall TAudioRecPlayForm::DisplayRationale(TObject *Sender, const TClassicStringDynArray APermissions, const _di_TProc APostRationaleProc)
+void __fastcall TAudioRecPlayForm::MicrophonePermissionRequest(TObject *Sender, const String Message, const bool AccessGranted)
 {
-	// Show an explanation to the user *asynchronously* - don't block this thread waiting for the user's response!
-	// After the user sees the explanation, invoke the post-rationale routine to request the permissions
-	TDialogService::ShowMessage("We need to be given permission to record some audio with your microphone",
-		[APostRationaleProc](TModalResult AKey)
-		{
-        	APostRationaleProc->Invoke();
-        });
-}
-//---------------------------------------------------------------------------
-void __fastcall TAudioRecPlayForm::RequestPermissionsResult(TObject *Sender, const TClassicStringDynArray APermissions, const TClassicPermissionStatusDynArray AGrantResults)
-{
-	// 1 permission involved: RECORD_AUDIO
-	if (AGrantResults.Length == 1)
-		switch (AGrantResults[0])
-        {
-            case TPermissionStatus::Granted:
-                try
-                {
-                    FMicrophone->StartCapture();
-                }
-                catch (Exception &e)
-                {
-                    TDialogService::ShowMessage("StartCapture: Operation not supported by this device");
-                }
-                break;
-            case TPermissionStatus::Denied:
-                TDialogService::ShowMessage("Cannot record audio without the relevant permission being granted");
-                break;
-            case TPermissionStatus::PermanentlyDenied:
-                TDialogService::ShowMessage("If you decide you wish to use the audio recording feature of this app, please go to app settings and enable the microphone permission");
-				break;
-			default: break;
-		}
+	if (AccessGranted)
+	{
+		FMicrophone->StartCapture();
+	}
 	else
-		TDialogService::ShowMessage("Something went wrong with the permission checking");
-}
-//---------------------------------------------------------------------------
-bool __fastcall TAudioRecPlayForm::HasMicrophone()
-{
-	return FMicrophone;
+	{
+		TDialogService::ShowMessage("Cannot record audio without the relevant permission being granted");
+	}
 }
 //---------------------------------------------------------------------------
 bool __fastcall TAudioRecPlayForm::IsMicrophoneRecording()
 {
-	return HasMicrophone() && (FMicrophone->State == TCaptureDeviceState::Capturing);
+	return FMicrophone->State == TCaptureDeviceState::Capturing;
 }
 //---------------------------------------------------------------------------
 void __fastcall TAudioRecPlayForm::ActionListUpdate(TBasicAction *Action, bool &Handled)
 {
-	imgOn->Visible = HasMicrophone() && (FMicrophone->State == TCaptureDeviceState::Capturing);
-	actStartRecording->Enabled = !IsMicrophoneRecording() && HasMicrophone();
+	imgOn->Visible = IsMicrophoneRecording();
+
+	actStartRecording->Enabled = !IsMicrophoneRecording();
 	actStopRecording->Enabled = IsMicrophoneRecording();
 	actStop->Enabled = (MediaPlayer->Media != NULL) && (MediaPlayer->State == TMediaState::Playing);
-	actPlay->Enabled = FileExists(GetAudioFileName(AUDIO_FILENAME)) && (MediaPlayer->State != TMediaState::Playing);
+	actPlay->Enabled = FileExists(FFileName) && (MediaPlayer->State != TMediaState::Playing);
 }
 //---------------------------------------------------------------------------
 void __fastcall TAudioRecPlayForm::actPlayExecute(TObject *Sender)
 {
 	if (IsMicrophoneRecording())
+	{
 		actStopRecording->Execute();
-	MediaPlayer->FileName = GetAudioFileName(AUDIO_FILENAME);
+	}
+
+	MediaPlayer->FileName = FFileName;
 	MediaPlayer->Play();
 }
 //---------------------------------------------------------------------------
@@ -125,19 +93,9 @@ void __fastcall TAudioRecPlayForm::actStopExecute(TObject *Sender)
 void __fastcall TAudioRecPlayForm::actStartRecordingExecute(TObject *Sender)
 {
 	actStop->Execute();
-	// get the microphone device
-	FMicrophone = TCaptureDeviceManager::Current->DefaultAudioCaptureDevice;
-	if (HasMicrophone())
-    {
-		// and attempt to record to 'test.caf' file
-		FMicrophone->FileName = GetAudioFileName(AUDIO_FILENAME);
 
-		DynamicArray<String> permissions { FPermission };
-
-		PermissionsService()->RequestPermissions(permissions, RequestPermissionsResult, DisplayRationale);
-	}
-	else
-		TDialogService::ShowMessage("No microphone is available.");
+	// and attempt to record to 'test.caf' file
+	FMicrophone->RequestPermission();
 }
 //---------------------------------------------------------------------------
 void __fastcall TAudioRecPlayForm::actStopRecordingExecute(TObject *Sender)
@@ -145,14 +103,7 @@ void __fastcall TAudioRecPlayForm::actStopRecordingExecute(TObject *Sender)
 	// stop capturing audio from the microphone
 	if (IsMicrophoneRecording())
     {
-		try
-        {
-			FMicrophone->StopCapture();
-		}
-		catch (Exception &e)
-        {
-			TDialogService::ShowMessage("Get state: Operation not supported by this device");
-		}
+		FMicrophone->StopCapture();
 	}
 }
 //---------------------------------------------------------------------------

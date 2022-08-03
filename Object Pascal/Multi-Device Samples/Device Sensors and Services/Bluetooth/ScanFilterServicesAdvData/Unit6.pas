@@ -51,6 +51,9 @@ type
     procedure FormShow(Sender: TObject);
   private const
     LOCATION_PERMISSION = 'android.permission.ACCESS_FINE_LOCATION';
+    BLUETOOTH_SCAN_PERMISSION = 'android.permission.BLUETOOTH_SCAN';
+    BLUETOOTH_ADVERTISE_PERMISSION = 'android.permission.BLUETOOTH_ADVERTISE';
+    BLUETOOTH_CONNECT_PERMISSION = 'android.permission.BLUETOOTH_CONNECT';
   private
     { Private declarations }
     DevicesAdvDataFiltered: TBluetoothLEDeviceList;
@@ -314,6 +317,8 @@ end;
 
 
 procedure TForm6.Button1Click(Sender: TObject);
+var
+  Permissions: TArray<string>;
 begin
   if DevicesAdvDataFiltered = nil then
     DevicesAdvDataFiltered := TBluetoothLEDeviceList.Create(False);
@@ -324,13 +329,20 @@ begin
   ForceConnectDevices := CheckBox1.IsChecked;
   Listbox1.Clear;
 
-  PermissionsService.RequestPermissions([LOCATION_PERMISSION],
+  if TOSVersion.Check(12) then
+    Permissions := [LOCATION_PERMISSION, BLUETOOTH_SCAN_PERMISSION, BLUETOOTH_ADVERTISE_PERMISSION, BLUETOOTH_CONNECT_PERMISSION]
+  else
+    Permissions := [LOCATION_PERMISSION];
+
+  PermissionsService.RequestPermissions(Permissions,
     procedure(const Permissions: TClassicStringDynArray; const GrantResults: TClassicPermissionStatusDynArray)
     begin
-      if (Length(GrantResults) = 1) and (GrantResults[0] = TPermissionStatus.Granted) then
-        BluetoothLE1.DiscoverDevices(ScanningTime)
-      else
-        ShowMessage('BLE scanning requires the location permission');
+      if ((Length(GrantResults) = 4) and (GrantResults[0] = TPermissionStatus.Granted)
+                                     and (GrantResults[1] = TPermissionStatus.Granted)
+                                     and (GrantResults[2] = TPermissionStatus.Granted)
+                                     and (GrantResults[3] = TPermissionStatus.Granted)) or
+         ((Length(GrantResults) = 1) and (GrantResults[0] = TPermissionStatus.Granted)) then
+        BluetoothLE1.DiscoverDevices(ScanningTime);
     end);
 end;
 

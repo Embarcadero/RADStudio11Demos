@@ -455,7 +455,7 @@ end;
 procedure TfrmCtrlsDemo.SwitchTo3D;
 var
   LImg: TImage;
-  LScreenShot: TBitmap;
+  LScreenshot: TBitmap;
 begin
   { Free 3D }
   if Assigned(FViewport) then
@@ -466,25 +466,29 @@ begin
   FViewport.Parent := Self;
   FViewport.Align := TAlignLayout.Client;
   FViewport.Color := claNull;
-  FContainer := TLayer3D.Create(FViewPort);
+
+  FContainer := TLayer3D.Create(Self);
   FContainer.Parent := FViewport;
   FContainer.Projection := TProjection.Screen;
   FContainer.Align := TAlignLayout.Client;
 
-  LImg := TImage.Create(nil);
-  LImg.Height := FSavedHeight;
+  LImg := TImage.Create(Self);
+  LImg.Parent := FContainer;
   LImg.Width := FSavedWidth;
-  Limg.Margins := ControlRoot.Margins;
-  Limg.WrapMode := TImageWrapMode.Original;
+  LImg.Height := FSavedHeight;
+  LImg.Margins := ControlRoot.Margins;
+  LImg.WrapMode := TImageWrapMode.Original;
   LImg.Scale.X := ScaleTrack.Value;
   LImg.Scale.Y := ScaleTrack.Value;
-  LImg.Bitmap.Height := Trunc(FSavedHeight);
-  LImg.Bitmap.Width := Trunc(FSavedWidth);
-  LScreenShot := ControlRoot.MakeScreenshot;
-  LImg.Bitmap.CopyFromBitmap(LScreenShot);
-  LImg.Margins := ControlRoot.Margins;
-  FreeAndNil(LScreenShot);
-  LImg.Parent := FContainer;
+
+  LScreenshot := ControlRoot.MakeScreenshot;
+
+  try
+    LImg.Bitmap.Assign(LScreenshot);
+  finally
+    LScreenshot.Free;
+  end;
+
   ControlRoot.Visible := False;
 end;
 

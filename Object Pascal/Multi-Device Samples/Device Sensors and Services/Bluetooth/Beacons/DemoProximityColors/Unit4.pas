@@ -29,6 +29,9 @@ type
     procedure FormDestroy(Sender: TObject);
   private const
     LOCATION_PERMISSION = 'android.permission.ACCESS_FINE_LOCATION';
+    BLUETOOTH_SCAN_PERMISSION = 'android.permission.BLUETOOTH_SCAN';
+    BLUETOOTH_ADVERTISE_PERMISSION = 'android.permission.BLUETOOTH_ADVERTISE';
+    BLUETOOTH_CONNECT_PERMISSION = 'android.permission.BLUETOOTH_CONNECT';
   private
     FBeaconManager: TBeaconManager;
     FisScanning: Boolean;
@@ -63,20 +66,26 @@ begin
 end;
 
 procedure TForm4.StartScan;
+var
+  Permissions: TArray<string>;
 begin
-  PermissionsService.RequestPermissions([LOCATION_PERMISSION],
+  if TOSVersion.Check(12) then
+    Permissions := [LOCATION_PERMISSION, BLUETOOTH_SCAN_PERMISSION, BLUETOOTH_ADVERTISE_PERMISSION, BLUETOOTH_CONNECT_PERMISSION]
+  else
+    Permissions := [LOCATION_PERMISSION];
+
+  PermissionsService.RequestPermissions(Permissions,
     procedure(const Permissions: TClassicStringDynArray; const GrantResults: TClassicPermissionStatusDynArray)
     begin
-      if (Length(GrantResults) = 1) and (GrantResults[0] = TPermissionStatus.Granted) then
+      if ((Length(GrantResults) = 4) and (GrantResults[0] = TPermissionStatus.Granted)
+                                     and (GrantResults[1] = TPermissionStatus.Granted)
+                                     and (GrantResults[2] = TPermissionStatus.Granted)
+                                     and (GrantResults[3] = TPermissionStatus.Granted)) or
+         ((Length(GrantResults) = 1) and (GrantResults[0] = TPermissionStatus.Granted)) then
       begin
         FBeaconManager.StartScan();
         Button1.Text := 'STOP';
         FisScanning := True;
-      end
-      else
-      begin
-        Button1.Text := 'START';
-        ShowMessage('Beacon scanning requires the location permission');
       end;
     end);
 end;
