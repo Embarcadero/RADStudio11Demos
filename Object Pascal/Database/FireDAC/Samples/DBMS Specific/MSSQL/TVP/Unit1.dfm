@@ -10,8 +10,6 @@ object Form1: TForm1
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
-  PixelsPerInch = 96
   TextHeight = 13
   object Bevel1: TBevel
     Left = 8
@@ -87,6 +85,15 @@ object Form1: TForm1
     TabOrder = 6
     OnClick = btnQryRegularClick
   end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'Forms'
+    Left = 296
+    Top = 224
+  end
+  object FDPhysMSSQLDriverLink1: TFDPhysMSSQLDriverLink
+    Left = 408
+    Top = 224
+  end
   object FDConnection1: TFDConnection
     Params.Strings = (
       'ConnectionDef=MSSQL_Demo')
@@ -103,14 +110,10 @@ object Form1: TForm1
     Left = 400
     Top = 24
   end
-  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
-    Provider = 'Forms'
-    Left = 296
-    Top = 224
-  end
-  object FDPhysMSSQLDriverLink1: TFDPhysMSSQLDriverLink
-    Left = 408
-    Top = 224
+  object FDQuery2: TFDQuery
+    Connection = FDConnection1
+    Left = 312
+    Top = 80
   end
   object FDStoredProc1: TFDStoredProc
     Connection = FDConnection1
@@ -121,10 +124,5 @@ object Form1: TForm1
     DataSet = FDQuery1
     Left = 400
     Top = 88
-  end
-  object FDQuery2: TFDQuery
-    Connection = FDConnection1
-    Left = 312
-    Top = 80
   end
 end

@@ -59,10 +59,9 @@ implementation
 
 {$R *.dfm}
 
-// Note: SQL Server Native Client v 11 or higher has an issue which leads 
+// Note: SQL Server Native Client v 10 or less has an issue which leads
 // to "Invalid string or buffer length" error on operations with TVP.
-// Install and use SQL Server Native Client v 10. For that set the
-// FDPhysMSSQLDriverLink1.ODBCDriver to "SQL Server Native Client 10.0".
+// Install and use SQL Server Native Client v 11 or newer ODBC driver.
 
 {-------------------------------------------------------------------------------}
 const
