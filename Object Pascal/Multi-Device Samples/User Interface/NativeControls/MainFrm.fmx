@@ -2,24 +2,25 @@ object FormMain: TFormMain
   Left = 0
   Top = 0
   Caption = 'Native controls demo'
-  ClientHeight = 534
+  ClientHeight = 536
   ClientWidth = 352
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   OnCreate = FormCreate
+  OnDestroy = FormDestroy
   DesignerMasterStyle = 2
   object Layout1: TLayout
     Align = Client
     Size.Width = 352.000000000000000000
-    Size.Height = 534.000000000000000000
+    Size.Height = 536.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 5
     object TabControl1: TTabControl
       Align = Client
       FullSize = False
       Size.Width = 352.000000000000000000
-      Size.Height = 490.000000000000000000
+      Size.Height = 492.000000000000000000
       Size.PlatformDefault = False
       TabHeight = 49.000000000000000000
       TabIndex = 0
@@ -28,39 +29,39 @@ object FormMain: TFormMain
       OnChange = TabControl1Change
       Sizes = (
         352s
-        490s
+        492s
         352s
-        490s
+        492s
         352s
-        490s
+        492s
         352s
-        490s
+        492s
         352s
-        490s
+        492s
         352s
-        490s
+        492s
         352s
-        490s
+        492s
         352s
-        490s
+        492s
         352s
-        490s
+        492s
         352s
-        490s
+        492s
         352s
-        490s
+        492s
         352s
-        490s
+        492s
         352s
-        490s
+        492s
         352s
-        490s
+        492s
         352s
-        490s
+        492s
         352s
-        490s
+        492s
         352s
-        490s)
+        492s)
       object TabItemMenu: TTabItem
         CustomIcon = <
           item
@@ -82,7 +83,7 @@ object FormMain: TFormMain
           AllowSelection = False
           Align = Client
           Size.Width = 352.000000000000000000
-          Size.Height = 490.000000000000000000
+          Size.Height = 492.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 0
           ItemAppearanceObjects.HeaderObjects.Text.Font.StyleExt = {00070000000000000004000000}
@@ -109,7 +110,7 @@ object FormMain: TFormMain
           TabOrder = 0
           ControlType = Platform
           Position.X = 10.000000000000000000
-          Position.Y = 38.000000000000000000
+          Position.Y = 38.200000762939450000
           Margins.Left = 10.000000000000000000
           Margins.Right = 10.000000000000000000
           Size.Width = 332.000000000000000000
@@ -127,11 +128,12 @@ object FormMain: TFormMain
           Position.X = 10.000000000000000000
           Position.Y = 10.000000000000000000
           Size.Width = 332.000000000000000000
-          Size.Height = 23.000000000000000000
+          Size.Height = 23.200000762939450000
           Size.PlatformDefault = False
           StyleLookup = 'embossedlabel'
           TextSettings.WordWrap = False
           Text = 'Edit with Prompt'
+          TabOrder = 1
         end
       end
       object TabItemEditCursorColor: TTabItem
@@ -154,7 +156,7 @@ object FormMain: TFormMain
           ControlType = Platform
           Text = 'Look at this green cursor'
           Position.X = 10.000000000000000000
-          Position.Y = 38.000000000000000000
+          Position.Y = 38.200000762939450000
           Margins.Left = 10.000000000000000000
           Margins.Right = 10.000000000000000000
           Size.Width = 332.000000000000000000
@@ -172,11 +174,12 @@ object FormMain: TFormMain
           Position.X = 10.000000000000000000
           Position.Y = 10.000000000000000000
           Size.Width = 332.000000000000000000
-          Size.Height = 23.000000000000000000
+          Size.Height = 23.200000762939450000
           Size.PlatformDefault = False
           StyleLookup = 'embossedlabel'
           TextSettings.WordWrap = False
           Text = 'Edit with green cursor'
+          TabOrder = 2
         end
         object Label14: TLabel
           Align = Top
@@ -186,13 +189,14 @@ object FormMain: TFormMain
           Margins.Right = 10.000000000000000000
           Margins.Bottom = 5.000000000000000000
           Position.X = 10.000000000000000000
-          Position.Y = 78.000000000000000000
+          Position.Y = 78.199996948242190000
           Size.Width = 332.000000000000000000
-          Size.Height = 23.000000000000000000
+          Size.Height = 23.199996948242190000
           Size.PlatformDefault = False
           StyleLookup = 'embossedlabel'
           TextSettings.WordWrap = False
           Text = 'Edit with indigo cursor'
+          TabOrder = 3
         end
         object Edit8: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
@@ -201,7 +205,7 @@ object FormMain: TFormMain
           ControlType = Platform
           Text = 'Look at this green cursor'
           Position.X = 10.000000000000000000
-          Position.Y = 106.000000000000000000
+          Position.Y = 106.399993896484400000
           Margins.Left = 10.000000000000000000
           Margins.Right = 10.000000000000000000
           Size.Width = 332.000000000000000000
@@ -230,7 +234,7 @@ object FormMain: TFormMain
           ControlType = Platform
           Text = 'Some text'
           Position.X = 10.000000000000000000
-          Position.Y = 38.000000000000000000
+          Position.Y = 38.200000762939450000
           Margins.Left = 10.000000000000000000
           Margins.Right = 10.000000000000000000
           Size.Width = 332.000000000000000000
@@ -256,11 +260,12 @@ object FormMain: TFormMain
           Position.X = 10.000000000000000000
           Position.Y = 10.000000000000000000
           Size.Width = 332.000000000000000000
-          Size.Height = 23.000000000000000000
+          Size.Height = 23.200000762939450000
           Size.PlatformDefault = False
           StyleLookup = 'embossedlabel'
           TextSettings.WordWrap = False
           Text = 'Edit with Clear button'
+          TabOrder = 3
         end
         object Edit12: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
@@ -268,7 +273,7 @@ object FormMain: TFormMain
           TabOrder = 1
           ControlType = Platform
           Position.X = 10.000000000000000000
-          Position.Y = 78.000000000000000000
+          Position.Y = 78.199996948242190000
           Margins.Left = 10.000000000000000000
           Margins.Top = 10.000000000000000000
           Margins.Right = 10.000000000000000000
@@ -309,11 +314,12 @@ object FormMain: TFormMain
           Position.X = 10.000000000000000000
           Position.Y = 10.000000000000000000
           Size.Width = 332.000000000000000000
-          Size.Height = 23.000000000000000000
+          Size.Height = 23.200000762939450000
           Size.PlatformDefault = False
           StyleLookup = 'embossedlabel'
           TextSettings.WordWrap = False
           Text = 'Edit with non standard background'
+          TabOrder = 0
         end
         object Image1: TImage
           MultiResBitmap.Height = 104
@@ -1453,7 +1459,7 @@ object FormMain: TFormMain
               FileName = 'C:\Users\YBrovin\Desktop\Background.png'
             end>
           Align = Top
-          Position.Y = 38.000000000000000000
+          Position.Y = 38.200000762939450000
           Size.Width = 352.000000000000000000
           Size.Height = 54.000000000000000000
           Size.PlatformDefault = False
@@ -1485,7 +1491,7 @@ object FormMain: TFormMain
               Text = 'Text'
               TextSettings.FontColor = claWhite
               Size.Width = 322.000000000000000000
-              Size.Height = 29.000000000000000000
+              Size.Height = 28.000000000000000000
               Size.PlatformDefault = False
               StyledSettings = [Family, Size, Style]
               object ClearEditButton1: TClearEditButton
@@ -1507,7 +1513,7 @@ object FormMain: TFormMain
           ControlType = Platform
           Text = 'Transparented text'
           Position.X = 10.000000000000000000
-          Position.Y = 130.000000000000000000
+          Position.Y = 130.399993896484400000
           Margins.Left = 10.000000000000000000
           Margins.Right = 10.000000000000000000
           Size.Width = 332.000000000000000000
@@ -1522,13 +1528,14 @@ object FormMain: TFormMain
           Margins.Right = 10.000000000000000000
           Margins.Bottom = 5.000000000000000000
           Position.X = 10.000000000000000000
-          Position.Y = 102.000000000000000000
+          Position.Y = 102.199996948242200000
           Size.Width = 332.000000000000000000
-          Size.Height = 23.000000000000000000
+          Size.Height = 23.199996948242190000
           Size.PlatformDefault = False
           StyleLookup = 'embossedlabel'
           TextSettings.WordWrap = False
           Text = 'Transparent Edit'
+          TabOrder = 4
         end
       end
       object TabItemEditTextAlign: TTabItem
@@ -1551,7 +1558,7 @@ object FormMain: TFormMain
           ControlType = Platform
           Text = 'I'#39'm at the left'
           Position.X = 10.000000000000000000
-          Position.Y = 38.000000000000000000
+          Position.Y = 38.200000762939450000
           Margins.Left = 10.000000000000000000
           Margins.Right = 10.000000000000000000
           Size.Width = 332.000000000000000000
@@ -1569,11 +1576,12 @@ object FormMain: TFormMain
           Position.X = 10.000000000000000000
           Position.Y = 10.000000000000000000
           Size.Width = 332.000000000000000000
-          Size.Height = 23.000000000000000000
+          Size.Height = 23.200000762939450000
           Size.PlatformDefault = False
           StyleLookup = 'embossedlabel'
           TextSettings.WordWrap = False
           Text = 'Edit with leading text aligment'
+          TabOrder = 6
         end
         object Edit6: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
@@ -1583,7 +1591,7 @@ object FormMain: TFormMain
           Text = 'I'#39'm on center'
           TextSettings.HorzAlign = Center
           Position.X = 10.000000000000000000
-          Position.Y = 106.000000000000000000
+          Position.Y = 106.399993896484400000
           Margins.Left = 10.000000000000000000
           Margins.Right = 10.000000000000000000
           Size.Width = 332.000000000000000000
@@ -1599,13 +1607,14 @@ object FormMain: TFormMain
           Margins.Right = 10.000000000000000000
           Margins.Bottom = 5.000000000000000000
           Position.X = 10.000000000000000000
-          Position.Y = 78.000000000000000000
+          Position.Y = 78.199996948242190000
           Size.Width = 332.000000000000000000
-          Size.Height = 23.000000000000000000
+          Size.Height = 23.199996948242190000
           Size.PlatformDefault = False
           StyleLookup = 'embossedlabel'
           TextSettings.WordWrap = False
           Text = 'Edit with center text aligment'
+          TabOrder = 7
         end
         object Edit7: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
@@ -1615,7 +1624,7 @@ object FormMain: TFormMain
           Text = 'I'#39'm at the right'
           TextSettings.HorzAlign = Trailing
           Position.X = 10.000000000000000000
-          Position.Y = 174.000000000000000000
+          Position.Y = 174.599990844726600000
           Margins.Left = 10.000000000000000000
           Margins.Right = 10.000000000000000000
           Size.Width = 332.000000000000000000
@@ -1631,13 +1640,14 @@ object FormMain: TFormMain
           Margins.Right = 10.000000000000000000
           Margins.Bottom = 5.000000000000000000
           Position.X = 10.000000000000000000
-          Position.Y = 146.000000000000000000
+          Position.Y = 146.399993896484400000
           Size.Width = 332.000000000000000000
-          Size.Height = 23.000000000000000000
+          Size.Height = 23.199996948242190000
           Size.PlatformDefault = False
           StyleLookup = 'embossedlabel'
           TextSettings.WordWrap = False
           Text = 'Edit with trailing text aligment'
+          TabOrder = 8
         end
       end
       object TabItemEditFonstSettings: TTabItem
@@ -1728,13 +1738,14 @@ object FormMain: TFormMain
           Margins.Right = 10.000000000000000000
           Margins.Bottom = 5.000000000000000000
           Position.X = 10.000000000000000000
-          Position.Y = 125.000000000000000000
+          Position.Y = 125.199996948242200000
           Size.Width = 332.000000000000000000
-          Size.Height = 23.000000000000000000
+          Size.Height = 23.199996948242190000
           Size.PlatformDefault = False
           StyleLookup = 'embossedlabel'
           TextSettings.WordWrap = False
           Text = 'Memo with indigo cursor'
+          TabOrder = 0
         end
         object Label16: TLabel
           Align = Top
@@ -1746,11 +1757,12 @@ object FormMain: TFormMain
           Position.X = 10.000000000000000000
           Position.Y = 10.000000000000000000
           Size.Width = 332.000000000000000000
-          Size.Height = 23.000000000000000000
+          Size.Height = 23.200000762939450000
           Size.PlatformDefault = False
           StyleLookup = 'embossedlabel'
           TextSettings.WordWrap = False
           Text = 'Memo with green cursor'
+          TabOrder = 1
         end
         object Memo1: TMemo
           Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
@@ -1764,7 +1776,7 @@ object FormMain: TFormMain
           Margins.Right = 10.000000000000000000
           Margins.Bottom = 10.000000000000000000
           Position.X = 10.000000000000000000
-          Position.Y = 153.000000000000000000
+          Position.Y = 153.399993896484400000
           Size.Width = 332.000000000000000000
           Size.Height = 67.000000000000000000
           Size.PlatformDefault = False
@@ -1784,7 +1796,7 @@ object FormMain: TFormMain
           Margins.Right = 10.000000000000000000
           Margins.Bottom = 10.000000000000000000
           Position.X = 10.000000000000000000
-          Position.Y = 38.000000000000000000
+          Position.Y = 38.200000762939450000
           Size.Width = 332.000000000000000000
           Size.Height = 67.000000000000000000
           Size.PlatformDefault = False
@@ -1816,11 +1828,12 @@ object FormMain: TFormMain
           Position.X = 10.000000000000000000
           Position.Y = 10.000000000000000000
           Size.Width = 332.000000000000000000
-          Size.Height = 23.000000000000000000
+          Size.Height = 23.200000762939450000
           Size.PlatformDefault = False
           StyleLookup = 'embossedlabel'
           TextSettings.WordWrap = False
           Text = 'Text settings and checks spelling'
+          TabOrder = 1
         end
         object Memo2: TMemo
           Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
@@ -1839,11 +1852,11 @@ object FormMain: TFormMain
           Margins.Left = 10.000000000000000000
           Margins.Right = 10.000000000000000000
           Size.Width = 332.000000000000000000
-          Size.Height = 452.000000000000000000
+          Size.Height = 453.799987792968800000
           Size.PlatformDefault = False
           TabOrder = 0
           Viewport.Width = 324.000000000000000000
-          Viewport.Height = 444.000000000000000000
+          Viewport.Height = 445.800000000000000000
         end
       end
       object TabItemMemoDetectingLinks: TTabItem
@@ -1873,12 +1886,12 @@ object FormMain: TFormMain
           Align = Client
           ControlType = Platform
           Size.Width = 352.000000000000000000
-          Size.Height = 452.000000000000000000
+          Size.Height = 453.799987792968800000
           Size.PlatformDefault = False
           TabOrder = 5
           TabStop = False
           Viewport.Width = 344.000000000000000000
-          Viewport.Height = 444.000000000000000000
+          Viewport.Height = 445.800000000000000000
         end
         object Label10: TLabel
           Align = Top
@@ -1890,11 +1903,12 @@ object FormMain: TFormMain
           Position.X = 10.000000000000000000
           Position.Y = 10.000000000000000000
           Size.Width = 332.000000000000000000
-          Size.Height = 23.000000000000000000
+          Size.Height = 23.200000762939450000
           Size.PlatformDefault = False
           StyleLookup = 'embossedlabel'
           TextSettings.WordWrap = False
           Text = 'Detecting phones, links, address, events'
+          TabOrder = 6
         end
       end
       object TabItemMemoCheckSpelling: TTabItem
@@ -1922,11 +1936,11 @@ object FormMain: TFormMain
           Align = Client
           ControlType = Platform
           Size.Width = 352.000000000000000000
-          Size.Height = 490.000000000000000000
+          Size.Height = 492.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 0
           Viewport.Width = 344.000000000000000000
-          Viewport.Height = 482.000000000000000000
+          Viewport.Height = 484.000000000000000000
         end
       end
       object TabItemMemoCustomBackground: TTabItem
@@ -3081,7 +3095,7 @@ object FormMain: TFormMain
             end>
           Align = Client
           Size.Width = 352.000000000000000000
-          Size.Height = 490.000000000000000000
+          Size.Height = 492.000000000000000000
           Size.PlatformDefault = False
           WrapMode = Stretch
           object Rectangle2: TRectangle
@@ -3096,7 +3110,7 @@ object FormMain: TFormMain
             Margins.Right = 3.000000000000000000
             Margins.Bottom = 3.000000000000000000
             Size.Width = 346.000000000000000000
-            Size.Height = 484.000000000000000000
+            Size.Height = 486.000000000000000000
             Size.PlatformDefault = False
             Stroke.Color = xFFD7D7D7
             XRadius = 3.000000000000000000
@@ -3133,12 +3147,12 @@ object FormMain: TFormMain
               Align = Client
               ControlType = Platform
               Size.Width = 336.000000000000000000
-              Size.Height = 478.000000000000000000
+              Size.Height = 480.000000000000000000
               Size.PlatformDefault = False
               StyleLookup = 'transparentmemo'
               TabOrder = 0
-              Viewport.Width = 328.000000000000000000
-              Viewport.Height = 470.000000000000000000
+              Viewport.Width = 323.000000000000000000
+              Viewport.Height = 472.000000000000000000
             end
           end
         end
@@ -3175,11 +3189,12 @@ object FormMain: TFormMain
           Position.X = 10.000000000000000000
           Position.Y = 10.000000000000000000
           Size.Width = 332.000000000000000000
-          Size.Height = 23.000000000000000000
+          Size.Height = 23.200000762939450000
           Size.PlatformDefault = False
           StyleLookup = 'embossedlabel'
           TextSettings.WordWrap = False
           Text = 'Calendar'
+          TabOrder = 1
         end
       end
       object TabItemListView: TTabItem
@@ -3202,7 +3217,7 @@ object FormMain: TFormMain
           FooterAppearanceClassName = 'TListHeaderObjects'
           Align = Client
           Size.Width = 352.000000000000000000
-          Size.Height = 490.000000000000000000
+          Size.Height = 492.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 0
           SearchVisible = True
@@ -3234,18 +3249,19 @@ object FormMain: TFormMain
           Position.X = 10.000000000000000000
           Position.Y = 10.000000000000000000
           Size.Width = 332.000000000000000000
-          Size.Height = 23.000000000000000000
+          Size.Height = 23.200000762939450000
           Size.PlatformDefault = False
           StyleLookup = 'embossedlabel'
           TextSettings.WordWrap = False
           Text = 'Switch'
+          TabOrder = 0
         end
         object Switch1: TSwitch
           Align = Top
           ControlType = Platform
           IsChecked = True
           Position.X = 148.000000000000000000
-          Position.Y = 38.000000000000000000
+          Position.Y = 38.200000762939450000
           Size.Width = 55.000000000000000000
           Size.Height = 35.000000000000000000
           Size.PlatformDefault = False
@@ -3272,11 +3288,11 @@ object FormMain: TFormMain
           ControlType = Platform
           Align = Client
           Size.Width = 352.000000000000000000
-          Size.Height = 490.000000000000000000
+          Size.Height = 492.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 0
           Viewport.Width = 347.000000000000000000
-          Viewport.Height = 485.000000000000000000
+          Viewport.Height = 487.000000000000000000
           object TrackBar1: TTrackBar
             CanParentFocus = True
             Orientation = Horizontal
@@ -3330,9 +3346,10 @@ object FormMain: TFormMain
         object WebBrowser1: TWebBrowser
           Align = Client
           Size.Width = 352.000000000000000000
-          Size.Height = 490.000000000000000000
+          Size.Height = 492.000000000000000000
           Size.PlatformDefault = False
-          URL = 'http://google.com/'
+          WindowsEngine = EdgeIfAvailable
+          URL = 'https://www.google.com/'
         end
       end
     end

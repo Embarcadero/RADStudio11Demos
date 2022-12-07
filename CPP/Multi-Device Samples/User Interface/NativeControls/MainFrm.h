@@ -32,6 +32,7 @@
 #include <System.Bindings.Outputs.hpp>
 #include <System.Rtti.hpp>
 #include <FMX.Maps.hpp>
+#include <FMX.Memo.Types.hpp>
 #include <map>
 
 // ---------------------------------------------------------------------------
@@ -113,9 +114,7 @@ __published: // IDE-managed Components
 	TPrototypeBindSource *PrototypeBindSource1;
 	TBindingsList *BindingsList1;
 	TLinkFillControlToField *LinkFillControlToField1;
-	TTabItem *TabItemMap;
-	TMapView *MapView1;
-	TText *Text1;
+	TButton *Button1;
 
 	void __fastcall FormDestroy(TObject *Sender);
 	void __fastcall FormCreate(TObject *Sender);

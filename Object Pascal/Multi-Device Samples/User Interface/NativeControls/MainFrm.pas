@@ -19,7 +19,7 @@ uses
   FMX.Calendar, FMX.Controls.Presentation, FMX.Edit, FMX.TabControl, FMX.ScrollBox, FMX.Memo, FMX.ListView.Types,
   FMX.ListView, Data.Bind.Components, Data.Bind.ObjectScope, Fmx.Bind.GenData, Data.Bind.GenData, System.Rtti,
   System.Bindings.Outputs, Fmx.Bind.Editors, Data.Bind.EngExt, Fmx.Bind.DBEngExt, FMX.ListView.Appearances,
-  FMX.ListView.Adapters.Base, FMX.MultiView, FMX.Objects, FMX.Colors, FMX.WebBrowser;
+  FMX.ListView.Adapters.Base, FMX.MultiView, FMX.Objects, FMX.Colors, FMX.WebBrowser, FMX.Memo.Types;
 
 type
   TFormMain = class(TForm)
@@ -100,15 +100,13 @@ type
     Memo6: TMemo;
     Button1: TButton;
     procedure FormCreate(Sender: TObject);
+    procedure FormDestroy(Sender: TObject);
     procedure SpeedButtonBackToMenuClick(Sender: TObject);
     procedure TabControl1Change(Sender: TObject);
     procedure ListViewMenuItemClickEx(const Sender: TObject; ItemIndex: Integer; const LocalClickPos: TPointF;
       const ItemObject: TListItemDrawable);
   private
     FMenu: TDictionary<TListViewItem, TTabItem>;
-  public
-    constructor Create(AOwner: TComponent); override;
-    destructor Destroy; override;
   end;
 
 var
@@ -120,18 +118,6 @@ uses
   System.Math;
 
 {$R *.fmx}
-
-constructor TFormMain.Create(AOwner: TComponent);
-begin
-  inherited;
-  FMenu := TDictionary<TListViewItem, TTabItem>.Create;
-end;
-
-destructor TFormMain.Destroy;
-begin
-  FreeAndNil(FMenu);
-  inherited;
-end;
 
 procedure TFormMain.FormCreate(Sender: TObject);
 
@@ -145,15 +131,14 @@ procedure TFormMain.FormCreate(Sender: TObject);
     FMenu.Add(Item, ATabItem);
   end;
 
-var
-  I: Integer;
-  Item: TListViewItem;
 begin
+  FMenu := TDictionary<TListViewItem, TTabItem>.Create;
+
   ListViewMenu.BeginUpdate;
   ListViewMenu.Items.Clear;
   try
     AddItem('Edit', nil, TListItemPurpose.Header);
-{$IFDEF IOS}
+{$IF Defined(IOS)}
     AddItem('- Prompt', TabItemEditPrompt);
     AddItem('- Color cursor', TabItemEditCursorColor);
     AddItem('- Clear button', TabItemEditClearButton);
@@ -163,7 +148,7 @@ begin
     AddItem('- Font settings', TabItemEditFonstSettings);
 
     AddItem('Memo', nil, TListItemPurpose.Header);
-{$IFDEF IOS}
+{$IF Defined(IOS)}
     AddItem('- Color cursor', TabItemMemoCursorColor);
     AddItem('- Detecting phones, links, address, events', TabItemMemoDetectingLinks);
     AddItem('- Check spelling', TabItemMemoCheckSpelling);
@@ -171,7 +156,7 @@ begin
 {$ENDIF}
     AddItem('- Font settings', TabItemMemoFontSettings);
 
-{$IFDEF IOS}
+{$IF Defined(IOS)}
     AddItem('Calendar', nil, TListItemPurpose.Header);
     AddItem('- Calendar', TabItemCalendar);
 
@@ -182,7 +167,7 @@ begin
     AddItem('ScrollBox', nil, TListItemPurpose.Header);
     AddItem('- Custom content size', TabItemScrollBox);
 
-{$IFDEF IOS}
+{$IF Defined(IOS)}
     AddItem('Switch', nil, TListItemPurpose.Header);
     AddItem('- Switch', TabItemSwitch);
 {$ENDIF}
@@ -190,8 +175,13 @@ begin
     AddItem('Web Browser', nil, TListItemPurpose.Header);
     AddItem('- Web Browser', TabItemWebBrowser);
   finally
-    TabControl1.EndUpdate;
+    ListViewMenu.EndUpdate;
   end;
+end;
+
+procedure TFormMain.FormDestroy(Sender: TObject);
+begin
+  FreeAndNil(FMenu);
 end;
 
 procedure TFormMain.ListViewMenuItemClickEx(const Sender: TObject; ItemIndex: Integer; const LocalClickPos: TPointF;

@@ -7,17 +7,16 @@
 // ---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.fmx"
-TFormMain *FormMain;      
+TFormMain *FormMain;
 // ---------------------------------------------------------------------------
 
 __fastcall TFormMain::TFormMain(TComponent* Owner) : TForm(Owner) {
-	fMenu = new std::map<TListViewItem*, TTabItem*>();
-}  
+}
 // ---------------------------------------------------------------------------
 
 void __fastcall TFormMain::FormDestroy(TObject *Sender) {
 	delete fMenu;
-}   
+}
 // ---------------------------------------------------------------------------
 
 void TFormMain::addItem(const UnicodeString text, TTabItem* tabItem, TListItemPurpose purpose) {       
@@ -26,10 +25,12 @@ void TFormMain::addItem(const UnicodeString text, TTabItem* tabItem, TListItemPu
 	item->Purpose = purpose;
 	std::map<TListViewItem*, TTabItem*>::iterator it = fMenu->begin();
 	fMenu->insert(it, std::pair<TListViewItem*, TTabItem*>(item, tabItem));
-}   
+}
 // ---------------------------------------------------------------------------
 
 void __fastcall TFormMain::FormCreate(TObject *Sender) {
+	fMenu = new std::map<TListViewItem*, TTabItem*>();
+
 	ListViewMenu->BeginUpdate();
 	ListViewMenu->Items->Clear();
 	try {
@@ -68,17 +69,12 @@ void __fastcall TFormMain::FormCreate(TObject *Sender) {
 		addItem("- Switch", TabItemSwitch);
 #endif
 
-#if defined(__APPLE__) || defined(__ANDROID__)
-		addItem("Map", NULL, TListItemPurpose::Header);
-		addItem("- Map", TabItemMap);
-#endif
-
 		addItem("Web Browser", NULL, TListItemPurpose::Header);
 		addItem("- Web Browser", TabItemWebBrowser);
 	} __finally {
-		TabControl1->EndUpdate();
+		ListViewMenu->EndUpdate();
 	}
-}      
+}
 // ---------------------------------------------------------------------------
 
 void __fastcall TFormMain::SpeedButtonBackToMenuClick(TObject *Sender) {
@@ -88,7 +84,7 @@ void __fastcall TFormMain::SpeedButtonBackToMenuClick(TObject *Sender) {
 // ---------------------------------------------------------------------------
 void __fastcall TFormMain::ListViewMenuItemClickEx(TObject * const Sender, int ItemIndex, const TPointF &LocalClickPos,
 	TListItemDrawable * const ItemObject)   
-{     
+{
 	TListViewItem* item = ListViewMenu->Items->operator[](ItemIndex);
 	TTabItem* tabItem = fMenu->operator[](item);
 	if (tabItem != NULL) {
