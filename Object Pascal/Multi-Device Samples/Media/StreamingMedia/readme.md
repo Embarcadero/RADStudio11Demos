@@ -64,12 +64,12 @@ The **StreamingMedia** sample application shows how to stream audio and video co
 
 
 
-|**File in Delphi**      |**File in C++**              |**Contains**                                                           |
-|------------------------|-----------------------------|-----------------------------------------------------------------------|
-|**StreamingMedia.dproj**|**StreamingMedia_Cpp.cbproj**|The project itself.                                                    |
-|**Unit1.fmx**           |**Unit1.fmx**                |The main form where the components are located.                        |
-|**Unit1.pas**           |**Unit1.h**, **Unit1.cpp**   |Used to define and implement the sample.                               |
-|**StreamingMedia.dpr**  |**StreamingMedia_Cpp.cpp**   |Source of the project file that manages the running of the application.|
+| **File in Delphi**       | **File in C++**               | **Contains**                                                            |
+| ------------------------ | ----------------------------- | ----------------------------------------------------------------------- |
+| **StreamingMedia.dproj** | **StreamingMedia_Cpp.cbproj** | The project itself.                                                     |
+| **Unit1.fmx**            | **Unit1.fmx**                 | The main form where the components are located.                         |
+| **Unit1.pas**            | **Unit1.h**, **Unit1.cpp**    | Used to define and implement the sample.                                |
+| **StreamingMedia.dpr**   | **StreamingMedia_Cpp.cpp**    | Source of the project file that manages the running of the application. |
 
 
 ## Implementation 

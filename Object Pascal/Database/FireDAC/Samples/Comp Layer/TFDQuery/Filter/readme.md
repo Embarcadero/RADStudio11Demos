@@ -42,10 +42,10 @@ The **Filter** sample shows you how to use the [Filter](http://docwiki.embarcade
 
 
 
-| File in Delphi           | Contains          |
-|--------------------------|-------------------|
-|`Filter.dproj``Filter.dpr`|The project itself.|
-|`fFilter.pas``fFilter.fmx`|The main form.     |
+| File in Delphi             | Contains            |
+| -------------------------- | ------------------- |
+| `Filter.dproj``Filter.dpr` | The project itself. |
+| `fFilter.pas``fFilter.fmx` | The main form.      |
 
 
 ## Implementation 

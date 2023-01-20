@@ -57,11 +57,11 @@ The **CopyPaste** sample demonstrates how to create applications that use the sy
 
 
 
-|**File in Delphi**     |**File in C++**                              |**Contains**                                   |
-|-----------------------|---------------------------------------------|-----------------------------------------------|
-|**CopyPasteDemo.dproj**|**CopyPasteDemo.cbproj**                     |The project itself.                            |
-|**fmMain.fmx**         |**fmMain.fmx**                               |The main form where the components are located.|
-|**fmMain.pas**         |**CopyPasteDemoPCH.h**, **CopyPasteDemo.cpp**|Used to define and implement the sample.       |
+| **File in Delphi**      | **File in C++**                               | **Contains**                                    |
+| ----------------------- | --------------------------------------------- | ----------------------------------------------- |
+| **CopyPasteDemo.dproj** | **CopyPasteDemo.cbproj**                      | The project itself.                             |
+| **fmMain.fmx**          | **fmMain.fmx**                                | The main form where the components are located. |
+| **fmMain.pas**          | **CopyPasteDemoPCH.h**, **CopyPasteDemo.cpp** | Used to define and implement the sample.        |
 
 
 ## Classes 

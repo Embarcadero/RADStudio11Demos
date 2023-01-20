@@ -50,14 +50,14 @@ You can find the **SQLiteIniDemo** project at:
 
 
 
-|**File**                          |**Contains**                                                                                                             |
-|----------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-|**Demo\data\ winmacmachine.bmp**  |Contains the image that is diplayed in the [TImage](http://docwiki.embarcadero.com/Libraries/en/Vcl.ExtCtrls.TImage).|
-|**Demo\SQLiteIniDemo.dproj**      |Contains the project itself.                                                                                             |
-|**Demo\Unit1.dfm**                |Contains the code of the main form.                                                                                      |
-|**Demo\Unit1.pas**                |Contains the main form and the main code.                                                                                |
-|**FireDAC.Phys.SQLiteIniFile.pas**|Contains the code for the _SQLiteIniFile_ class used for writting/reading to/from the _IniFile.db_.                      |
-|**ReadMe.txt**                    |Contains information about FireDAC.Phys.SQLiteIniFile.pas.                                                               |
+| **File**                           | **Contains**                                                                                                          |
+| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| **Demo\data\ winmacmachine.bmp**   | Contains the image that is diplayed in the [TImage](http://docwiki.embarcadero.com/Libraries/en/Vcl.ExtCtrls.TImage). |
+| **Demo\SQLiteIniDemo.dproj**       | Contains the project itself.                                                                                          |
+| **Demo\Unit1.dfm**                 | Contains the code of the main form.                                                                                   |
+| **Demo\Unit1.pas**                 | Contains the main form and the main code.                                                                             |
+| **FireDAC.Phys.SQLiteIniFile.pas** | Contains the code for the _SQLiteIniFile_ class used for writting/reading to/from the _IniFile.db_.                   |
+| **ReadMe.txt**                     | Contains information about FireDAC.Phys.SQLiteIniFile.pas.                                                            |
 
 
 ## Implementation 

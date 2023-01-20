@@ -45,10 +45,10 @@ The **BatchErrorHandling** sample shows you how to handle errors when executing 
 
 
 
-| File in Delphi                                   | Contains          |
-|--------------------------------------------------|-------------------|
-|`BatchErrorHandling.dproj``BatchErrorHandling.dpr`|The project itself.|
-|`Unit1.pas``unit1.fmx`                            |The main form.     |
+| File in Delphi                                     | Contains            |
+| -------------------------------------------------- | ------------------- |
+| `BatchErrorHandling.dproj``BatchErrorHandling.dpr` | The project itself. |
+| `Unit1.pas``unit1.fmx`                             | The main form.      |
 
 
 ## Implementation 

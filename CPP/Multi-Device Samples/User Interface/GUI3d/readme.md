@@ -45,11 +45,11 @@ The **GUI3d** sample demonstrates how to build 3D GUI applications. The sample u
 
 
 
-|**File in C++**                |**Contains**                                   |
-|-------------------------------|-----------------------------------------------|
-|**GUI3dCPP.cbproj**            |The project itself.                            |
-|**Unit1.fmx**                  |The main form where the components are located.|
-|**GUI3dCPPCH.h**, **Unit1.cpp**|Used to define and implement the sample.       |
+| **File in C++**                 | **Contains**                                    |
+| ------------------------------- | ----------------------------------------------- |
+| **GUI3dCPP.cbproj**             | The project itself.                             |
+| **Unit1.fmx**                   | The main form where the components are located. |
+| **GUI3dCPPCH.h**, **Unit1.cpp** | Used to define and implement the sample.        |
 
 
 ## Classes 

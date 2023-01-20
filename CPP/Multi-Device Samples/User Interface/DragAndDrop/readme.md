@@ -59,11 +59,11 @@ The **DragAndDrop** sample demonstrates how to implement object dragging feature
 
 
 
-|**File in Delphi**   |**File in C++**                                 |**Contains**                                   |
-|---------------------|------------------------------------------------|-----------------------------------------------|
-|**DragAndDrop.dproj**|**DragAndDropCpp.cbproj**                       |The project itself.                            |
-|**fmMain.fmx**       |**fmMain.fmx**                                  |The main form where the components are located.|
-|**fmMain.pas**       |**DragAndDropCppPCH1.h**, **DragAndDropCpp.cpp**|Used to define and implement the sample.       |
+| **File in Delphi**    | **File in C++**                                  | **Contains**                                    |
+| --------------------- | ------------------------------------------------ | ----------------------------------------------- |
+| **DragAndDrop.dproj** | **DragAndDropCpp.cbproj**                        | The project itself.                             |
+| **fmMain.fmx**        | **fmMain.fmx**                                   | The main form where the components are located. |
+| **fmMain.pas**        | **DragAndDropCppPCH1.h**, **DragAndDropCpp.cpp** | Used to define and implement the sample.        |
 
 
 ## Classes 

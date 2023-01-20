@@ -48,11 +48,11 @@ The **FirstApp3D** sample demonstrates how to use the [TFloatAnimation](http://d
 
 
 
-|**File in C++**                            |**Contains**                                   |
-|-------------------------------------------|-----------------------------------------------|
-|**CppFMX3DFirstApp.cbproj**                |The project itself.                            |
-|**MainForm.fmx**                           |The main form where the components are located.|
-|**CppFMX3DFirstAppPCH.h**, **MainForm.cpp**|Used to define and implement the sample.       |
+| **File in C++**                             | **Contains**                                    |
+| ------------------------------------------- | ----------------------------------------------- |
+| **CppFMX3DFirstApp.cbproj**                 | The project itself.                             |
+| **MainForm.fmx**                            | The main form where the components are located. |
+| **CppFMX3DFirstAppPCH.h**, **MainForm.cpp** | Used to define and implement the sample.        |
 
 
 ## Classes 

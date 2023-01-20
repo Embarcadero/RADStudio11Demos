@@ -53,12 +53,12 @@ The **PhoneDialer** sample demonstrates how to use the [PhoneDialer](http://docw
 
 
 
-|**File in Delphi**   |**File in C++**                          |**Contains**                                   |
-|---------------------|-----------------------------------------|-----------------------------------------------|
-|**PhoneDialer.dproj**|**PhoneDialer.cbproj**                   |The project itself.                            |
-|**uMain.fmx**        |**uMain.fmx**                            |The main form where the components are located.|
-|**uMain.pas**        |**PhoneDialerPCH.h**, **PhoneDialer.cpp**|Used to define and implement the sample.       |
-|**Information.txt**  |**Information.txt**                      |Further information about the sample.          |
+| **File in Delphi**    | **File in C++**                           | **Contains**                                    |
+| --------------------- | ----------------------------------------- | ----------------------------------------------- |
+| **PhoneDialer.dproj** | **PhoneDialer.cbproj**                    | The project itself.                             |
+| **uMain.fmx**         | **uMain.fmx**                             | The main form where the components are located. |
+| **uMain.pas**         | **PhoneDialerPCH.h**, **PhoneDialer.cpp** | Used to define and implement the sample.        |
+| **Information.txt**   | **Information.txt**                       | Further information about the sample.           |
 
 
 ## Classes 

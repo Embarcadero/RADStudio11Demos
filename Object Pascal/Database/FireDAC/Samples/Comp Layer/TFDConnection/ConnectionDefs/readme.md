@@ -50,10 +50,10 @@ The **ConnectionDefs** sample shows different ways to [define a connection](http
 
 
 
-| File in Delphi                                         | Contains          |
-|--------------------------------------------------------|-------------------|
-|`ConnectionDefinitions.dproj``ConnectionDefinitions.dpr`|The project itself.|
-|`fConnectionDefinitions.pas``fConnectionDefinitions.fmx`|The main form.     |
+| File in Delphi                                           | Contains            |
+| -------------------------------------------------------- | ------------------- |
+| `ConnectionDefinitions.dproj``ConnectionDefinitions.dpr` | The project itself. |
+| `fConnectionDefinitions.pas``fConnectionDefinitions.fmx` | The main form.      |
 
 
 ## Implementation 

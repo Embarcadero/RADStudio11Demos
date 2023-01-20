@@ -48,11 +48,11 @@ The **Arrows3D** sample demonstrates how to use the [TViewport3D](http://docwiki
 
 
 
-|**File in C++**                           |**Contains**                                   |
-|------------------------------------------|-----------------------------------------------|
-|**FMArrows3dCPP.cbproj**                  |The project itself.                            |
-|**FormArrows.fmx**                        |The main form where the components are located.|
-|**FMArrows3dCPPPCH.h**, **FormArrows.cpp**|Used to define and implement the sample.       |
+| **File in C++**                            | **Contains**                                    |
+| ------------------------------------------ | ----------------------------------------------- |
+| **FMArrows3dCPP.cbproj**                   | The project itself.                             |
+| **FormArrows.fmx**                         | The main form where the components are located. |
+| **FMArrows3dCPPPCH.h**, **FormArrows.cpp** | Used to define and implement the sample.        |
 
 
 ## Classes 

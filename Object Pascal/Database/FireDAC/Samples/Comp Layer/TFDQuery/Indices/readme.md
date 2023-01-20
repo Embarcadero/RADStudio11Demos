@@ -47,10 +47,10 @@ The **Indices** sample shows you how to use the [Indexes](http://docwiki.embarca
 
 
 
-| File in Delphi             | Contains          |
-|----------------------------|-------------------|
-|`Indices.dproj``Indices.dpr`|The project itself.|
-|`fIndices.pas``fIndices.fmx`|The main form.     |
+| File in Delphi               | Contains            |
+| ---------------------------- | ------------------- |
+| `Indices.dproj``Indices.dpr` | The project itself. |
+| `fIndices.pas``fIndices.fmx` | The main form.      |
 
 
 ## Implementation 

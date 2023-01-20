@@ -50,10 +50,10 @@ The **NativeControls** sample shows the use of the [Native Controls](http://docw
 
 
 
-| File in Delphi                                   | File in C++                                       | Contains          |
-|--------------------------------------------------|---------------------------------------------------|-------------------|
-|`NativeControlsDemo.dproj``NativeControlsDemo.dpr`|`NativeControlsDemo.cbproj``NativeControlsDemo.cpp`|The project itself.|
-|`MainFrm.pas``MainFrm.fmx`                        |`MainFrm.h``MainFrm.cpp``MainFrm.fmx`              |The main form.     |
+| File in Delphi                                     | File in C++                                         | Contains            |
+| -------------------------------------------------- | --------------------------------------------------- | ------------------- |
+| `NativeControlsDemo.dproj``NativeControlsDemo.dpr` | `NativeControlsDemo.cbproj``NativeControlsDemo.cpp` | The project itself. |
+| `MainFrm.pas``MainFrm.fmx`                         | `MainFrm.h``MainFrm.cpp``MainFrm.fmx`               | The main form.      |
 
 
 ## Classes 

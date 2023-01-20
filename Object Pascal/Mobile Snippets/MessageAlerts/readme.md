@@ -56,12 +56,12 @@ The **MessageAlerts** sample shows how to pop up alert messages on iOS or Androi
 
 
 
-|**File in Delphi**     |**File in C++**                              |**Contains**                                   |
-|-----------------------|---------------------------------------------|-----------------------------------------------|
-|**MessageAlerts.dproj**|**MessageAlerts.cbproj**                     |The project itself.                            |
-|**uMain.fmx**          |**uMain.fmx**                                |The main form where the components are located.|
-|**uMain.pas**          |**MessageAlertsPCH.h**, **MessageAlerts.cpp**|Used to define and implement the sample.       |
-|**Information.txt**    |**Information.txt**                          |Further information about the sample.          |
+| **File in Delphi**      | **File in C++**                               | **Contains**                                    |
+| ----------------------- | --------------------------------------------- | ----------------------------------------------- |
+| **MessageAlerts.dproj** | **MessageAlerts.cbproj**                      | The project itself.                             |
+| **uMain.fmx**           | **uMain.fmx**                                 | The main form where the components are located. |
+| **uMain.pas**           | **MessageAlertsPCH.h**, **MessageAlerts.cpp** | Used to define and implement the sample.        |
+| **Information.txt**     | **Information.txt**                           | Further information about the sample.           |
 
 
 ## Classes 

@@ -42,10 +42,10 @@ The **Async** sample shows you how to use the [IFDPhysCommand](http://docwiki.em
 
 
 
-| File in Delphi                         | Contains          |
-|----------------------------------------|-------------------|
-|`IFDPhys_Async.dproj``IFDPhys_Async.dpr`|The project itself.|
-|`fAsync.pas``fAsync.fmx`                |The main form.     |
+| File in Delphi                           | Contains            |
+| ---------------------------------------- | ------------------- |
+| `IFDPhys_Async.dproj``IFDPhys_Async.dpr` | The project itself. |
+| `fAsync.pas``fAsync.fmx`                 | The main form.      |
 
 
 ## Implementation 

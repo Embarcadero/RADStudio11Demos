@@ -45,11 +45,11 @@ The **CamerasTextures3D** sample uses the FireMonkey classes: [TCamera](http://d
 
 
 
-|**File in C++**                                   |**Contains**                                   |
-|--------------------------------------------------|-----------------------------------------------|
-|**CppFMX3DCamerasTextures.cbproj**                |The project itself.                            |
-|**MainForm.fmx**                                  |The main form where the components are located.|
-|**CppFMX3DCamerasTexturesPCH.h**, **MainForm.cpp**|Used to define and implement the sample.       |
+| **File in C++**                                    | **Contains**                                    |
+| -------------------------------------------------- | ----------------------------------------------- |
+| **CppFMX3DCamerasTextures.cbproj**                 | The project itself.                             |
+| **MainForm.fmx**                                   | The main form where the components are located. |
+| **CppFMX3DCamerasTexturesPCH.h**, **MainForm.cpp** | Used to define and implement the sample.        |
 
 
 ## Classes 

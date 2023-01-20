@@ -47,10 +47,10 @@ The **Macros** sample shows you how to use the [Macros](http://docwiki.embarcade
 
 
 
-| File in Delphi                           | Contains          |
-|------------------------------------------|-------------------|
-|`IFDPhys_Macros.dproj``IFDPhys_Macros.dpr`|The project itself.|
-|`fMacros.pas``fMacros.fmx`                |The main form.     |
+| File in Delphi                             | Contains            |
+| ------------------------------------------ | ------------------- |
+| `IFDPhys_Macros.dproj``IFDPhys_Macros.dpr` | The project itself. |
+| `fMacros.pas``fMacros.fmx`                 | The main form.      |
 
 
 ## Implementation 

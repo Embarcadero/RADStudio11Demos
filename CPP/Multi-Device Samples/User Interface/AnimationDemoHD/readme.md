@@ -45,11 +45,11 @@ The **AnimationDemoHD** sample animates several visual objects on a FireMonkey f
 
 
 
-|**File in C++**                                  |**Contains**                                   |
-|-------------------------------------------------|-----------------------------------------------|
-|**AnimationDemoHD.cbproj**                       |The project itself.                            |
-|**aniform.fmx**                                  |The main form where the components are located.|
-|**AnimationDemoHDPCH.h**, **AnimationDemoHD.cpp**|Used to define and implement the sample.       |
+| **File in C++**                                   | **Contains**                                    |
+| ------------------------------------------------- | ----------------------------------------------- |
+| **AnimationDemoHD.cbproj**                        | The project itself.                             |
+| **aniform.fmx**                                   | The main form where the components are located. |
+| **AnimationDemoHDPCH.h**, **AnimationDemoHD.cpp** | Used to define and implement the sample.        |
 
 
 ## Classes 

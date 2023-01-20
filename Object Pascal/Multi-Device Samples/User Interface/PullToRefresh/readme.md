@@ -57,12 +57,12 @@ The **PullToRefresh** sample demonstrates how to handle a [OnPullRefresh](http:/
 
 
 
-|**File in Delphi**     |**File in C++**                                            |**Contains**                                   |
-|-----------------------|-----------------------------------------------------------|-----------------------------------------------|
-|**PullToRefresh.dproj**|**PullToRefreshExample.cbproj**                            |The project itself.                            |
-|**Unit1.fmx**          |**Unit1.fmx**                                              |The main form where the components are located.|
-|**Unit1.pas**          |**PullToRefreshExamplePCH.h**, **PullToRefreshExample.cpp**|Used to define and implement the sample.       |
-|**RandomTextUtils.pas**|**RandomTextUtils.h**                                      |Contains different random arrays of strings.   |
+| **File in Delphi**      | **File in C++**                                             | **Contains**                                    |
+| ----------------------- | ----------------------------------------------------------- | ----------------------------------------------- |
+| **PullToRefresh.dproj** | **PullToRefreshExample.cbproj**                             | The project itself.                             |
+| **Unit1.fmx**           | **Unit1.fmx**                                               | The main form where the components are located. |
+| **Unit1.pas**           | **PullToRefreshExamplePCH.h**, **PullToRefreshExample.cpp** | Used to define and implement the sample.        |
+| **RandomTextUtils.pas** | **RandomTextUtils.h**                                       | Contains different random arrays of strings.    |
 
 
 ## Classes 

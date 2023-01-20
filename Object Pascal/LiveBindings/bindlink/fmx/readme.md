@@ -39,11 +39,11 @@ This sample demonstrates the use of a [TBindLink](http://docwiki.embarcadero.com
 
 
 
-|**File**              |**Contains**                                   |
-|----------------------|-----------------------------------------------|
-|**BindLinkFMXProject**|The project itself.                            |
-|**FormUnit1**         |The main form where the components are located.|
-|**Readme.html**       |Basic information about this sample.           |
+| **File**               | **Contains**                                    |
+| ---------------------- | ----------------------------------------------- |
+| **BindLinkFMXProject** | The project itself.                             |
+| **FormUnit1**          | The main form where the components are located. |
+| **Readme.html**        | Basic information about this sample.            |
 
 
 ## Implementation 

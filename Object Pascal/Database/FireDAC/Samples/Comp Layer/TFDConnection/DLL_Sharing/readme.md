@@ -47,12 +47,12 @@ The **DLLSharing** sample shows how to use [FireDAC](http://docwiki.embarcadero.
 
 
 
-| File in Delphi               | Contains          |
-|------------------------------|-------------------|
-|`Project1.dproj``Project1.dpr`|The project itself.|
-|`Unit1.pas``Unit1.fmx`        |The main form.     |
-|`Project2.dproj``Project2.dpr`|The DLL.           |
-|`Unit2.pas``Unit2.fmx`        |The DLL form.      |
+| File in Delphi                 | Contains            |
+| ------------------------------ | ------------------- |
+| `Project1.dproj``Project1.dpr` | The project itself. |
+| `Unit1.pas``Unit1.fmx`         | The main form.      |
+| `Project2.dproj``Project2.dpr` | The DLL.            |
+| `Unit2.pas``Unit2.fmx`         | The DLL form.       |
 
 
 ## Implementation 

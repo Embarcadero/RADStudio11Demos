@@ -40,11 +40,11 @@ This sample demonstrates the use of a [TBindLink](http://docwiki.embarcadero.com
 
 
 
-|**File**                |**Contains**                                   |
-|------------------------|-----------------------------------------------|
-|**BindLinkVCLProject**  |The project itself.                            |
-|**BindLinkVCLFormUnit1**|The main form where the components are located.|
-|**Readme.html**         |Basic information about this sample.           |
+| **File**                 | **Contains**                                    |
+| ------------------------ | ----------------------------------------------- |
+| **BindLinkVCLProject**   | The project itself.                             |
+| **BindLinkVCLFormUnit1** | The main form where the components are located. |
+| **Readme.html**          | Basic information about this sample.            |
 
 
 ## Implementation 

@@ -36,11 +36,11 @@ The **ViewPort3DTLightTexture3D** sample demonstrates how to use the [TViewport3
 
 
 
-|**File in C++**                      |**Contains**                                   |
-|-------------------------------------|-----------------------------------------------|
-|**CppViewPort3DTLightTexture.cbproj**|The project itself.                            |
-|**MainForm.fmx**                     |The main form where the components are located.|
-|**MainForm.h**, **MainForm.cpp**     |Used to define and implement the sample.       |
+| **File in C++**                       | **Contains**                                    |
+| ------------------------------------- | ----------------------------------------------- |
+| **CppViewPort3DTLightTexture.cbproj** | The project itself.                             |
+| **MainForm.fmx**                      | The main form where the components are located. |
+| **MainForm.h**, **MainForm.cpp**      | Used to define and implement the sample.        |
 
 
 ## Classes 

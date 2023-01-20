@@ -51,10 +51,10 @@ The **AutoincFields** sample shows you how to work with [auto-incremental fields
 
 
 
-| File in Delphi             | Contains          |
-|----------------------------|-------------------|
-|`AutoInc.dproj``AutoInc.dpr`|The project itself.|
-|`fAutoInc.pas``fAutoInc.fmx`|The main form.     |
+| File in Delphi               | Contains            |
+| ---------------------------- | ------------------- |
+| `AutoInc.dproj``AutoInc.dpr` | The project itself. |
+| `fAutoInc.pas``fAutoInc.fmx` | The main form.      |
 
 
 ## Implementation 

@@ -51,12 +51,12 @@ The grid and the adapters are linked using [LiveBindings](http://docwiki.embarca
 
 
 
-|**File**                                         |**Contains**                                             |
-|-------------------------------------------------|---------------------------------------------------------|
-|**AdapterBindSourceSample.dproj**                |The project itself.                                      |
-|**ABSMain.fmx / pas**                            |The main form and main unit.                             |
-|**CollectionObjects.pas**                        |The unit with the definition of the custom class TPerson.|
-|**ABSMain.iPhone4in.fmx / ABSMain.LgXhdpiPh.fmx**|View forms for iPhone and Android.                       |
+| **File**                                          | **Contains**                                              |
+| ------------------------------------------------- | --------------------------------------------------------- |
+| **AdapterBindSourceSample.dproj**                 | The project itself.                                       |
+| **ABSMain.fmx / pas**                             | The main form and main unit.                              |
+| **CollectionObjects.pas**                         | The unit with the definition of the custom class TPerson. |
+| **ABSMain.iPhone4in.fmx / ABSMain.LgXhdpiPh.fmx** | View forms for iPhone and Android.                        |
 
 
 ## Implementation 

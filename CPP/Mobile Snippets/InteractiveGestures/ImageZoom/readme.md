@@ -50,12 +50,12 @@ The **ImageZoom** sample demonstrates how to zoom an image on an iOS or Android 
 
 
 
-|**File in Delphi** |**File in C++**                      |**Contains**                                   |
-|-------------------|-------------------------------------|-----------------------------------------------|
-|**ImageZoom.dproj**|**ImageZoom.cbproj**                 |The project itself.                            |
-|**ImageZoomU.fmx** |**ImageZoomU.fmx**                   |The main form where the components are located.|
-|**ImageZoomU.pas** |**ImageZoomPCH.h**, **ImageZoom.cpp**|Used to define and implement the sample.       |
-|**Information.txt**|**Information.txt**                  |Further information about the sample.          |
+| **File in Delphi**  | **File in C++**                       | **Contains**                                    |
+| ------------------- | ------------------------------------- | ----------------------------------------------- |
+| **ImageZoom.dproj** | **ImageZoom.cbproj**                  | The project itself.                             |
+| **ImageZoomU.fmx**  | **ImageZoomU.fmx**                    | The main form where the components are located. |
+| **ImageZoomU.pas**  | **ImageZoomPCH.h**, **ImageZoom.cpp** | Used to define and implement the sample.        |
+| **Information.txt** | **Information.txt**                   | Further information about the sample.           |
 
 
 ## Implementation 

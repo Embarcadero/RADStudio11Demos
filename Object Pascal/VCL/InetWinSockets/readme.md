@@ -37,13 +37,13 @@ This sample consists of a package (.bpl) that you can install in RAD Studio. The
 
 
 
-|**File**                 |**Contains**                                                                                                |
-|-------------------------|------------------------------------------------------------------------------------------------------------|
-|**InetWinSocketsReg.pas**|The code for registering the **InetWinSockets** components and their property editor                        |
-|**inetwinsockets.dpk**   |The source code for the **InetWinSockets** package                                                          |
-|**inetwinsockets.res**   |Resource file for the **InetWinSockets** package; contains the icons for the Tool Palette.                  |
-|**SocketsEditor**        |The code for the sockets editor.                                                                            |
-|**Web.Win.Sockets.pas**  |The source file for the deprecated **Web.Win.Sockets** unit, upon which the InetWinSockets package is built.|
+| **File**                  | **Contains**                                                                                                 |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| **InetWinSocketsReg.pas** | The code for registering the **InetWinSockets** components and their property editor                         |
+| **inetwinsockets.dpk**    | The source code for the **InetWinSockets** package                                                           |
+| **inetwinsockets.res**    | Resource file for the **InetWinSockets** package; contains the icons for the Tool Palette.                   |
+| **SocketsEditor**         | The code for the sockets editor.                                                                             |
+| **Web.Win.Sockets.pas**   | The source file for the deprecated **Web.Win.Sockets** unit, upon which the InetWinSockets package is built. |
 
 
 ## Implementation 

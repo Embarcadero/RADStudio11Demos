@@ -48,12 +48,12 @@ This sample shows the elapsed time for a defined number of consecutive connectio
 
 
 
-|**File in Delphi**  |**File in C++**    |**Contains**                                                  |
-|--------------------|-------------------|--------------------------------------------------------------|
-|**mtspool.dproj**   |**mstpool.cbproj** |The project itself.                                           |
-|**Pooling.pas/dfm** |**Pooling.cpp/dfm**|The main form and the code to turn on the MTS Pooling setting.|
-|**mtspool_Icon.ico**|                   |The favicon of the application.                               |
-|**Readme.html**     |                   |Basic information about this sample.                          |
+| **File in Delphi**   | **File in C++**     | **Contains**                                                   |
+| -------------------- | ------------------- | -------------------------------------------------------------- |
+| **mtspool.dproj**    | **mstpool.cbproj**  | The project itself.                                            |
+| **Pooling.pas/dfm**  | **Pooling.cpp/dfm** | The main form and the code to turn on the MTS Pooling setting. |
+| **mtspool_Icon.ico** |                     | The favicon of the application.                                |
+| **Readme.html**      |                     | Basic information about this sample.                           |
 
 
 ## Implementation 

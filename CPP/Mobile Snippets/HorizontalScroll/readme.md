@@ -51,12 +51,12 @@ The **HorizontalScroll** sample shows how to use [THorzScrollBox](http://docwiki
 
 
 
-|**File in Delphi**        |**File in C++**                                    |**Contains**                                   |
-|--------------------------|---------------------------------------------------|-----------------------------------------------|
-|**HorizontalScroll.dproj**|**HorizontalScroll.cbproj**                        |The project itself.                            |
-|**uMain.fmx**             |**uMain.fmx**                                      |The main form where the components are located.|
-|**uMain.pas**             |**HorizontalScrollPCH.h**, **HorizontalScroll.cpp**|Used to define and implement the sample.       |
-|**Information.txt**       |**Information.txt**                                |Further information about the sample.          |
+| **File in Delphi**         | **File in C++**                                     | **Contains**                                    |
+| -------------------------- | --------------------------------------------------- | ----------------------------------------------- |
+| **HorizontalScroll.dproj** | **HorizontalScroll.cbproj**                         | The project itself.                             |
+| **uMain.fmx**              | **uMain.fmx**                                       | The main form where the components are located. |
+| **uMain.pas**              | **HorizontalScrollPCH.h**, **HorizontalScroll.cpp** | Used to define and implement the sample.        |
+| **Information.txt**        | **Information.txt**                                 | Further information about the sample.           |
 
 
 ## Classes 

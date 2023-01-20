@@ -50,12 +50,12 @@ The **TapAndHold** sample demonstrates how to use long tap gestures on an iOS or
 
 
 
-|**File in Delphi**  |**File in C++**                        |**Contains**                                   |
-|--------------------|---------------------------------------|-----------------------------------------------|
-|**TapAndHold.dproj**|**TapAndHold.cbproj**                  |The project itself.                            |
-|**TapHoldForm.fmx** |**TapHoldForm.fmx**                    |The main form where the components are located.|
-|**TapHoldForm.pas** |**TapAndHoldPCH.h**, **TapAndHold.cpp**|Used to define and implement the sample.       |
-|**Information.txt** |**Information.txt**                    |Further information about the sample.          |
+| **File in Delphi**   | **File in C++**                         | **Contains**                                    |
+| -------------------- | --------------------------------------- | ----------------------------------------------- |
+| **TapAndHold.dproj** | **TapAndHold.cbproj**                   | The project itself.                             |
+| **TapHoldForm.fmx**  | **TapHoldForm.fmx**                     | The main form where the components are located. |
+| **TapHoldForm.pas**  | **TapAndHoldPCH.h**, **TapAndHold.cpp** | Used to define and implement the sample.        |
+| **Information.txt**  | **Information.txt**                     | Further information about the sample.           |
 
 
 ## Implementation 

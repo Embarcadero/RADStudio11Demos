@@ -63,11 +63,11 @@ Apart from the parameters to connect to an InterBase server, the sample has four
 
 
 
-|**File**                |**Contains**                                                                  |
-|------------------------|------------------------------------------------------------------------------|
-|**IBAdminTool.dproj**   |The project itself.                                                           |
-|**dmAdmin.pas/dfm**     |The data module containing the components and code for the admin tasks.       |
-|**AdminUtility.pas/fmx**|The main form and code calling the data module methods to perform admin tasks.|
+| **File**                 | **Contains**                                                                   |
+| ------------------------ | ------------------------------------------------------------------------------ |
+| **IBAdminTool.dproj**    | The project itself.                                                            |
+| **dmAdmin.pas/dfm**      | The data module containing the components and code for the admin tasks.        |
+| **AdminUtility.pas/fmx** | The main form and code calling the data module methods to perform admin tasks. |
 
 
 ## Implementation 

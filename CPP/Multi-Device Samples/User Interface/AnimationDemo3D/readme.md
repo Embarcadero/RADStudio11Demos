@@ -45,11 +45,11 @@ The **AnimationDemo3D** sample animates several visual objects on a 3D form. To 
 
 
 
-|**File in C++**                                  |**Contains**                                   |
-|-------------------------------------------------|-----------------------------------------------|
-|**AnimationDemo3D.cbproj**                       |The project itself.                            |
-|**anidemofrm.fmx**                               |The main form where the components are located.|
-|**AnimationDemo3DPCH.h**, **AnimationDemo3D.cpp**|Used to define and implement the sample.       |
+| **File in C++**                                   | **Contains**                                    |
+| ------------------------------------------------- | ----------------------------------------------- |
+| **AnimationDemo3D.cbproj**                        | The project itself.                             |
+| **anidemofrm.fmx**                                | The main form where the components are located. |
+| **AnimationDemo3DPCH.h**, **AnimationDemo3D.cpp** | Used to define and implement the sample.        |
 
 
 ## Classes 

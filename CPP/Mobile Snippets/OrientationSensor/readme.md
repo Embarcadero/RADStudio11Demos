@@ -63,12 +63,12 @@ The **OrientationSensor** sample demonstrates how to use the orientation sensor 
 
 
 
-|**File in Delphi**         |**File in C++**                                      |**Contains**                                   |
-|---------------------------|-----------------------------------------------------|-----------------------------------------------|
-|**OrientationSensor.dproj**|**OrientationSensor.cbproj**                         |The project itself.                            |
-|**uMain.fmx**              |**uMain.fmx**                                        |The main form where the components are located.|
-|**uMain.pas**              |**OrientationSensorPCH.h**, **OrientationSensor.cpp**|Used to define and implement the sample.       |
-|**Information.txt**        |**Information.txt**                                  |Further information about the sample.          |
+| **File in Delphi**          | **File in C++**                                       | **Contains**                                    |
+| --------------------------- | ----------------------------------------------------- | ----------------------------------------------- |
+| **OrientationSensor.dproj** | **OrientationSensor.cbproj**                          | The project itself.                             |
+| **uMain.fmx**               | **uMain.fmx**                                         | The main form where the components are located. |
+| **uMain.pas**               | **OrientationSensorPCH.h**, **OrientationSensor.cpp** | Used to define and implement the sample.        |
+| **Information.txt**         | **Information.txt**                                   | Further information about the sample.           |
 
 
 ## Classes 

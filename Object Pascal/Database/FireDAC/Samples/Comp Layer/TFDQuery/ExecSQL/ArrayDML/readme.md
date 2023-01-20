@@ -42,10 +42,10 @@ The **ArrayDML** sample shows you how to use [Array DML](http://docwiki.embarcad
 
 
 
-| File in Delphi                             | Contains          |
-|--------------------------------------------|-------------------|
-|`FireDACArrayDML.dproj``FireDACArrayDML.dpr`|The project itself.|
-|`fMain.pas``fMain.fmx`                      |The main form.     |
+| File in Delphi                               | Contains            |
+| -------------------------------------------- | ------------------- |
+| `FireDACArrayDML.dproj``FireDACArrayDML.dpr` | The project itself. |
+| `fMain.pas``fMain.fmx`                       | The main form.      |
 
 
 ## Implementation 

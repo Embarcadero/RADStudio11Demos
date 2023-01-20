@@ -42,10 +42,10 @@ The **MasterDetail** sample shows you how to set up [master-detail relationships
 
 
 
-| File in Delphi                               | Contains          |
-|----------------------------------------------|-------------------|
-|`CDS_MasterDetail.dproj``CDS_MasterDetail.dpr`|The project itself.|
-|`fMasterDetail.pas``fMasterDetail.fmx`        |The main form.     |
+| File in Delphi                                 | Contains            |
+| ---------------------------------------------- | ------------------- |
+| `CDS_MasterDetail.dproj``CDS_MasterDetail.dpr` | The project itself. |
+| `fMasterDetail.pas``fMasterDetail.fmx`         | The main form.      |
 
 
 ## Implementation 

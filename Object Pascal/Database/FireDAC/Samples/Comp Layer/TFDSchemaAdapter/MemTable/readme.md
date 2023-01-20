@@ -45,10 +45,10 @@ The **SchemaAdapterMemTable** sample shows you how to work with the [TFDSchemaAd
 
 
 
-| File in Delphi                         | Contains          |
-|----------------------------------------|-------------------|
-|`SchemaAdapter.dproj``SchemaAdapter.dpr`|The project itself.|
-|`fSchemaAdapter.pas``fSchemaAdapter.fmx`|The main form.     |
+| File in Delphi                           | Contains            |
+| ---------------------------------------- | ------------------- |
+| `SchemaAdapter.dproj``SchemaAdapter.dpr` | The project itself. |
+| `fSchemaAdapter.pas``fSchemaAdapter.fmx` | The main form.      |
 
 
 ## Implementation 

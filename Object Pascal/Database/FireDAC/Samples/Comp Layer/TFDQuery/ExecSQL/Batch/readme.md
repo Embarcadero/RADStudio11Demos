@@ -42,10 +42,10 @@ The **Batch** sample shows you how to use [Array DML](http://docwiki.embarcadero
 
 
 
-| File in Delphi         | Contains          |
-|------------------------|-------------------|
-|`Batch.dproj``Batch.dpr`|The project itself.|
-|`fBatch.pas``fBatch.fmx`|The main form.     |
+| File in Delphi           | Contains            |
+| ------------------------ | ------------------- |
+| `Batch.dproj``Batch.dpr` | The project itself. |
+| `fBatch.pas``fBatch.fmx` | The main form.      |
 
 
 ## Implementation 

@@ -53,10 +53,10 @@ The **GettingStarted** sample implements some functionalities working with table
 
 
 
-| File in Delphi                           | Contains          |
-|------------------------------------------|-------------------|
-|`GettingStarted.dproj``GettingStarted.dpr`|The project itself.|
-|`fGettingStarted.pas``fGettingStarted.fmx`|The main form.     |
+| File in Delphi                             | Contains            |
+| ------------------------------------------ | ------------------- |
+| `GettingStarted.dproj``GettingStarted.dpr` | The project itself. |
+| `fGettingStarted.pas``fGettingStarted.fmx` | The main form.      |
 
 
 ## Implementation 

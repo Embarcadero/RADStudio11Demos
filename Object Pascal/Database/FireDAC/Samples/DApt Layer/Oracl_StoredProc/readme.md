@@ -50,10 +50,10 @@ The **OraclStoredProc** sample shows you how to work with Oracle [stored procedu
 
 
 
-| File in Delphi                           | Contains          |
-|------------------------------------------|-------------------|
-|`Ora_StoredProc.dproj``Ora_StoredProc.dpr`|The project itself.|
-|`fOra_StoredProc.pas``fOra_StoredProc.fmx`|The main form.     |
+| File in Delphi                             | Contains            |
+| ------------------------------------------ | ------------------- |
+| `Ora_StoredProc.dproj``Ora_StoredProc.dpr` | The project itself. |
+| `fOra_StoredProc.pas``fOra_StoredProc.fmx` | The main form.      |
 
 
 ## Implementation 

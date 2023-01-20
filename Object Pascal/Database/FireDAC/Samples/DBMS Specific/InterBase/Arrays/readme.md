@@ -44,10 +44,10 @@ The **Arrays** sample shows you how to use the [TFDParam.ArrayType](http://docwi
 
 
 
-| File in Delphi               | Contains          |
-|------------------------------|-------------------|
-|`IBArrays.dproj``IBArrays.dpr`|The project itself.|
-|`fMain.pas``fMain.fmx`        |The main form.     |
+| File in Delphi                 | Contains            |
+| ------------------------------ | ------------------- |
+| `IBArrays.dproj``IBArrays.dpr` | The project itself. |
+| `fMain.pas``fMain.fmx`         | The main form.      |
 
 
 ## Implementation 

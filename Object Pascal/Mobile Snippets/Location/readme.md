@@ -56,12 +56,12 @@ The **Location** sample demonstrates how to use the location sensor of the devic
 
 
 
-|**File in Delphi** |**File in C++**                    |**Contains**                                   |
-|-------------------|-----------------------------------|-----------------------------------------------|
-|**Location.dproj** |**Location.cbproj**                |The project itself.                            |
-|**uMain.fmx**      |**uMain.fmx**                      |The main form where the components are located.|
-|**uMain.pas**      |**LocationPCH.h**, **Location.cpp**|Used to define and implement the sample.       |
-|**Information.txt**|**Information.txt**                |Further information about the sample.          |
+| **File in Delphi**  | **File in C++**                     | **Contains**                                    |
+| ------------------- | ----------------------------------- | ----------------------------------------------- |
+| **Location.dproj**  | **Location.cbproj**                 | The project itself.                             |
+| **uMain.fmx**       | **uMain.fmx**                       | The main form where the components are located. |
+| **uMain.pas**       | **LocationPCH.h**, **Location.cpp** | Used to define and implement the sample.        |
+| **Information.txt** | **Information.txt**                 | Further information about the sample.           |
 
 
 ## Classes 

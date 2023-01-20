@@ -39,14 +39,14 @@ This sample consists of an image editor. You can open up to three images at the 
 
 
 
-|**File**       |**Contains**                                                                                      |
-|---------------|--------------------------------------------------------------------------------------------------|
-|**About**      |The form for the about box to be displayed from the Help menu.                                    |
-|**Arithmetic** |The form displayed when the user chooses to add, subtract, or calculate the average of two images.|
-|**Brightness** |The dialog displayed to adjust the brightness and contrast.                                       |
-|**ipFunctions**|Global functions necessary to manipulate images.                                                  |
-|**MainForm**   |The form for the editor itself.                                                                   |
-|**Threashold** |The form displayed when the user chooses to adjust the threshold.                                 |
+| **File**        | **Contains**                                                                                       |
+| --------------- | -------------------------------------------------------------------------------------------------- |
+| **About**       | The form for the about box to be displayed from the Help menu.                                     |
+| **Arithmetic**  | The form displayed when the user chooses to add, subtract, or calculate the average of two images. |
+| **Brightness**  | The dialog displayed to adjust the brightness and contrast.                                        |
+| **ipFunctions** | Global functions necessary to manipulate images.                                                   |
+| **MainForm**    | The form for the editor itself.                                                                    |
+| **Threashold**  | The form displayed when the user chooses to adjust the threshold.                                  |
 
 
 ## Classes 

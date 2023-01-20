@@ -67,7 +67,7 @@ You need to set the specific parameters for the Beacon device that you want to u
 2.  In the **[Object Inspector](http://docwiki.embarcadero.com/RADStudio/en/Object_Inspector)**, go to the [MonitorizedRegions](http://docwiki.embarcadero.com/Libraries/en/System.Beacon.Components.TCustomBeacon.MonitorizedRegions) property.
 3.  Click
 
-![ProjectOptionsEllipsis.png](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAAAAACMfPpKAAAAOUlEQVR4AWNZw4AFsDC4YAruYWH4j1UtNkC6WspNEGFk+A9Bb7Ca8B/JhNevYIiabsAEtAuz41hEAWjJGSaPYaXQAAAAAElFTkSuQmCC)
+![ProjectOptionsEllipsis.png](Readme%20Files/ProjectOptionsEllipsis.png)
 
 to see the [TBeaconRegionCollection](http://docwiki.embarcadero.com/Libraries/en/System.Beacon.Components.TBeaconRegionCollection).
 4.  Select the existing [TBeaconRegionItem](http://docwiki.embarcadero.com/Libraries/en/System.Beacon.Components.TBeaconRegionItem) : **0-TBeaconRegionItem**.

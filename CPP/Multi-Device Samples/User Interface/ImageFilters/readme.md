@@ -51,11 +51,11 @@ The **ImageFilters** sample demonstrates how to apply the [Sepia](http://docwiki
 
 
 
-|**File in C++**                           |**Contains**                                   |
-|------------------------------------------|-----------------------------------------------|
-|**CppImageFilters.cbproj**                |The project itself.                            |
-|**MainForm.fmx**                          |The main form where the components are located.|
-|**CppImageFiltersPCH.h**, **MainForm.cpp**|Used to define and implement the sample.       |
+| **File in C++**                            | **Contains**                                    |
+| ------------------------------------------ | ----------------------------------------------- |
+| **CppImageFilters.cbproj**                 | The project itself.                             |
+| **MainForm.fmx**                           | The main form where the components are located. |
+| **CppImageFiltersPCH.h**, **MainForm.cpp** | Used to define and implement the sample.        |
 
 
 ## Classes 

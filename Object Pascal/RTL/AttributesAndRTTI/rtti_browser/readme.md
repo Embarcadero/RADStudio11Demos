@@ -36,10 +36,10 @@ You can find the **AttributesAndRTTI** sample project at:
 
 The project has three source files:
 
-|**File**         |**Contains**                                                                                                                          |
-|-----------------|--------------------------------------------------------------------------------------------------------------------------------------|
-|**DemoAttr.pas** |The implementation of **MyDemoAttribute**, a user-defined custom attribute, and of **TDemoObject**, the corresponding annotated class.|
-|**Form_Main.pas**|**TMainForm**, the class corresponding to the main form.                                                                              |
+| **File**          | **Contains**                                                                                                                           |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| **DemoAttr.pas**  | The implementation of **MyDemoAttribute**, a user-defined custom attribute, and of **TDemoObject**, the corresponding annotated class. |
+| **Form_Main.pas** | **TMainForm**, the class corresponding to the main form.                                                                               |
 
 
 ## Classes 

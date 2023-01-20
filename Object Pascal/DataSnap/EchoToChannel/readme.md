@@ -70,24 +70,24 @@ The files used by this sample are:
 
 
 
-|**File**                             |**Contains**                                                                                               |
-|-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-|**EchoToChannelServerProject**       |The Echo to Channel server project.                                                                        |
-|**EchoToChannelServerForm**          |The main form that is the user interface for the Echo to Channel server sample.                            |
-|**EchoToChannelServerMethodsUnit1**  |The server methods container holding source code for the server methods used in the Echo to Channel sample.|
-|**EchoToChannelServerContainerUnit3**|The server container that holds the DataSnap Server components.                                            |
+| **File**                              | **Contains**                                                                                                |
+| ------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **EchoToChannelServerProject**        | The Echo to Channel server project.                                                                         |
+| **EchoToChannelServerForm**           | The main form that is the user interface for the Echo to Channel server sample.                             |
+| **EchoToChannelServerMethodsUnit1**   | The server methods container holding source code for the server methods used in the Echo to Channel sample. |
+| **EchoToChannelServerContainerUnit3** | The server container that holds the DataSnap Server components.                                             |
 
 
 ### EchoToChannel Client Files 
 
 
 
-|**File**                         |**Contains**                                                                       |
-|---------------------------------|-----------------------------------------------------------------------------------|
-|**DBXEchoToChannelClientProject**|The Echo to Channel client project.                                                |
-|**DBXEchoToChannelClientClasses**|Client classes created by the DataSnap proxy generator.                            |
-|**DBXEchoToChannelForm**         |The main form that is the user interface for the Basic DataSnap Client application.|
-|**DBXEchoToChannelClientModule** |The Echo to Channel server module.                                                 |
+| **File**                          | **Contains**                                                                        |
+| --------------------------------- | ----------------------------------------------------------------------------------- |
+| **DBXEchoToChannelClientProject** | The Echo to Channel client project.                                                 |
+| **DBXEchoToChannelClientClasses** | Client classes created by the DataSnap proxy generator.                             |
+| **DBXEchoToChannelForm**          | The main form that is the user interface for the Basic DataSnap Client application. |
+| **DBXEchoToChannelClientModule**  | The Echo to Channel server module.                                                  |
 
 
 ## Classes 

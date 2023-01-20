@@ -47,10 +47,10 @@ Also, some models may have a high level of detail, so the loading operation may 
 
 
 
-|**File**       |**Contains**                                                                                     |
-|---------------|-------------------------------------------------------------------------------------------------|
-|**Materials_U**|The class for the form that is displayed when the user chooses **Edit Material** from the editor.|
-|**Model3D_U**  |The class for the main form that represents the editor itself.                                   |
+| **File**        | **Contains**                                                                                      |
+| --------------- | ------------------------------------------------------------------------------------------------- |
+| **Materials_U** | The class for the form that is displayed when the user chooses **Edit Material** from the editor. |
+| **Model3D_U**   | The class for the main form that represents the editor itself.                                    |
 
 
 ## Classes 

@@ -40,11 +40,11 @@ This sample demonstrates the use of a [TBindGridLink](http://docwiki.embarcadero
 
 
 
-|**File**                  |**Contains**                                   |
-|--------------------------|-----------------------------------------------|
-|**BindGridLinkVCLProject**|The project itself.                            |
-|**GridLinkFormUnit1**     |The main form where the components are located.|
-|**Readme.html**           |Basic information about this sample.           |
+| **File**                   | **Contains**                                    |
+| -------------------------- | ----------------------------------------------- |
+| **BindGridLinkVCLProject** | The project itself.                             |
+| **GridLinkFormUnit1**      | The main form where the components are located. |
+| **Readme.html**            | Basic information about this sample.            |
 
 
 ## Implementation 

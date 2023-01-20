@@ -60,12 +60,12 @@ The **Accelerometer** sample demonstrates how to use the accelerometer in iOS or
 
 
 
-|**File in Delphi**     |**File in C++**                              |**Contains**                                   |
-|-----------------------|---------------------------------------------|-----------------------------------------------|
-|**Accelerometer.dproj**|**Accelerometer.cbproj**                     |The project itself.                            |
-|**uMain.fmx**          |**uMain.fmx**                                |The main form where the components are located.|
-|**uMain.pas**          |**AccelerometerPCH.h**, **Accelerometer.cpp**|Used to define and implement the sample.       |
-|**Information.txt**    |**Information.txt**                          |Further information about the sample.          |
+| **File in Delphi**      | **File in C++**                               | **Contains**                                    |
+| ----------------------- | --------------------------------------------- | ----------------------------------------------- |
+| **Accelerometer.dproj** | **Accelerometer.cbproj**                      | The project itself.                             |
+| **uMain.fmx**           | **uMain.fmx**                                 | The main form where the components are located. |
+| **uMain.pas**           | **AccelerometerPCH.h**, **Accelerometer.cpp** | Used to define and implement the sample.        |
+| **Information.txt**     | **Information.txt**                           | Further information about the sample.           |
 
 
 ## Classes 

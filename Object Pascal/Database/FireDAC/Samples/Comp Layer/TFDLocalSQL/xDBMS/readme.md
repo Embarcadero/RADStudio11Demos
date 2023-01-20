@@ -42,10 +42,10 @@ The **xDBMS** sample shows you how use the [TFDLocalSQL](http://docwiki.embarcad
 
 
 
-| File in Delphi         | Contains          |
-|------------------------|-------------------|
-|`xDBMS.dproj``xDBMS.dpr`|The project itself.|
-|`fMain.pas``fMain.fmx`  |The main form.     |
+| File in Delphi           | Contains            |
+| ------------------------ | ------------------- |
+| `xDBMS.dproj``xDBMS.dpr` | The project itself. |
+| `fMain.pas``fMain.fmx`   | The main form.      |
 
 
 ## Implementation 

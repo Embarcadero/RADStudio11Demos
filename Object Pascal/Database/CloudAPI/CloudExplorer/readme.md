@@ -70,12 +70,12 @@ The Cloud Explorer application demonstrates how to use the API to:
 
 The files used by this sample are:
 
-|**File**           |**Contains**                                                                                                                 |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------|
-|**CloudAccountsIO**|Unit that provides support for importing and exporting the accounts into a CloudAccounts.json file.                          |
-|**CloudExplorerUI**|The main form, which is the user interface for the Cloud Explorer Demo.                                                      |
-|**CloudPopulator** |Unit that provides the methods and types for file transfer between the local machine and the cloud for both Amazon and Azure.|
-|**CloudAccounts**  |JSON file that holds information about accounts.                                                                             |
+| **File**            | **Contains**                                                                                                                  |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| **CloudAccountsIO** | Unit that provides support for importing and exporting the accounts into a CloudAccounts.json file.                           |
+| **CloudExplorerUI** | The main form, which is the user interface for the Cloud Explorer Demo.                                                       |
+| **CloudPopulator**  | Unit that provides the methods and types for file transfer between the local machine and the cloud for both Amazon and Azure. |
+| **CloudAccounts**   | JSON file that holds information about accounts.                                                                              |
 
 
 > **Note:** OpenSSL libraries (libeay32.dll and ssleay32.dll) are required on your path in order for this sample to work.

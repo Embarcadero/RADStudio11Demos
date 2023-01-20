@@ -44,11 +44,11 @@ The **SortVector** sample demostrates how to sort a random vector of integers. F
 
 
 
-| File                              | Contains                                            |
-|-----------------------------------|-----------------------------------------------------|
-|`SortVector.cbproj``SortVector.cpp`|The project itself.                                  |
-|`UIForm.h``UIForm.cpp``UIForm.fmx` |The main form.                                       |
-|`Unit2.h``Unit2.cpp`               |The main functions used to generate and sort vectors.|
+| File                                | Contains                                              |
+| ----------------------------------- | ----------------------------------------------------- |
+| `SortVector.cbproj``SortVector.cpp` | The project itself.                                   |
+| `UIForm.h``UIForm.cpp``UIForm.fmx`  | The main form.                                        |
+| `Unit2.h``Unit2.cpp`                | The main functions used to generate and sort vectors. |
 
 
 ## Classes 

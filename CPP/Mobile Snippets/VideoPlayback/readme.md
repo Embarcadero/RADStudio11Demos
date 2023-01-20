@@ -60,12 +60,12 @@ The **VideoPlayback** sample uses the [TMediaPlayer](http://docwiki.embarcadero.
 
 
 
-|**File in Delphi**                     |**Contains**                                   |
-|---------------------------------------|-----------------------------------------------|
-|**VideoPlayerTest.cbproj**             |The project itself.                            |
-|**uMain.fmx**                          |The main form where the components are located.|
-|**uMain.cpp**                          |Used to define and implement the sample.       |
-|**MP4\Kayaking.mp4**, **MP4\Ocean.mp4**|The video files to play in the sample.         |
+| **File in Delphi**                      | **Contains**                                    |
+| --------------------------------------- | ----------------------------------------------- |
+| **VideoPlayerTest.cbproj**              | The project itself.                             |
+| **uMain.fmx**                           | The main form where the components are located. |
+| **uMain.cpp**                           | Used to define and implement the sample.        |
+| **MP4\Kayaking.mp4**, **MP4\Ocean.mp4** | The video files to play in the sample.          |
 
 
 ## Implementation 

@@ -45,11 +45,11 @@ The **Planets** sample uses different FireMonkey classes in order to demonstrate
 
 
 
-|**File in C++**                   |**Contains**                                   |
-|----------------------------------|-----------------------------------------------|
-|**PlanetsCPP.cbproj**             |The project itself.                            |
-|**Unit1.fmx**                     |The main form where the components are located.|
-|**PlanetsCPPPCH.h**, **Unit1.cpp**|Used to define and implement the sample.       |
+| **File in C++**                    | **Contains**                                    |
+| ---------------------------------- | ----------------------------------------------- |
+| **PlanetsCPP.cbproj**              | The project itself.                             |
+| **Unit1.fmx**                      | The main form where the components are located. |
+| **PlanetsCPPPCH.h**, **Unit1.cpp** | Used to define and implement the sample.        |
 
 
 ## Classes 

@@ -50,10 +50,10 @@ The **Main** sample shows you how to use different database functionalities rela
 
 
 
-| File in Delphi               | Contains          |
-|------------------------------|-------------------|
-|`CDS_main.dproj``CDS_main.dpr`|The project itself.|
-|`fMainDemo.pas``fMainDemo.fmx`|The main form.     |
+| File in Delphi                 | Contains            |
+| ------------------------------ | ------------------- |
+| `CDS_main.dproj``CDS_main.dpr` | The project itself. |
+| `fMainDemo.pas``fMainDemo.fmx` | The main form.      |
 
 
 ## Implementation 

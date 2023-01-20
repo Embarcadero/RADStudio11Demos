@@ -45,10 +45,10 @@ The application creates a main form that has the functionality to open images in
 
 This project has two source files:
 
-|**File**       |**Contains**                                                            |
-|---------------|------------------------------------------------------------------------|
-|**MainMDIForm**|The main form where new images are open and the child forms are created.|
-|**MDIChild**   |The child form where customized task bar preview functionality is done. |
+| **File**        | **Contains**                                                             |
+| --------------- | ------------------------------------------------------------------------ |
+| **MainMDIForm** | The main form where new images are open and the child forms are created. |
+| **MDIChild**    | The child form where customized task bar preview functionality is done.  |
 
 
 ## Classes 

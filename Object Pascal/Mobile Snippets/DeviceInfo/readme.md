@@ -53,12 +53,12 @@ The **DeviceInfo** sample demonstrates how to obtain device information of an iO
 
 
 
-|**File in Delphi**  |**File in C++**                        |**Contains**                                   |
-|--------------------|---------------------------------------|-----------------------------------------------|
-|**DeviceInfo.dproj**|**DeviceInfo.cbproj**                  |The project itself.                            |
-|**uMain.fmx**       |**uMain.fmx**                          |The main form where the components are located.|
-|**uMain.pas**       |**DeviceInfoPCH.h**, **TapAndHold.cpp**|Used to define and implement the sample.       |
-|**Information.txt** |**Information.txt**                    |Further information about the sample.          |
+| **File in Delphi**   | **File in C++**                         | **Contains**                                    |
+| -------------------- | --------------------------------------- | ----------------------------------------------- |
+| **DeviceInfo.dproj** | **DeviceInfo.cbproj**                   | The project itself.                             |
+| **uMain.fmx**        | **uMain.fmx**                           | The main form where the components are located. |
+| **uMain.pas**        | **DeviceInfoPCH.h**, **TapAndHold.cpp** | Used to define and implement the sample.        |
+| **Information.txt**  | **Information.txt**                     | Further information about the sample.           |
 
 
 ## Clases 

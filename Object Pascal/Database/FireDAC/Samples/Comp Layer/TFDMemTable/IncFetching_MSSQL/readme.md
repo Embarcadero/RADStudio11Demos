@@ -42,10 +42,10 @@ The **IncFetchingMSSQL** sample shows you how to [fetch rows](http://docwiki.emb
 
 
 
-| File in Delphi                     | Contains          |
-|------------------------------------|-------------------|
-|`IncFetching.dproj``IncFetching.dpr`|The project itself.|
-|`Unit30.pas``Unit30.fmx`            |The main form.     |
+| File in Delphi                       | Contains            |
+| ------------------------------------ | ------------------- |
+| `IncFetching.dproj``IncFetching.dpr` | The project itself. |
+| `Unit30.pas``Unit30.fmx`             | The main form.      |
 
 
 ## Implementation 

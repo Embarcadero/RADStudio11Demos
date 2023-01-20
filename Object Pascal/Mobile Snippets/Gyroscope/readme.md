@@ -54,12 +54,12 @@ The **Gyroscope** sample demonstrates how to use the Gyroscope in order to rotat
 
 
 
-|**File in Delphi** |**File in C++**                      |**Contains**                                   |
-|-------------------|-------------------------------------|-----------------------------------------------|
-|**Gyroscope.dproj**|**Gyroscope.cbproj**                 |The project itself.                            |
-|**uMain.fmx**      |**uMain.fmx**                        |The main form where the components are located.|
-|**uMain.pas**      |**GyroscopePCH.h**, **Gyroscope.cpp**|Used to define and implement the sample.       |
-|**Information.txt**|**Information.txt**                  |Further information about the sample.          |
+| **File in Delphi**  | **File in C++**                       | **Contains**                                    |
+| ------------------- | ------------------------------------- | ----------------------------------------------- |
+| **Gyroscope.dproj** | **Gyroscope.cbproj**                  | The project itself.                             |
+| **uMain.fmx**       | **uMain.fmx**                         | The main form where the components are located. |
+| **uMain.pas**       | **GyroscopePCH.h**, **Gyroscope.cpp** | Used to define and implement the sample.        |
+| **Information.txt** | **Information.txt**                   | Further information about the sample.           |
 
 
 ## Classes 

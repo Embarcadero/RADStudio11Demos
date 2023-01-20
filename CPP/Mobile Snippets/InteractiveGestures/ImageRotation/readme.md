@@ -50,12 +50,12 @@ The **ImageRotation** sample demonstrates how to rotate an image on an iOS or An
 
 
 
-|**File in Delphi**     |**File in C++**                              |**Contains**                                   |
-|-----------------------|---------------------------------------------|-----------------------------------------------|
-|**ImageRotation.dproj**|**ImageRotation.cbproj**                     |The project itself.                            |
-|**ImageRotationU.fmx** |**ImageRotationU.fmx**                       |The main form where the components are located.|
-|**ImageRotationU.pas** |**ImageRotationPCH.h**, **ImageRotation.cpp**|Used to define and implement the sample.       |
-|**Information.txt**    |**Information.txt**                          |Further information about the sample.          |
+| **File in Delphi**      | **File in C++**                               | **Contains**                                    |
+| ----------------------- | --------------------------------------------- | ----------------------------------------------- |
+| **ImageRotation.dproj** | **ImageRotation.cbproj**                      | The project itself.                             |
+| **ImageRotationU.fmx**  | **ImageRotationU.fmx**                        | The main form where the components are located. |
+| **ImageRotationU.pas**  | **ImageRotationPCH.h**, **ImageRotation.cpp** | Used to define and implement the sample.        |
+| **Information.txt**     | **Information.txt**                           | Further information about the sample.           |
 
 
 ## Implementation 

@@ -42,10 +42,10 @@ The **MasterDetail** sample shows you how to set up [master-detail relationships
 
 
 
-| File in Delphi                                 | Contains          |
-|------------------------------------------------|-------------------|
-|`Qry_MasterDetail.dproj``Qry_MasterDetail.dpr`  |The project itself.|
-|`fQueryMasterDetail.pas``fQueryMasterDetail.fmx`|The main form.     |
+| File in Delphi                                   | Contains            |
+| ------------------------------------------------ | ------------------- |
+| `Qry_MasterDetail.dproj``Qry_MasterDetail.dpr`   | The project itself. |
+| `fQueryMasterDetail.pas``fQueryMasterDetail.fmx` | The main form.      |
 
 
 ## Implementation 

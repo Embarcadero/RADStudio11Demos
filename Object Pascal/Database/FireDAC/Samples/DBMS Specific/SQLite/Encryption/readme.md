@@ -70,10 +70,10 @@ insert into tab values (5, 'test 5');
 
 
 
-| File in Delphi                           | Contains          |
-|------------------------------------------|-------------------|
-|`SQLite_Encrypt.dproj``SQLite_Encrypt.dpr`|The project itself.|
-|`fMain.pas``fMain.fmx`                    |The main form.     |
+| File in Delphi                             | Contains            |
+| ------------------------------------------ | ------------------- |
+| `SQLite_Encrypt.dproj``SQLite_Encrypt.dpr` | The project itself. |
+| `fMain.pas``fMain.fmx`                     | The main form.      |
 
 
 ## Implementation 

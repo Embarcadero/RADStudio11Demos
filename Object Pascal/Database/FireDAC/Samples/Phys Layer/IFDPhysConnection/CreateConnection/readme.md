@@ -47,10 +47,10 @@ The **CreateConnection** sample shows you how to use the [IFDPhysConnection](htt
 
 
 
-| File in Delphi                               | Contains          |
-|----------------------------------------------|-------------------|
-|`CreateConnection.dproj``CreateConnection.dpr`|The project itself.|
-|`fCreateConnection.pas``fCreateConnection.fmx`|The main form.     |
+| File in Delphi                                 | Contains            |
+| ---------------------------------------------- | ------------------- |
+| `CreateConnection.dproj``CreateConnection.dpr` | The project itself. |
+| `fCreateConnection.pas``fCreateConnection.fmx` | The main form.      |
 
 
 ## Implementation 

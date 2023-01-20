@@ -42,10 +42,10 @@ The **OnUpdateRecord** sample shows you how to cache the user changes when using
 
 
 
-| File in Delphi                                 | Contains          |
-|------------------------------------------------|-------------------|
-|`Qry_CachedUpdates.dproj``Qry_CachedUpdates.dpr`|The project itself.|
-|`fCachedUpdates.pas``fCachedUpdates.fmx`        |The main form.     |
+| File in Delphi                                   | Contains            |
+| ------------------------------------------------ | ------------------- |
+| `Qry_CachedUpdates.dproj``Qry_CachedUpdates.dpr` | The project itself. |
+| `fCachedUpdates.pas``fCachedUpdates.fmx`         | The main form.      |
 
 
 ## Implementation 

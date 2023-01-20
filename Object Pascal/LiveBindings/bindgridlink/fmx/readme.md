@@ -38,11 +38,11 @@ This sample demonstrates the use of a [TBindGridLink](http://docwiki.embarcadero
 
 
 
-|**File**                  |**Contains**                                   |
-|--------------------------|-----------------------------------------------|
-|**BindGridLinkFMXProject**|The project itself.                            |
-|**FMXGridFormUnit1**      |The main form where the components are located.|
-|**Readme.html**           |Basic information about this sample.           |
+| **File**                   | **Contains**                                    |
+| -------------------------- | ----------------------------------------------- |
+| **BindGridLinkFMXProject** | The project itself.                             |
+| **FMXGridFormUnit1**       | The main form where the components are located. |
+| **Readme.html**            | Basic information about this sample.            |
 
 
 ## Implementation 

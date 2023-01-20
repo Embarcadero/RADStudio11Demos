@@ -56,12 +56,12 @@ The **AudioRecPlay** sample shows you how to record some sound via the microphon
 
 
 
-|**File in Delphi**    |**File in C++**                            |**Contains**                                   |
-|----------------------|-------------------------------------------|-----------------------------------------------|
-|**AudioRecPlay.dproj**|**AudioRecPlay.cbproj**                    |The project itself.                            |
-|**AudioRecPlay.fmx**  |**AudioRecPlay.fmx**                       |The main form where the components are located.|
-|**uMain.pas**         |**AudioRecPlayPCH.h**, **AudioRecPlay.cpp**|Used to define and implement the sample.       |
-|**Information.txt**   |**Information.txt**                        |Further information about the sample.          |
+| **File in Delphi**     | **File in C++**                             | **Contains**                                    |
+| ---------------------- | ------------------------------------------- | ----------------------------------------------- |
+| **AudioRecPlay.dproj** | **AudioRecPlay.cbproj**                     | The project itself.                             |
+| **AudioRecPlay.fmx**   | **AudioRecPlay.fmx**                        | The main form where the components are located. |
+| **uMain.pas**          | **AudioRecPlayPCH.h**, **AudioRecPlay.cpp** | Used to define and implement the sample.        |
+| **Information.txt**    | **Information.txt**                         | Further information about the sample.           |
 
 
 ## Classes 

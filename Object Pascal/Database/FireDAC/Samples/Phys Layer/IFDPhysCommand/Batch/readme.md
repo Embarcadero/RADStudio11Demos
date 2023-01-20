@@ -42,10 +42,10 @@ The **Batch** sample shows you how to use the [Array DML execution](http://docwi
 
 
 
-| File in Delphi                         | Contains          |
-|----------------------------------------|-------------------|
-|`IFDPhys_Batch.dproj``IFDPhys_Batch.dpr`|The project itself.|
-|`fBatch.pas``fBatch.fmx`                |The main form.     |
+| File in Delphi                           | Contains            |
+| ---------------------------------------- | ------------------- |
+| `IFDPhys_Batch.dproj``IFDPhys_Batch.dpr` | The project itself. |
+| `fBatch.pas``fBatch.fmx`                 | The main form.      |
 
 
 ## Implementation 

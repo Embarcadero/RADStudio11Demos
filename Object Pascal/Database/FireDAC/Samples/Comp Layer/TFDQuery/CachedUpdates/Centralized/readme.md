@@ -46,10 +46,10 @@ First, the **CentralizedCachedUpdates** sample sets up range-based [master-detai
 
 
 
-| File in Delphi                                 | Contains          |
-|------------------------------------------------|-------------------|
-|`Qry_SchemaAdapter.dproj``Qry_SchemaAdapter.dpr`|The project itself.|
-|`fSchemaAdapter.pas``fSchemaAdapter.fmx`        |The main form.     |
+| File in Delphi                                   | Contains            |
+| ------------------------------------------------ | ------------------- |
+| `Qry_SchemaAdapter.dproj``Qry_SchemaAdapter.dpr` | The project itself. |
+| `fSchemaAdapter.pas``fSchemaAdapter.fmx`         | The main form.      |
 
 
 ## Implementation 

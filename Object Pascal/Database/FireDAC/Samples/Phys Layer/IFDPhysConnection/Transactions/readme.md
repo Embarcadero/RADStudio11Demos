@@ -47,10 +47,10 @@ The **Transactions** sample shows you how to use the [IFDPhysTransaction](http:/
 
 
 
-| File in Delphi                                       | Contains          |
-|------------------------------------------------------|-------------------|
-|`IFDPhys_Transactions.dproj``IFDPhys_Transactions.dpr`|The project itself.|
-|`fTransactions.pas``fTransactions.fmx`                |The main form.     |
+| File in Delphi                                         | Contains            |
+| ------------------------------------------------------ | ------------------- |
+| `IFDPhys_Transactions.dproj``IFDPhys_Transactions.dpr` | The project itself. |
+| `fTransactions.pas``fTransactions.fmx`                 | The main form.      |
 
 
 ## Implementation 

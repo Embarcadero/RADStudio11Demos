@@ -50,18 +50,18 @@ To run the example, complete the following steps:
 
 
 
-|**File**    |**Contains**                                                           |
-|------------|-----------------------------------------------------------------------|
-|**ccalendr**|The **TCCalendar** class                                               |
-|**cdiroutl**|The **TCDirectoryOutline** class                                       |
-|**cgauges** |The **TCGauge** class and other helper classes                         |
-|**cgrid**   |The **TCColorGrid** class                                              |
-|**cspin**   |The **TCSpinButton** and **TCSpinEdit** classes                        |
-|**perfgrap**|The **TPerformanceGraph** class                                        |
-|**pies**    |The **TPie** class and **TAngle** helper class                         |
-|**trayicon**|The **TCTrayIcon** class                                               |
-|**piereg**  |The code for registering the **TPie** component and its property editor|
-|**smpreg**  |The code for registering the rest of the components                    |
+| **File**     | **Contains**                                                            |
+| ------------ | ----------------------------------------------------------------------- |
+| **ccalendr** | The **TCCalendar** class                                                |
+| **cdiroutl** | The **TCDirectoryOutline** class                                        |
+| **cgauges**  | The **TCGauge** class and other helper classes                          |
+| **cgrid**    | The **TCColorGrid** class                                               |
+| **cspin**    | The **TCSpinButton** and **TCSpinEdit** classes                         |
+| **perfgrap** | The **TPerformanceGraph** class                                         |
+| **pies**     | The **TPie** class and **TAngle** helper class                          |
+| **trayicon** | The **TCTrayIcon** class                                                |
+| **piereg**   | The code for registering the **TPie** component and its property editor |
+| **smpreg**   | The code for registering the rest of the components                     |
 
 
 ## Classes 

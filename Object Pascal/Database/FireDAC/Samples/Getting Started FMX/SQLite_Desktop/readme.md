@@ -49,11 +49,11 @@ You can find the **FMGettingStarted** project at:
 
 
 
-|**File**                  |**Contains**                             |
-|--------------------------|-----------------------------------------|
-|**FMGettingStarted.dproj**|Contains the project itself.             |
-|**MainFrm.fmx**           |Contains the main form code.             |
-|**MainFrm.pas**           |contains the main form and the main code.|
+| **File**                   | **Contains**                              |
+| -------------------------- | ----------------------------------------- |
+| **FMGettingStarted.dproj** | Contains the project itself.              |
+| **MainFrm.fmx**            | Contains the main form code.              |
+| **MainFrm.pas**            | contains the main form and the main code. |
 
 
 ## Implementation 

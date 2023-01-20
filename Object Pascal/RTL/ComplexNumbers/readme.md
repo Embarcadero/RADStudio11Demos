@@ -36,10 +36,10 @@ This application provides an implementation for a record that handles complex nu
 
 The project has two source files:
 
-|**File**                     |**Contains**                                                               |
-|-----------------------------|---------------------------------------------------------------------------|
-|**Vassbotn.Vcl.Complex.pas** |The implementation for **TComplex**, a record that handles complex numbers.|
-|**Win32OperatorOverload.dpr**|A program that uses **TComplex** instances, operators, and methods.        |
+| **File**                      | **Contains**                                                                |
+| ----------------------------- | --------------------------------------------------------------------------- |
+| **Vassbotn.Vcl.Complex.pas**  | The implementation for **TComplex**, a record that handles complex numbers. |
+| **Win32OperatorOverload.dpr** | A program that uses **TComplex** instances, operators, and methods.         |
 
 
 ## Classes 

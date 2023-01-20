@@ -45,10 +45,10 @@ The **CachedUpdates** sample shows you how to work with the [TFDMemTable](http:/
 
 
 
-| File in Delphi                                 | Contains          |
-|------------------------------------------------|-------------------|
-|`CDS_CachedUpdates.dproj``CDS_CachedUpdates.dpr`|The project itself.|
-|`fCachedUpdates.pas``fCachedUpdates.fmx`        |The main form.     |
+| File in Delphi                                   | Contains            |
+| ------------------------------------------------ | ------------------- |
+| `CDS_CachedUpdates.dproj``CDS_CachedUpdates.dpr` | The project itself. |
+| `fCachedUpdates.pas``fCachedUpdates.fmx`         | The main form.      |
 
 
 ## Implementation 

@@ -42,10 +42,10 @@ The **Async** sample demonstrates how to configure the [ResourceOptions](http://
 
 
 
-| File in Delphi         | Contains          |
-|------------------------|-------------------|
-|`Async.dproj``Async.dpr`|The project itself.|
-|`fAsync.pas``fAsync.fmx`|The main form.     |
+| File in Delphi           | Contains            |
+| ------------------------ | ------------------- |
+| `Async.dproj``Async.dpr` | The project itself. |
+| `fAsync.pas``fAsync.fmx` | The main form.      |
 
 
 ## Implementation 

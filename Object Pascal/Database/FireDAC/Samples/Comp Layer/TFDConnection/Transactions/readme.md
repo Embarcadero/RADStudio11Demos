@@ -56,10 +56,10 @@ The **Transactions** sample shows you how to manage database [transactions](http
 
 
 
-| File in Delphi                       | Contains          |
-|--------------------------------------|-------------------|
-|`Transactions.dproj``Transactions.dpr`|The project itself.|
-|`fTransactions.pas``fTransactions.fmx`|The main form.     |
+| File in Delphi                         | Contains            |
+| -------------------------------------- | ------------------- |
+| `Transactions.dproj``Transactions.dpr` | The project itself. |
+| `fTransactions.pas``fTransactions.fmx` | The main form.      |
 
 
 ## Implementation 

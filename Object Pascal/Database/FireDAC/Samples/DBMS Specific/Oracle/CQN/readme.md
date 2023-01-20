@@ -52,10 +52,10 @@ The **Oracle_CQN** sample shows you how to use [Continuous Query Notification](h
 
 
 
-| File in Delphi                   | Contains          |
-|----------------------------------|-------------------|
-|`Oracle_CQN.dproj``Oracle_CQN.dpr`|The project itself.|
-|`ChangeFrm.pas``ChangeFrm.dfm`    |The main form.     |
+| File in Delphi                     | Contains            |
+| ---------------------------------- | ------------------- |
+| `Oracle_CQN.dproj``Oracle_CQN.dpr` | The project itself. |
+| `ChangeFrm.pas``ChangeFrm.dfm`     | The main form.      |
 
 
 ## Implementation 

@@ -50,10 +50,10 @@ The **SetResetBadgeNumber** sample shows you how to use the Notification API in 
 
 
 
-| File in Delphi                                            | File in C++                                                         | Contains          |
-|-----------------------------------------------------------|---------------------------------------------------------------------|-------------------|
-|`SettingResettingBadgeNumber.dproj``NativeControlsDemo.dpr`|`SettingResettingBadgeNumber.cbproj``SettingResettingBadgeNumber.cpp`|The project itself.|
-|`uMain.pas``uMain.fmx`                                     |`uMain.h``uMain.cpp``uMain.fmx`                                      |The main form.     |
+| File in Delphi                                              | File in C++                                                           | Contains            |
+| ----------------------------------------------------------- | --------------------------------------------------------------------- | ------------------- |
+| `SettingResettingBadgeNumber.dproj``NativeControlsDemo.dpr` | `SettingResettingBadgeNumber.cbproj``SettingResettingBadgeNumber.cpp` | The project itself. |
+| `uMain.pas``uMain.fmx`                                      | `uMain.h``uMain.cpp``uMain.fmx`                                       | The main form.      |
 
 
 ## Classes 

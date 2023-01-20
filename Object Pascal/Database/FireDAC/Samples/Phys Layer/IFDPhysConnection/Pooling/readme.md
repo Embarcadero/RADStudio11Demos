@@ -48,10 +48,10 @@ The **Pooling** sample shows you how to use the [IFDPhysConnection](http://docwi
 
 
 
-| File in Delphi                             | Contains          |
-|--------------------------------------------|-------------------|
-|`IFDPhys_Pooling.dproj``IFDPhys_Pooling.dpr`|The project itself.|
-|`fPooling.pas``fPooling.fmx`                |The main form.     |
+| File in Delphi                               | Contains            |
+| -------------------------------------------- | ------------------- |
+| `IFDPhys_Pooling.dproj``IFDPhys_Pooling.dpr` | The project itself. |
+| `fPooling.pas``fPooling.fmx`                 | The main form.      |
 
 
 ## Implementation 

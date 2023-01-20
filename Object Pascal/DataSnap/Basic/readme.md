@@ -82,38 +82,38 @@ The files used by this sample are:
 
 
 
-|**File**                  |**Contains**                                                                       |
-|--------------------------|-----------------------------------------------------------------------------------|
-|**DataSnapTestServer**    |The Basic DataSnap Server project.                                                 |
-|**MethodsServerModule**   |The DataSnap Server module.                                                        |
-|**ParametersServerModule**|The parameters Server module.                                                      |
-|**ProviderServerModule**  |The provider Server module.                                                        |
-|**ServerContainerForm**   |The main form that is the user interface for the Basic DataSnap Server application.|
+| **File**                   | **Contains**                                                                        |
+| -------------------------- | ----------------------------------------------------------------------------------- |
+| **DataSnapTestServer**     | The Basic DataSnap Server project.                                                  |
+| **MethodsServerModule**    | The DataSnap Server module.                                                         |
+| **ParametersServerModule** | The parameters Server module.                                                       |
+| **ProviderServerModule**   | The provider Server module.                                                         |
+| **ServerContainerForm**    | The main form that is the user interface for the Basic DataSnap Server application. |
 
 
 ### Client Files 
 
 
 
-|**File**              |**Contains**                                                                       |
-|----------------------|-----------------------------------------------------------------------------------|
-|**ClientClasses**     |Client classes created by the DataSnap proxy generator.                            |
-|**ClientForm**        |The main form that is the user interface for the Basic DataSnap Client application.|
-|**DataSnapTestClient**|The Basic DataSnap Client project.                                                 |
+| **File**               | **Contains**                                                                        |
+| ---------------------- | ----------------------------------------------------------------------------------- |
+| **ClientClasses**      | Client classes created by the DataSnap proxy generator.                             |
+| **ClientForm**         | The main form that is the user interface for the Basic DataSnap Client application. |
+| **DataSnapTestClient** | The Basic DataSnap Client project.                                                  |
 
 
 ### DataSnap Server Methods Example Files 
 
 
 
-|**File**                                       |**Contains**                                                |
-|-----------------------------------------------|------------------------------------------------------------|
-|**This client is a collection of dunit tests.**|Client classes created by the DataSnap proxy generator.     |
-|**ClientTestClasses**                          |Client test classes created by the DataSnap proxy generator.|
-|**DataSnapExamples**                           |The Basic DataSnap Server Methods Example project.          |
-|**DataSnapTestData**                           |Various methods and classes used in the testing process.    |
-|**TestServerContainer**                        |The DataSnap server container.                              |
-|**TestServerModule**                           |The DataSnap server module.                                 |
+| **File**                                        | **Contains**                                                 |
+| ----------------------------------------------- | ------------------------------------------------------------ |
+| **This client is a collection of dunit tests.** | Client classes created by the DataSnap proxy generator.      |
+| **ClientTestClasses**                           | Client test classes created by the DataSnap proxy generator. |
+| **DataSnapExamples**                            | The Basic DataSnap Server Methods Example project.           |
+| **DataSnapTestData**                            | Various methods and classes used in the testing process.     |
+| **TestServerContainer**                         | The DataSnap server container.                               |
+| **TestServerModule**                            | The DataSnap server module.                                  |
 
 
 ## Uses 

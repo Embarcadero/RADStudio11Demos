@@ -46,11 +46,11 @@ The **NestedDataSet** sample shows you how to set a [nested dataset](http://docw
 
 
 
-| File in Delphi                         | Contains                |
-|----------------------------------------|-------------------------|
-|`NestedDataSet.dproj``NestedDataSet.dpr`|The project itself.      |
-|`fNested.pas``fnested.fmx`              |The main form.           |
-|`fNestedCopy.pas``fnestedCopy.fmx`      |The copied datasets form.|
+| File in Delphi                           | Contains                  |
+| ---------------------------------------- | ------------------------- |
+| `NestedDataSet.dproj``NestedDataSet.dpr` | The project itself.       |
+| `fNested.pas``fnested.fmx`               | The main form.            |
+| `fNestedCopy.pas``fnestedCopy.fmx`       | The copied datasets form. |
 
 
 ## Implementation 

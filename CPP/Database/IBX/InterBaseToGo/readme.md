@@ -41,10 +41,10 @@ This sample has two [TStringGrid](http://docwiki.embarcadero.com/Libraries/en/FM
 
 
 
-|**File in C++**         |**Contains**                                                       |
-|------------------------|-------------------------------------------------------------------|
-|**CppIBToGoDemo.cbproj**|The project itself.                                                |
-|**MainForm.cpp/dfm**    |The main form and the code to give the functionality to the sample.|
+| **File in C++**          | **Contains**                                                        |
+| ------------------------ | ------------------------------------------------------------------- |
+| **CppIBToGoDemo.cbproj** | The project itself.                                                 |
+| **MainForm.cpp/dfm**     | The main form and the code to give the functionality to the sample. |
 
 
 ## Implementation 

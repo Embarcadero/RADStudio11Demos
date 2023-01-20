@@ -50,11 +50,11 @@ To interact with the sample:
 
 
 
-|**File in Delphi**  |**File in C++**         |**Contains**                                   |
-|--------------------|------------------------|-----------------------------------------------|
-|**RegExpDemo.dproj**|**CppRegExpDemo.cbproj**|The project itself.                            |
-|**Main.dfm**        |**Main.dfm**            |The main form where the components are located.|
-|**Main.pas**        |**Main.h**, **Main.cpp**|Implementation of the sample.                  |
+| **File in Delphi**   | **File in C++**          | **Contains**                                    |
+| -------------------- | ------------------------ | ----------------------------------------------- |
+| **RegExpDemo.dproj** | **CppRegExpDemo.cbproj** | The project itself.                             |
+| **Main.dfm**         | **Main.dfm**             | The main form where the components are located. |
+| **Main.pas**         | **Main.h**, **Main.cpp** | Implementation of the sample.                   |
 
 
 ## Classes 

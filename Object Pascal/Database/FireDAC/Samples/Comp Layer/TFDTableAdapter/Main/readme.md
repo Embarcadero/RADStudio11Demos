@@ -42,10 +42,10 @@ The **TableAdapter** sample shows you how to use [TFDTableAdapter](http://docwik
 
 
 
-| File in Delphi                       | Contains          |
-|--------------------------------------|-------------------|
-|`TableAdapter.dproj``TableAdapter.dpr`|The project itself.|
-|`fTableAdapter.pas``fTableAdapter.fmx`|The main form.     |
+| File in Delphi                         | Contains            |
+| -------------------------------------- | ------------------- |
+| `TableAdapter.dproj``TableAdapter.dpr` | The project itself. |
+| `fTableAdapter.pas``fTableAdapter.fmx` | The main form.      |
 
 
 ## Implementation 

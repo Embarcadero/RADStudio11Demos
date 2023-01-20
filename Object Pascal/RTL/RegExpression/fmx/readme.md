@@ -51,11 +51,11 @@ To interact with the sample:
 
 
 
-|**File in Delphi**         |**File in C++**         |**Contains**                                   |
-|---------------------------|------------------------|-----------------------------------------------|
-|**RegExpressionDemo.dproj**|**CppRegExFMX.cbproj**  |The project itself.                            |
-|**Main.fmx**               |**Main.fmx**            |The main form where the components are located.|
-|**Main.pas**               |**Main.h**, **Main.cpp**|Implementation of the sample.                  |
+| **File in Delphi**          | **File in C++**          | **Contains**                                    |
+| --------------------------- | ------------------------ | ----------------------------------------------- |
+| **RegExpressionDemo.dproj** | **CppRegExFMX.cbproj**   | The project itself.                             |
+| **Main.fmx**                | **Main.fmx**             | The main form where the components are located. |
+| **Main.pas**                | **Main.h**, **Main.cpp** | Implementation of the sample.                   |
 
 
 ## Classes 

@@ -57,10 +57,10 @@ The **GetFieldNames** sample shows how to populate a string list with some metad
 
 
 
-| File in Delphi                         | Contains          |
-|----------------------------------------|-------------------|
-|`GetFieldNames.dproj``GetFieldNames.dpr`|The project itself.|
-|`fGetFieldNames.pas``fGetFieldNames.fmx`|The main form.     |
+| File in Delphi                           | Contains            |
+| ---------------------------------------- | ------------------- |
+| `GetFieldNames.dproj``GetFieldNames.dpr` | The project itself. |
+| `fGetFieldNames.pas``fGetFieldNames.fmx` | The main form.      |
 
 
 ## Implementation 

@@ -46,10 +46,10 @@ The **EscapeFunctions** sample shows you how to use the [IFDPhysCommand](http://
 
 
 
-| File in Delphi                             | Contains          |
-|--------------------------------------------|-------------------|
-|`EscapeFunctions.dproj``EscapeFunctions.dpr`|The project itself.|
-|`fEscapeFunctions.pas``fEscapeFunctions.fmx`|The main form.     |
+| File in Delphi                               | Contains            |
+| -------------------------------------------- | ------------------- |
+| `EscapeFunctions.dproj``EscapeFunctions.dpr` | The project itself. |
+| `fEscapeFunctions.pas``fEscapeFunctions.fmx` | The main form.      |
 
 
 ## Implementation 

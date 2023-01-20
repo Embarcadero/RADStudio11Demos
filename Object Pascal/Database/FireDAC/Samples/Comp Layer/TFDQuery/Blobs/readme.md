@@ -42,10 +42,10 @@ The **Blobs** sample shows you how to create a BLOB stream for reading and/or wr
 
 
 
-| File in Delphi         | Contains          |
-|------------------------|-------------------|
-|`Blobs.dproj``Blobs.dpr`|The project itself.|
-|`fBlobs.pas``fBlobs.fmx`|The main form.     |
+| File in Delphi           | Contains            |
+| ------------------------ | ------------------- |
+| `Blobs.dproj``Blobs.dpr` | The project itself. |
+| `fBlobs.pas``fBlobs.fmx` | The main form.      |
 
 
 ## Implementation 

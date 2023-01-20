@@ -39,10 +39,10 @@ The **Boost** library is not installed with the default RAD Studio installation.
 
 
 
-| File                                          | Contains          |
-|-----------------------------------------------|-------------------|
-|`BoostArchiveDemo.cbproj``BoostArchiveDemo.cpp`|The project itself.|
-|`MainUnit.h``MainUnit.cpp``MainUnit.fmx`       |The main form.     |
+| File                                            | Contains            |
+| ----------------------------------------------- | ------------------- |
+| `BoostArchiveDemo.cbproj``BoostArchiveDemo.cpp` | The project itself. |
+| `MainUnit.h``MainUnit.cpp``MainUnit.fmx`        | The main form.      |
 
 
 ## See Also 

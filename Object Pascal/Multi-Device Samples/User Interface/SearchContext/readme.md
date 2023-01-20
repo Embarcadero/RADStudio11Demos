@@ -51,13 +51,13 @@ By modifying a [TClearingEdit](http://docwiki.embarcadero.com/Libraries/en/FMX.E
 
 
 
-| File                                        | Class                                                                     |
-|---------------------------------------------|---------------------------------------------------------------------------|
-| unitSearchMenuHelperCpp                     | The TSearchItem class, the TSearchBand class, the TSearchBandManager class|
-| formMain                                    |* **Delphi:** The `TfrmManageData` class.* **C++:** The `TfrmData` class.  |
-| dataData                                    | The TdtmdlData Class                                                      |
-| formMain                                    | the TfrmMain Class                                                        |
-|SearchContext (Delphi)SearchContext_Cpp (C++)| The project itself                                                        |
+| File                                          | Class                                                                      |
+| --------------------------------------------- | -------------------------------------------------------------------------- |
+| unitSearchMenuHelperCpp                       | The TSearchItem class, the TSearchBand class, the TSearchBandManager class |
+| formMain                                      | * **Delphi:** The `TfrmManageData` class.* **C++:** The `TfrmData` class.  |
+| dataData                                      | The TdtmdlData Class                                                       |
+| formMain                                      | the TfrmMain Class                                                         |
+| SearchContext (Delphi)SearchContext_Cpp (C++) | The project itself                                                         |
 
 
 ## Classes 

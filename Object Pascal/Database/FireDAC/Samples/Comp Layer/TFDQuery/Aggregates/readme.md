@@ -42,10 +42,10 @@ The **Aggregates** sample shows you how to use the [Aggregates](http://docwiki.e
 
 
 
-| File in Delphi                   | Contains          |
-|----------------------------------|-------------------|
-|`Aggregates.dproj``Aggregates.dpr`|The project itself.|
-|`fAggregates.pas``fAggregates.fmx`|The main form.     |
+| File in Delphi                     | Contains            |
+| ---------------------------------- | ------------------- |
+| `Aggregates.dproj``Aggregates.dpr` | The project itself. |
+| `fAggregates.pas``fAggregates.fmx` | The main form.      |
 
 
 ## Implementation 

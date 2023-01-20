@@ -49,10 +49,10 @@ The **Sensors** sample demonstrates how to use [sensor](http://docwiki.embarcade
 
 
 
-| File in Delphi                   | File in C++                             | Contains          |
-|----------------------------------|-----------------------------------------|-------------------|
-|`VCLSensors.dproj``VCLSensors.dpr`|`VCLSensorsCpp.cbproj``VCLSensorsCpp.cpp`|The project itself.|
-|`uMain.pas``uMain.fmx`            |`uMain.h``uMain.cpp``uMain.fmx`          |The main form.     |
+| File in Delphi                     | File in C++                               | Contains            |
+| ---------------------------------- | ----------------------------------------- | ------------------- |
+| `VCLSensors.dproj``VCLSensors.dpr` | `VCLSensorsCpp.cbproj``VCLSensorsCpp.cpp` | The project itself. |
+| `uMain.pas``uMain.fmx`             | `uMain.h``uMain.cpp``uMain.fmx`           | The main form.      |
 
 
 ## Classes 

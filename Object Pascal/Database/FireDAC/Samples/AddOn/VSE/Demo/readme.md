@@ -45,13 +45,13 @@ You can find the **Project1** project at:
 
 
 
-|**File**                   |**Contains**                                                                                    |
-|---------------------------|------------------------------------------------------------------------------------------------|
-|**Demo\Project1.dproj**    |Contains the project itself.                                                                    |
-|**Demo\Unit1.dfm**         |Contains the code of the main form.                                                             |
-|**Demo\Unit1.pas**         |Contains the main form and the main code.                                                       |
-|**FireDAC.Comp.VSE.pas**   |Contains the code for the _ VSE _ class used for parsing the XML document.                      |
-|**FireDAC.Comp.VSEXML.pas**|Contains the code for the _ VSEXML _ class used for [XPath](http://ro.wikipedia.org/wiki/XPath).|
+| **File**                    | **Contains**                                                                                     |
+| --------------------------- | ------------------------------------------------------------------------------------------------ |
+| **Demo\Project1.dproj**     | Contains the project itself.                                                                     |
+| **Demo\Unit1.dfm**          | Contains the code of the main form.                                                              |
+| **Demo\Unit1.pas**          | Contains the main form and the main code.                                                        |
+| **FireDAC.Comp.VSE.pas**    | Contains the code for the _ VSE _ class used for parsing the XML document.                       |
+| **FireDAC.Comp.VSEXML.pas** | Contains the code for the _ VSEXML _ class used for [XPath](http://ro.wikipedia.org/wiki/XPath). |
 
 
 ## Implementation 

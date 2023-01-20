@@ -67,12 +67,12 @@ The **SendCancelNotification** sample demonstrates how to send and cancel notifi
 
 
 
-|**File in Delphi**               |**File in C++**                                                       |**Contains**                                   |
-|---------------------------------|----------------------------------------------------------------------|-----------------------------------------------|
-|**SendCancelNotifications.dproj**|**SendCancelNotifications.cbproj**                                    |The project itself.                            |
-|**uMain.fmx**                    |**uMain.fmx**                                                         |The main form where the components are located.|
-|**uMain.pas**                    |**SendCancelNotificationsPCH1.h**, **SendCancelNotificationsPCH1.cpp**|Used to define and implement the sample.       |
-|**Information.txt**              |**Information.txt**                                                   |Further information about the sample.          |
+| **File in Delphi**                | **File in C++**                                                        | **Contains**                                    |
+| --------------------------------- | ---------------------------------------------------------------------- | ----------------------------------------------- |
+| **SendCancelNotifications.dproj** | **SendCancelNotifications.cbproj**                                     | The project itself.                             |
+| **uMain.fmx**                     | **uMain.fmx**                                                          | The main form where the components are located. |
+| **uMain.pas**                     | **SendCancelNotificationsPCH1.h**, **SendCancelNotificationsPCH1.cpp** | Used to define and implement the sample.        |
+| **Information.txt**               | **Information.txt**                                                    | Further information about the sample.           |
 
 
 ## Implementation 

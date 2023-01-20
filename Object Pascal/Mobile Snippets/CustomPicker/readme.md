@@ -55,12 +55,12 @@ The **CustomPicker** sample demonstrates how to use an item picker on Android an
 
 
 
-|**File in Delphi**    |**File in C++**                            |**Contains**                                   |
-|----------------------|-------------------------------------------|-----------------------------------------------|
-|**CustomPicker.dproj**|**CustomPicker.cbproj**                    |The project itself.                            |
-|**uMain.fmx**         |**uMain.fmx**                              |The main form where the components are located.|
-|**uMain.pas**         |**CustomPickerPCH.h**, **CustomPicker.cpp**|Used to define and implement the sample.       |
-|**Information.txt**   |**Information.txt**                        |Further information about the sample.          |
+| **File in Delphi**     | **File in C++**                             | **Contains**                                    |
+| ---------------------- | ------------------------------------------- | ----------------------------------------------- |
+| **CustomPicker.dproj** | **CustomPicker.cbproj**                     | The project itself.                             |
+| **uMain.fmx**          | **uMain.fmx**                               | The main form where the components are located. |
+| **uMain.pas**          | **CustomPickerPCH.h**, **CustomPicker.cpp** | Used to define and implement the sample.        |
+| **Information.txt**    | **Information.txt**                         | Further information about the sample.           |
 
 
 ## Classes 

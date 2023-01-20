@@ -42,10 +42,10 @@ The **BlobStreams** sample shows you how to use the [BLOB streaming](http://docw
 
 
 
-| File in Delphi                     | Contains          |
-|------------------------------------|-------------------|
-|`BlobStreams.dproj``BlobStreams.dpr`|The project itself.|
-|`fBlobStr.pas``fBlobStr.fmx`        |The main form.     |
+| File in Delphi                       | Contains            |
+| ------------------------------------ | ------------------- |
+| `BlobStreams.dproj``BlobStreams.dpr` | The project itself. |
+| `fBlobStr.pas``fBlobStr.fmx`         | The main form.      |
 
 
 ## Implementation 

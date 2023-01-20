@@ -54,12 +54,12 @@ The **PlayAudioFile** sample demonstrates how to include an audio file for playb
 
 
 
-|**File in Delphi**     |**File in C++**                      |**Contains**                                   |
-|-----------------------|-------------------------------------|-----------------------------------------------|
-|**PlayAudioFile.dproj**|**PlayAudioFile.cbproj**             |The project itself.                            |
-|**PlayAudioFile.fmx**  |**PlayAudioFile.fmx**                |The main form where the components are located.|
-|**PlayAudioFile.pas**  |**PlayAudioPCH.h**, **PlayAudio.cpp**|Used to define and implement the sample.       |
-|**soundsample.mp3**    |**soundsample.mp3**                  |The audio file.                                |
+| **File in Delphi**      | **File in C++**                       | **Contains**                                    |
+| ----------------------- | ------------------------------------- | ----------------------------------------------- |
+| **PlayAudioFile.dproj** | **PlayAudioFile.cbproj**              | The project itself.                             |
+| **PlayAudioFile.fmx**   | **PlayAudioFile.fmx**                 | The main form where the components are located. |
+| **PlayAudioFile.pas**   | **PlayAudioPCH.h**, **PlayAudio.cpp** | Used to define and implement the sample.        |
+| **soundsample.mp3**     | **soundsample.mp3**                   | The audio file.                                 |
 
 
 ## Classes 

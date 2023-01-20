@@ -51,12 +51,12 @@ The **AccessCameraApp** sample shows how to use [TTakePhotoFromCameraAction](htt
 
 
 
-|**File in Delphi**       |**File in C++**                            |**Contains**                                   |
-|-------------------------|-------------------------------------------|-----------------------------------------------|
-|**AccessCameraApp.dproj**|**AccessCamera.cbproj**                    |The project itself.                            |
-|**uMain.fmx**            |**uMain.fmx**                              |The main form where the components are located.|
-|**uMain.pas**            |**AccessCameraPCH.h**, **AccessCamera.cpp**|Used to define and implement the sample.       |
-|**Information.txt**      |**Information.txt**                        |Further information about the sample.          |
+| **File in Delphi**        | **File in C++**                             | **Contains**                                    |
+| ------------------------- | ------------------------------------------- | ----------------------------------------------- |
+| **AccessCameraApp.dproj** | **AccessCamera.cbproj**                     | The project itself.                             |
+| **uMain.fmx**             | **uMain.fmx**                               | The main form where the components are located. |
+| **uMain.pas**             | **AccessCameraPCH.h**, **AccessCamera.cpp** | Used to define and implement the sample.        |
+| **Information.txt**       | **Information.txt**                         | Further information about the sample.           |
 
 
 ## Classes 

@@ -57,10 +57,10 @@ var
 
 
 
-| File in Delphi               | Contains          |
-|------------------------------|-------------------|
-|`PGRanges.dproj``PGRanges.dpr`|The project itself.|
-|`fMain.pas``fMain.fmx`        |The main form.     |
+| File in Delphi                 | Contains            |
+| ------------------------------ | ------------------- |
+| `PGRanges.dproj``PGRanges.dpr` | The project itself. |
+| `fMain.pas``fMain.fmx`         | The main form.      |
 
 
 ## Implementation 

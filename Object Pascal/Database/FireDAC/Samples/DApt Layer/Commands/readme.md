@@ -50,10 +50,10 @@ The **Commands** sample shows how to redirect inserting, deleting and updating r
 
 
 
-| File in Delphi               | Contains          |
-|------------------------------|-------------------|
-|`Commands.dproj``Commands.dpr`|The project itself.|
-|`fCommands.pas``fCommands.fmx`|The main form.     |
+| File in Delphi                 | Contains            |
+| ------------------------------ | ------------------- |
+| `Commands.dproj``Commands.dpr` | The project itself. |
+| `fCommands.pas``fCommands.fmx` | The main form.      |
 
 
 ## Implementation 

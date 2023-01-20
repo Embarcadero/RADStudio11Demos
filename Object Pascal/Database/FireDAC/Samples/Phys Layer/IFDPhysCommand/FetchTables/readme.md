@@ -49,10 +49,10 @@ The **FetchTables** sample shows you how to use the [Fetch](http://docwiki.embar
 
 
 
-| File in Delphi                     | Contains          |
-|------------------------------------|-------------------|
-|`FetchTables.dproj``FetchTables.dpr`|The project itself.|
-|`fFetchTables.pas``fFetchTables.fmx`|The main form.     |
+| File in Delphi                       | Contains            |
+| ------------------------------------ | ------------------- |
+| `FetchTables.dproj``FetchTables.dpr` | The project itself. |
+| `fFetchTables.pas``fFetchTables.fmx` | The main form.      |
 
 
 ## Implementation 

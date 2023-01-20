@@ -54,10 +54,10 @@ The **Commands** sample shows you how to set up column mappings.
 
 
 
-| File in Delphi                           | Contains          |
-|------------------------------------------|-------------------|
-|`MappingColumns.dproj``MappingColumns.dpr`|The project itself.|
-|`fMappingColumns.pas``fMappingColumns.fmx`|The main form.     |
+| File in Delphi                             | Contains            |
+| ------------------------------------------ | ------------------- |
+| `MappingColumns.dproj``MappingColumns.dpr` | The project itself. |
+| `fMappingColumns.pas``fMappingColumns.fmx` | The main form.      |
 
 
 ## Implementation 

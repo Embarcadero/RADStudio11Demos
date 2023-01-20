@@ -86,24 +86,24 @@ The files used by this sample are:
 
 
 
-|**File**                          |**Contains**                                  |
-|----------------------------------|----------------------------------------------|
-|**WebModuleUnit1.pas/dfm**        |The DataSnap Server Components.               |
-|**ServerMethodsUnit1.pas/dfm**    |The Server module with the FireDAC components.|
-|**DepartmentsServerProject.dproj**|The project itself.                           |
-|**DepartmentsServerFormU.pas/dfm**|The Server form.                              |
+| **File**                           | **Contains**                                   |
+| ---------------------------------- | ---------------------------------------------- |
+| **WebModuleUnit1.pas/dfm**         | The DataSnap Server Components.                |
+| **ServerMethodsUnit1.pas/dfm**     | The Server module with the FireDAC components. |
+| **DepartmentsServerProject.dproj** | The project itself.                            |
+| **DepartmentsServerFormU.pas/dfm** | The Server form.                               |
 
 
 ### Client Files 
 
 
 
-|**File**                          |**Contains**                                                                      |
-|----------------------------------|----------------------------------------------------------------------------------|
-|**DepartmentsClientProject.dproj**|The project itself.                                                               |
-|**DepartmentClientFormU.pas/fmx** |The main form that is the user interface for the DataSnap Client application.     |
-|**ClientModuleUnit2.pas/dfm**     |The module with the TDSRestConnection component.                                  |
-|**ClientClassesUnit2.pas**        |The client classes from the server generated with the TDSRestConnection component.|
+| **File**                           | **Contains**                                                                       |
+| ---------------------------------- | ---------------------------------------------------------------------------------- |
+| **DepartmentsClientProject.dproj** | The project itself.                                                                |
+| **DepartmentClientFormU.pas/fmx**  | The main form that is the user interface for the DataSnap Client application.      |
+| **ClientModuleUnit2.pas/dfm**      | The module with the TDSRestConnection component.                                   |
+| **ClientClassesUnit2.pas**         | The client classes from the server generated with the TDSRestConnection component. |
 
 
 ## Uses 
