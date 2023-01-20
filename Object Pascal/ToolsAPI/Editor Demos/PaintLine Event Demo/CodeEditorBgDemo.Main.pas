@@ -53,12 +53,15 @@ end;
 
 procedure TIDEWizard.ChangedTheme;
 begin
-  var LEditors := CodeEditorService.GetKnownEditors;
+  var LEditorServices: INTACodeEditorServices;
+  if not Supports(BorlandIDEServices, INTACodeEditorServices, LEditorServices) then
+    Exit;
+  var LEditors := LEditorServices.GetKnownEditors;
   try
     for var I := 0 to LEditors.Count - 1  do
     begin
       UpdateBackgroundBuffer(LEditors[I]);
-      CodeEditorService.InvalidateEditor(LEditors[I]);
+      LEditorServices.InvalidateEditor(LEditors[I]);
     end;
   finally
     LEditors.Free;
@@ -82,8 +85,18 @@ begin
   var LNotifier := TCodeEditorNotifier.Create;
   FBackgroundBuffer := TDictionary<TWinControl, TBitmap>.Create;
   LoadBackgroundFromSettings;
-  FEditorEventsNotifier := CodeEditorService.AddEditorEventsNotifier(LNotifier);
-  FBackgroundColor := CodeEditorService.Options.BackgroundColor[atWhiteSpace];
+  var LEditorServices: INTACodeEditorServices;
+  if Supports(BorlandIDEServices, INTACodeEditorServices, LEditorServices) then
+  begin
+    FEditorEventsNotifier := LEditorServices.AddEditorEventsNotifier(LNotifier);
+    FBackgroundColor := LEditorServices.Options.BackgroundColor[atWhiteSpace];
+  end
+  else
+  begin
+    FEditorEventsNotifier := -1;
+    FBackgroundColor := clNone;
+  end;
+
   LNotifier.OnEditorPaintLine := PaintLine;
   LNotifier.OnEditorResized := EditorResized;
 end;
@@ -94,8 +107,10 @@ var
 begin
   if (FStyleServicesNotifier <> -1) and (Supports(BorlandIDEServices, IOTAIDEThemingServices, LThemingServices)) then
     LThemingServices.RemoveNotifier(FStyleServicesNotifier);
-  if (FEditorEventsNotifier <> -1) and Assigned(CodeEditorService) then
-    CodeEditorService.RemoveEditorEventsNotifier(FEditorEventsNotifier);
+  var LEditorServices: INTACodeEditorServices;
+  if Supports(BorlandIDEServices, INTACodeEditorServices, LEditorServices) and
+    (FEditorEventsNotifier <> -1) and Assigned(LEditorServices) then
+    LEditorServices.RemoveEditorEventsNotifier(FEditorEventsNotifier);
   for var LBitmap in FBackgroundBuffer.Values do
     LBitmap.Free;
   FreeAndNil(FBackgroundBuffer);
@@ -172,8 +187,9 @@ begin
     begin
       Result := TBitmap.Create(AControl.Width, AControl.Height);
       FBackgroundBuffer.Add(AControl, Result);
-
-      FBackgroundColor := CodeEditorService.Options.BackgroundColor[atWhiteSpace];
+      var LEditorServices: INTACodeEditorServices;
+      if Supports(BorlandIDEServices, INTACodeEditorServices, LEditorServices) then
+        FBackgroundColor := LEditorServices.Options.BackgroundColor[atWhiteSpace];
       Result.Canvas.Brush.Color := FBackgroundColor;
       Result.Canvas.FillRect(Rect(0, 0, Result.Width, Result.Height));
       LScaled := FBackground.CreateScaledCopy(LRect.Width, LRect.Height, wipmHighQualityCubic);

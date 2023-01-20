@@ -43,14 +43,21 @@ constructor TIDEWizard.Create;
 begin
   inherited;
   var LNotifier := TCodeEditorNotifier.Create;
-  FEditorEventsNotifier := CodeEditorService.AddEditorEventsNotifier(LNotifier);
+
+  var LEditorServices: INTACodeEditorServices;
+  if Supports(BorlandIDEServices, INTACodeEditorServices, LEditorServices) then
+    FEditorEventsNotifier := LEditorServices.AddEditorEventsNotifier(LNotifier)
+  else
+    FEditorEventsNotifier := -1;
   LNotifier.OnEditorPaintText := PaintText;
 end;
 
 destructor TIDEWizard.Destroy;
 begin
-  if (FEditorEventsNotifier <> -1) and Assigned(CodeEditorService) then
-    CodeEditorService.RemoveEditorEventsNotifier(FEditorEventsNotifier);
+  var LEditorServices: INTACodeEditorServices;
+  if Supports(BorlandIDEServices, INTACodeEditorServices, LEditorServices) and
+    (FEditorEventsNotifier <> -1) and Assigned(LEditorServices) then
+    LEditorServices.RemoveEditorEventsNotifier(FEditorEventsNotifier);
   inherited;
 end;
 
