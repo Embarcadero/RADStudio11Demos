@@ -1,4 +1,4 @@
-//---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
 
 // This software is Copyright (c) 2015 Embarcadero Technologies, Inc.
 // You may only use this software if you are an authorized licensee
@@ -7,14 +7,15 @@
 // the software license agreement that comes with the Embarcadero Products
 // and is subject to that software license agreement.
 
-//---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
 
 unit Notifications;
 
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, System.Notification, Vcl.StdCtrls;
 
 type
@@ -34,6 +35,7 @@ type
     procedure btnShowAnotherClick(Sender: TObject);
     procedure btnCancelAnotherClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -94,6 +96,15 @@ begin
   end;
 end;
 
+procedure TNotificationsForm.FormCreate(Sender: TObject);
+begin
+{$IFDEF MSWINDOWS}
+  // Windows needs a delay (some seconds) between initialization and presenting
+  // a notification to have the good title in first notification displayed in
+  // the life of a program
+  NotificationCenter1.PlatformInitialize;
+{$ENDIF}
+end;
 
 procedure TNotificationsForm.FormShow(Sender: TObject);
 begin
@@ -101,14 +112,15 @@ begin
 {$IFDEF MSWINDOWS}
   if not TOSVersion.Check(6, 2) then // Windows 8
   begin
-    ShowMessage('This demo is designed to show Notification feature in Windows 8 or higher. Bye.');
+    ShowMessage
+      ('This demo is designed to show Notification feature in Windows 8 or higher. Bye.');
     Application.Terminate;
   end;
 {$ENDIF MSWINDOWS}
 end;
 
-procedure TNotificationsForm.NotificationCenter1ReceiveLocalNotification(Sender: TObject;
-  ANotification: TNotification);
+procedure TNotificationsForm.NotificationCenter1ReceiveLocalNotification
+  (Sender: TObject; ANotification: TNotification);
 begin
   mmLog.Lines.Add('Notification received: ' + ANotification.Name);
 end;
