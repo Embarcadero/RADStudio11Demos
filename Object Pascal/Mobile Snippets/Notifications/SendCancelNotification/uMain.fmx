@@ -6,6 +6,7 @@ object NotificationsForm: TNotificationsForm
   FormFactor.Width = 1920
   FormFactor.Height = 1022
   FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
   DesignerMasterStyle = 2
   object btnSendScheduledNotification: TButton
     Action = ActionSendScheduledNotification
