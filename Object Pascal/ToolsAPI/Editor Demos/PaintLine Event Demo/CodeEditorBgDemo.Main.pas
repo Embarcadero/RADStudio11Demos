@@ -150,17 +150,17 @@ begin
   if BeforeEvent and (Stage = plsBackground) then
   begin
     var LColor: TColor := Context.Canvas.Brush.Color;
-    if LColor <> FBackgroundColor then
-      Context.Canvas.FillRect(Rect)
-    else
-    begin
-      var LBitmap: TBitmap;
-      if not FBackgroundBuffer.TryGetValue(Context.EditControl, LBitmap) then
-        LBitmap := UpdateBackgroundBuffer(Context.EditControl);
+    var LBitmap: TBitmap;
+    if not FBackgroundBuffer.TryGetValue(Context.EditControl, LBitmap) then
+      LBitmap := UpdateBackgroundBuffer(Context.EditControl);
 
-      BitBlt(Context.Canvas.Handle, Rect.Left, Rect.Top, Rect.Width, Rect.Height,
-        LBitmap.Canvas.Handle, Rect.Left, Rect.Top, SRCCOPY);
-    end;
+    BitBlt(Context.Canvas.Handle, Rect.Left, Rect.Top, Rect.Width, Rect.Height,
+      LBitmap.Canvas.Handle, Rect.Left, Rect.Top, SRCCOPY);
+
+    // Different background colour is for a selection, or current line highlight, etc
+    if LColor <> FBackgroundColor then
+      FillRectAlpha(Context.Canvas, Rect, LColor, 96);
+
     AllowDefaultPainting := False;
   end;
 end;
