@@ -9,6 +9,7 @@ object Notify: TNotify
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   ShowHint = False
+  OnCreate = FormCreate
   OnShow = FormShow
   DesignerMasterStyle = 0
   object btnShow: TButton

@@ -67,3 +67,17 @@ __astcache/
 
 # Boss dependency manager vendor folder https://github.com/HashLoad/boss
 modules/
+
+# Mac Finder and Windows Explorer files
+.DS_Store
+Thumbs.db
+
+# Default Delphi compiler directories
+Win32/
+Win64/
+OSX64/
+OSXARM64/
+Android/
+Android64/
+iOSDevice64/
+Linux64/

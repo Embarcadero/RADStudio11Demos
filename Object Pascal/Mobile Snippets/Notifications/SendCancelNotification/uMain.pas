@@ -1,4 +1,4 @@
-//---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
 // Copyright (c) 2016 Embarcadero Technologies, Inc. All rights reserved.
 //
 // This software is the copyrighted property of Embarcadero Technologies, Inc.
@@ -10,14 +10,14 @@
 // as such term is defined thereunder. Your use of this software constitutes
 // your acknowledgement of your agreement to the foregoing software license
 // and support agreement.
-//---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
 unit uMain;
 
 interface
 
 uses
   System.Actions, System.Classes, System.Notification,
-  FMX.ActnList, FMX.Controls, FMX.Controls.Presentation, FMX.Forms, FMX.Memo, 
+  FMX.ActnList, FMX.Controls, FMX.Controls.Presentation, FMX.Forms, FMX.Memo,
   FMX.Memo.Types, FMX.ScrollBox, FMX.StdCtrls, FMX.Types;
 
 type
@@ -37,13 +37,16 @@ type
     ActionCancelScheduled: TAction;
     ActionCancelAllNotifications: TAction;
 
-    procedure NotificationCPermissionRequestResult(Sender: TObject; const AIsGranted: Boolean);
-    procedure NotificationCReceiveLocalNotification(Sender: TObject; ANotification: TNotification);
+    procedure NotificationCPermissionRequestResult(Sender: TObject;
+      const AIsGranted: Boolean);
+    procedure NotificationCReceiveLocalNotification(Sender: TObject;
+      ANotification: TNotification);
     procedure ActionListExecute(Action: TBasicAction; var Handled: Boolean);
     procedure ActionSendScheduledNotificationExecute(Sender: TObject);
     procedure ActionSendNotificationImmediatelyExecute(Sender: TObject);
     procedure ActionCancelScheduledExecute(Sender: TObject);
     procedure ActionCancelAllNotificationsExecute(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     FPendingAction: TBasicAction;
   end;
@@ -57,8 +60,9 @@ implementation
 
 uses
   System.SysUtils;
-  
-procedure TNotificationsForm.NotificationCPermissionRequestResult(Sender: TObject; const AIsGranted: Boolean);
+
+procedure TNotificationsForm.NotificationCPermissionRequestResult
+  (Sender: TObject; const AIsGranted: Boolean);
 begin
   if AIsGranted and (FPendingAction <> nil) then
   begin
@@ -68,12 +72,14 @@ begin
   FPendingAction := nil;
 end;
 
-procedure TNotificationsForm.NotificationCReceiveLocalNotification(Sender: TObject; ANotification: TNotification);
+procedure TNotificationsForm.NotificationCReceiveLocalNotification
+  (Sender: TObject; ANotification: TNotification);
 begin
   Memo1.Lines.Add(ANotification.AlertBody);
 end;
 
-procedure TNotificationsForm.ActionListExecute(Action: TBasicAction; var Handled: Boolean);
+procedure TNotificationsForm.ActionListExecute(Action: TBasicAction;
+  var Handled: Boolean);
 begin
   if NotificationC.AuthorizationStatus <> TAuthorizationStatus.Authorized then
   begin
@@ -84,9 +90,11 @@ begin
   end;
 end;
 
-procedure TNotificationsForm.ActionSendScheduledNotificationExecute(Sender: TObject);
+procedure TNotificationsForm.ActionSendScheduledNotificationExecute
+  (Sender: TObject);
 begin
-  var Notification := NotificationC.CreateNotification;
+  var
+  Notification := NotificationC.CreateNotification;
   try
     Notification.Name := 'MyNotification';
     Notification.AlertBody := 'Delphi for Mobile is here!';
@@ -100,9 +108,21 @@ begin
   end;
 end;
 
-procedure TNotificationsForm.ActionSendNotificationImmediatelyExecute(Sender: TObject);
+procedure TNotificationsForm.FormCreate(Sender: TObject);
 begin
-  var Notification := NotificationC.CreateNotification;
+{$IFDEF MSWINDOWS}
+  // Windows needs a delay (some seconds) between initialization and presenting
+  // a notification to have the good title in first notification displayed in
+  // the life of a program
+  NotificationC.PlatformInitialize;
+{$ENDIF}
+end;
+
+procedure TNotificationsForm.ActionSendNotificationImmediatelyExecute
+  (Sender: TObject);
+begin
+  var
+  Notification := NotificationC.CreateNotification;
   try
     Notification.AlertBody := 'Delphi for Mobile is here!';
     Notification.FireDate := Now;
@@ -120,7 +140,8 @@ begin
   NotificationC.CancelNotification('MyNotification');
 end;
 
-procedure TNotificationsForm.ActionCancelAllNotificationsExecute(Sender: TObject);
+procedure TNotificationsForm.ActionCancelAllNotificationsExecute
+  (Sender: TObject);
 begin
   NotificationC.CancelAll;
 end;

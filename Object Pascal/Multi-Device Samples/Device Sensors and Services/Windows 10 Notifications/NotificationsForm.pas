@@ -1,4 +1,4 @@
-//---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
 
 // This software is Copyright (c) 2015 Embarcadero Technologies, Inc.
 // You may only use this software if you are an authorized licensee
@@ -7,16 +7,18 @@
 // the software license agreement that comes with the Embarcadero Products
 // and is subject to that software license agreement.
 
-//---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
 
 unit NotificationsForm;
 
 interface
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Controls.Presentation, FMX.StdCtrls,
-  System.Notification, FMX.ScrollBox, FMX.Memo;
+  System.SysUtils, System.Types, System.UITypes, System.Classes,
+  System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.Controls.Presentation, FMX.StdCtrls,
+  System.Notification, FMX.ScrollBox, FMX.Memo, FMX.Memo.Types;
 
 type
   TNotify = class(TForm)
@@ -30,15 +32,17 @@ type
     lblLog: TLabel;
     StyleBook1: TStyleBook;
     procedure btnShowClick(Sender: TObject);
-    procedure NotificationCenter1ReceiveLocalNotification(Sender: TObject; ANotification: TNotification);
+    procedure NotificationCenter1ReceiveLocalNotification(Sender: TObject;
+      ANotification: TNotification);
     procedure btnCancelAllClick(Sender: TObject);
     procedure btnShowAnotherClick(Sender: TObject);
     procedure btnCancelClick(Sender: TObject);
     procedure btnCancelAnotherClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
-    //FNotificationCenter: TNotificationCenter;
+    // FNotificationCenter: TNotificationCenter;
   public
     { Public declarations }
   end;
@@ -66,13 +70,24 @@ begin
   end;
 end;
 
+procedure TNotify.FormCreate(Sender: TObject);
+begin
+{$IFDEF MSWINDOWS}
+  // Windows needs a delay (some seconds) between initialization and presenting
+  // a notification to have the good title in first notification displayed in
+  // the life of a program
+  NotificationCenter1.PlatformInitialize;
+{$ENDIF}
+end;
+
 procedure TNotify.FormShow(Sender: TObject);
 begin
   OnShow := nil;
 {$IFDEF MSWINDOWS}
   if not TOSVersion.Check(6, 2) then // Windows 8
   begin
-    ShowMessage('This demo is designed to show Notification feature in Windows 8 or higher. Bye.');
+    ShowMessage
+      ('This demo is designed to show Notification feature in Windows 8 or higher. Bye.');
     Application.Terminate;
   end;
 {$ENDIF MSWINDOWS}
@@ -109,7 +124,8 @@ begin
   NotificationCenter1.CancelNotification('Windows10Notification');
 end;
 
-procedure TNotify.NotificationCenter1ReceiveLocalNotification(Sender: TObject; ANotification: TNotification);
+procedure TNotify.NotificationCenter1ReceiveLocalNotification(Sender: TObject;
+  ANotification: TNotification);
 begin
   mmLog.Lines.Add('Notification received: ' + ANotification.Name);
 end;
